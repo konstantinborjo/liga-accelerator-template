@@ -1354,6 +1354,60 @@ button,
   border: 4px solid #fff;
 }
 
+.main-footer {
+  background-color: #030A1A;
+}
+
+.main-footer__link {
+  color: #ffffff;
+  font-family: Alumni Sans;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.52px;
+}
+
+.main-footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 44px 0 32px;
+}
+
+.main-footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+}
+
+.main-footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.navigation__link {
+  color: #ffffff;
+  font-family: Roboto Condensed;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 74px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
