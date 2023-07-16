@@ -1,0 +1,100 @@
+.main-header {
+  border: 1px solid rgba(0, 0, 0, 0.20);
+  background: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
+  flex-shrink: 0;
+  min-height: 658px;
+}
+
+.main-header__wrapper {
+  margin: 0;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header__link {
+  color: #ffffff;
+  font-family: Alumni Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+
+.main-header__link--tel {
+  font-size: 26px;
+}
+
+.main-header__image {
+  display: flex;
+  position: relative;
+  color: #ffffff;
+  margin-top: 98px;
+}
+
+.main-header__picture {
+  position: absolute;
+  top: 49px;
+  right: 289px;
+}
+
+.main-header__list {
+  list-style-type: none;
+  text-align: right;
+  font-family: Roboto Condensed;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+  margin-top: 193px;
+}
+
+.main-header__description {
+  font-family: Alumni Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  width: 133px;
+}
+
+.main-header__title {
+  text-align: right;
+  font-family: Alumni Sans;
+  font-size: 92px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.6px;
+  width: 298px;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.main-header__town {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+
+.main-header__button {
+  width: 240px;
+  color: #ffffff;
+  font-family: Roboto Condensed;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 24px 56px;
+  text-align: center;
+  border: 4px solid #fff;
+}

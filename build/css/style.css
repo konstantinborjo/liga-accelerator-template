@@ -315,21 +315,21 @@ template {
 }
 
 @font-face {
-  font-family: "RobotoCondensed";
+  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url("../fonts/roboto/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/roboto/RobotoCondensed-Bold.woff") format("woff");
 }
 @font-face {
-  font-family: "RobotoCondensed";
+  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url("../fonts/roboto/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/roboto/RobotoCondensed-Regular.woff") format("woff");
 }
 @font-face {
-  font-family: "RobotoCondensed";
+  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
@@ -343,7 +343,7 @@ template {
   src: url("../fonts/rouble.woff2") format("woff2"), url("../fonts/roboto/rouble.woff") format("woff");
 }
 @font-face {
-  font-family: "alumniSans";
+  font-family: "Alumni Sans";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
@@ -370,6 +370,7 @@ html {
   line-height: 24px;
   font-family: "roboto", "Arial", sans-serif;
   color: #000000;
+  height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -378,6 +379,13 @@ html {
 body {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #ffffff;
 }
 
@@ -556,23 +564,17 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1920px;
   margin: 0 auto;
-  padding: 0 40px;
-}
-@media (max-width: 1439px) {
-  .container {
-    padding: 0 32px;
-  }
+  padding: 0 103px;
 }
 @media (max-width: 1023px) {
   .container {
-    padding: 0 24px;
+    padding: 0 45px;
   }
 }
 @media (max-width: 767px) {
   .container {
-    padding: 0 16px;
+    padding: 0 15px;
   }
 }
 
@@ -1232,6 +1234,124 @@ button,
 }
 .custom-select .input-message.is-valid {
   color: #15ab07;
+}
+
+.main-header {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.2363382578deg, #B80027 313.3060026169deg);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  min-height: 658px;
+}
+
+.main-header__wrapper {
+  margin: 0;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-header__link {
+  color: #ffffff;
+  font-family: Alumni Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+
+.main-header__link--tel {
+  font-size: 26px;
+}
+
+.main-header__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  color: #ffffff;
+  margin-top: 98px;
+}
+
+.main-header__picture {
+  position: absolute;
+  top: 49px;
+  right: 289px;
+}
+
+.main-header__list {
+  list-style-type: none;
+  text-align: right;
+  font-family: Roboto Condensed;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+  margin-top: 193px;
+}
+
+.main-header__description {
+  font-family: Alumni Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  width: 133px;
+}
+
+.main-header__title {
+  text-align: right;
+  font-family: Alumni Sans;
+  font-size: 92px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.6px;
+  width: 298px;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.main-header__town {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.main-header__button {
+  width: 240px;
+  color: #ffffff;
+  font-family: Roboto Condensed;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 24px 56px;
+  text-align: center;
+  border: 4px solid #fff;
 }
 
 /* @mixin hover-focus {

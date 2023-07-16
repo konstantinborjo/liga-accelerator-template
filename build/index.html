@@ -18,7 +18,7 @@
     crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto/RobotoCondensed-Regular.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/AlumniSans-SemiBold.woff" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/rouble.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/rouble.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -31,31 +31,36 @@
     <div class="container">
       <div class="main-header__wrapper">
         <a class="main-header__link" href="index.html">SUPERGYM</a>
-        <a class="main-header__link" href="tel:88005555555">8-800-555-55-55</a>
+        <a class="main-header__link main-header__link--tel" href="tel:88005555555">8-800-555-55-55</a>
       </div>
 
       <div class="main-header__image">
-        <ul>
-          <li>Тренажёрный зал</li>
-          <li>Групповые занятия</li>
-          <li>Кардио-зона</li>
-        </ul>
-        <span>Омск</span>
-        <h1>ФИТНЕС ЦЕНТР</h1>
-        <a href="#">купить абонемент</a>
-        <picture>
-          <source type="image/webp" media="(min-width: 1200px)"
-            srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
-          <source type="image/webp" srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
-
-          <source media="(min-width: 1200px)" srcset="img/Clark-desktop.png 1x, img/Clark-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/Clark-desktop.png 1x, img/Clark-desktop@2x.png 2x">
-          <img class="main-picture__pic" src="img/Clark-desktop.png" width="500" height="556"
-            srcset="img/Clark-desktop@2x.png" alt="главное изображение">
-        </picture>
+        <div class="main-header__container">
+          <ul class="main-header__list zone">
+            <li class="zone__item">Тренажёрный зал</li>
+            <li class="zone__item">Групповые занятия</li>
+            <li class="zone__item">Кардио-зона</li>
+          </ul>
+        </div>
+        <div class="main-header__town">
+        <span class="main-header__description">омск</span>
+        <h1 class="main-header__title">ФИТНЕС ЦЕНТР</h1>
+        <a class="main-header__button" href="#">купить абонемент</a>
       </div>
+      </div>
+      <picture>
+        <source type="image/webp" media="(min-width: 1200px)"
+          srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
+        <source type="image/webp" srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
+
+        <source media="(min-width: 1200px)" srcset="img/Clark-desktop.png 1x, img/Clark-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/Clark-desktop.png 1x, img/Clark-desktop@2x.png 2x">
+        <img class="main-header__picture" src="img/Clark-desktop.png" width="500" height="556"
+          srcset="img/Clark-desktop@2x.png" alt="главное изображение">
+      </picture>
+
     </div>
   </header>
   <main class="main-container">
@@ -67,18 +72,18 @@
           В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
           несколько оборудованных залов для различных видов групповых занятий. </p>
 
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
-            <source type="image/webp" srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
+          <source type="image/webp" srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
 
-            <source media="(min-width: 1200px)" srcset="img/gym-desktop.png 1x, img/Clark-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/Clark-desktop.png 1x, img/Clark-desktop@2x.png 2x">
-            <img class="main-picture__pic" src="img/gym-desktop.png" width="660" height="401"
-              srcset="img/gym-desktop.png@2x.png" alt="тренажерный зал">
-          </picture>
+          <source media="(min-width: 1200px)" srcset="img/gym-desktop.png 1x, img/Clark-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/Clark-desktop.png 1x, img/Clark-desktop@2x.png 2x">
+          <img class="main-picture__pic" src="img/gym-desktop.png" width="660" height="401"
+            srcset="img/gym-desktop@2x.png" alt="тренажерный зал">
+        </picture>
         <!-- <h1>Тестовая страница.</h1>
         <p>На данной странице показан пример модальных окон.</p>
         <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.
@@ -90,22 +95,379 @@
 
     <section>
       <div class="container">
-<h2>Абонементы</h2>
-<ul>
-  <li>1</li>
-  <li>6</li>
-  <li>12</li>
-</ul>
+        <h2>Абонементы</h2>
+        <ul>
+          <li>1 месяц</li>
+          <li>6 месяцов</li>
+          <li>12 месяцов</li>
+        </ul>
+
+        <ul>
+          <li>
+            <h3>С тренером</h3>
+            <span>12 занятий</span>
+            <p>5000
+              <svg width="30" height="42">
+                <use xlink:href="img/sprite.svg#rub"></use>
+              </svg>
+            </p>
+            <a href="#">купить абонемент</a>
+          </li>
+          <li>
+            <h3>Дневной</h3>
+            <span>с 8:00 до 17:00</span>
+            <p>1700
+              <svg width="30" height="42">
+                <use xlink:href="img/sprite.svg#rub"></use>
+              </svg>
+            </p>
+            <a href="#">купить абонемент</a>
+          </li>
+          <li>
+            <h3>Полный день</h3>
+            <span>с 8:00 до 22:00</span>
+            <p>2700
+              <svg width="30" height="42">
+                <use xlink:href="img/sprite.svg#rub"></use>
+              </svg>
+            </p>
+            <a href="#">купить абонемент</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div>
+          <div>
+            <div>
+              <h2>SUPER GAMES</h2>
+              <dl>
+                <dd>Дата</dd>
+                <dt>7 марта 2019</dt>
+                <dd>Время</dd>
+                <dt>12:00</dt>
+              </dl>
+            </div>
+            <span>Ежегодные соревнования по CrossFit</span>
+            <a href="#">заполнить заявку</a>
+          </div>
+
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/dust-desktop.webp 1x, img/dust-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/dust-desktop.webp 1x, img/dust-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/dust-desktop.webp 1x, img/dust-desktop@2x.webp 2x">
+
+            <source media="(min-width: 1200px)" srcset="img/dust-desktop.png 1x, img/dust-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/dust-desktop.png 1x, img/dust-desktop@2x.png 2x">
+            <img class="main-picture__pic" src="img/dust-desktop.png" width="660" height="401"
+              srcset="img/dust-desktop@2x.png" alt="тренажерный зал">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Тренеры</h2>
+        <ul>
+          <li>
+            <picture>
+              <source type="image/webp" srcset="img/anna-desktop.webp 1x, img/anna-desktop@2x.webp 2x">
+              <img class="main-picture__pic" src="img/anna-desktop.png" width="268" height="294"
+                srcset="img/anna-desktop@2x.png" alt="тренер">
+            </picture>
+            <p>Анна Павлова</p>
+          </li>
+
+          <li>
+            <picture>
+              <source type="image/webp" srcset="img/aleksey-desktop.webp 1x, img/aleksey-desktop@2x.webp 2x">
+              <img class="main-picture__pic" src="img/aleksey-desktop.png" width="268" height="294"
+                srcset="img/aleksey-desktop@2x.png" alt="тренер">
+            </picture>
+            <p>Алексей Лавров</p>
+          </li>
+
+          <li>
+            <picture>
+              <source type="image/webp" srcset="img/alex-desktop.webp 1x, img/alex-desktop@2x.webp 2x">
+              <img class="main-picture__pic" src="img/alex-desktop.png" width="268" height="294"
+                srcset="img/alex-desktop@2x.png" alt="тренер">
+            </picture>
+            <!-- переделать бэкграундом -->
+            <p>Александр Пашков</p>
+            <span>CrossFit</span>
+            <ul>
+              <li>Certified Level 3 Trainer</li>
+              <li>Победитель чемпионата России по CrossFit </li>
+              <li>Опыт — 6 лет</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Наши преимущества</h2>
+        <div>
+          <ul>
+            <li>
+              <div>
+                <span>900</span>
+                <span>кв/м</span>
+              </div>
+              <div>
+                <h3>Площадь </h3>
+                <span>Занимайтесь без очередей и толпучки</span>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <span>350</span>
+                <span>мест</span>
+              </div>
+              <div>
+                <h3>Комфорт</h3>
+                <span>Просторные раздевалки,душевые, фен, Wi-Fi, кулеры</span>
+              </div>
+            </li>
+
+            <li>
+              <span>100</span>
+              <span>Тренажеров</span>
+              <span>Современные тренажеры на все группы мышц</span>
+            </li>
+
+            <li>
+              <div>
+                <span>70</span>
+                <span>машин</span>
+              </div>
+              <div>
+                <h3>Собственная парковка</h3>
+                <span>Вы всегда найдете место для своей машины на нашей парковке</span>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <span>5+</span>
+                <span>лет</span>
+              </div>
+              <div>
+                <h3>Тренерский опыт</h3>
+                <span>Добивайтесь своих целей быстрее с профессиональным тренером</span>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Акции</h2>
+        <div>
+          <div>
+            <div>
+              <h3>Год</h3>
+              <span>4999</span>
+              <span>Безлимитный абонемент в тренажерный зал</span>
+              <a href="">подробнее</a>
+            </div>
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/girl-desktop.webp 1x, img/girl-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/dust-desktop.webp 1x, img/dust-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/dust-desktop.webp 1x, img/dust-desktop@2x.webp 2x">
+
+              <source media="(min-width: 1200px)" srcset="img/girl-desktop.png 1x, img/girl-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/dust-desktop.png 1x, img/dust-desktop@2x.png 2x">
+              <img class="main-picture__pic" src="img/girl-desktop.png" width="280" height="462"
+                srcset="img/dust-desktop@2x.png" alt="тренажерный зал">
+            </picture>
+          </div>
+
+          <div>
+            <h3>Месяц бесплатно</h3>
+            <span>Приведи друга, получи абонемент в подарок</span>
+            <a href="">подробнее</a>
+          </div>
+
+          <div>
+            <h3>Скидка 20%</h3>
+            <span>Корпоративный фитнес с командой</span>
+            <a href="">подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Вопросы и ответы</h2>
+        <div>
+          <ul>
+            <li>
+              <a href="#">Центр</a>
+            </li>
+            <li>
+              <a href="#">Абонемент</a>
+            </li>
+            <li>
+              <a href="#">Услуги</a>
+            </li>
+            <li>
+              <a href="#">Правила</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <h3>Занятия с тренером входят в абонемент?</h3>
+              <p>При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда
+                присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру
+                или технике выполнения упражнения.</p>
+              <button>
+                <svg width="42" height="42">
+                  <use xlink:href="img/sprite.svg#icon-close"></use>
+                </svg>
+            </li>
+
+            <li>
+              <h3>Занятия с тренером входят в абонемент?</h3>
+              <button>
+                <svg width="42" height="42">
+                  <use xlink:href="img/sprite.svg#open"></use>
+                </svg>
+            </li>
+
+            <li>
+              <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
+              <button>
+                <svg width="42" height="42">
+                  <use xlink:href="img/sprite.svg#open"></use>
+                </svg>
+            </li>
+
+            <li>
+              <h3>Что такое семейный доступ и доступ для друзей?</h3>
+              <button>
+                <svg width="42" height="42">
+                  <use xlink:href="img/sprite.svg#open"></use>
+                </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Отзывы</h2>
+        <div>
+          <h3>Анна Орлова</h3>
+          <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
+            дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div>
+          <h3>Бесплатное занятие </h3>
+          <form action="">
+            <fieldset>
+              <label for="">
+                <input type="text" placeholder="Имя">
+              </label>
+              <label for="">
+                <input type="text" placeholder="Имя"></label>
+              <button>отправить</button>
+            </fieldset>
+          </form>
+        </div>
+        <div>
+          <h2>Контакты</h2>
+          <ul>
+            <li>
+              <h3>Адрес:</h3>
+              <span>г. Омск, ул. 60 лет Октября, 7</span>
+            </li>
+
+            <li>
+              <h3>График работы:</h3>
+              <span>Пн-Вс: с 8:00 до 22:00</span>
+            </li>
+
+            <li>
+              <h3>Телефон:</h3>
+              <a class="" href="tel:88005555555">8-800-555-55-55</a>
+            </li>
+
+            <li>
+              <h3>Email:</h3>
+              <a class="" href="#">omsk@supergym.ru</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
+
   <footer>
-    <div class="container"></div>
+    <div class="container">
+      <div>
+        <a href="index.html">SUPERGYM</a>
+        <ul>
+          <li>Услуги</li>
+          <li>Абонементы</li>
+          <li>Акции</li>
+          <li>Тренеры</li>
+          <li>Расписание</li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="">
+              <svg width="30" height="42">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a href="">
+              <svg width="30" height="42">
+                <use xlink:href="img/sprite.svg#ok"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a href="">
+              <svg width="30" height="42">
+                <use xlink:href="img/sprite.svg#reddit"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </footer>
   </div>
 
   <!-- Модалки -->
-  <div class="modal modal--preload" data-modal="feedback">
+  <!-- <div class="modal modal--preload" data-modal="feedback">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
@@ -131,7 +493,7 @@
         </button>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
