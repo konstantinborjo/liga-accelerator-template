@@ -3,8 +3,7 @@
   justify-content: space-between;
   margin-top: 120px;
   margin-bottom: 235px;
-  position: relative;
-}
+  }
 
 .gym__wrapper {
   display: flex;
@@ -50,54 +49,11 @@
   line-height: 27px;
 }
 
-.gym__container::before {
-  position: absolute;
-  content: "";
-  top: 284px;
-  left: 498px;
-  background-image: url("../img/grey-gym-desktop.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 364px;
-  height: 228px;
-}
-
-.gym__container::after{
-  position: absolute;
-  content: "";
-  top: 284px;
-  left: 498px;
-  background: rgba(20, 54, 122, 0.50);
-  width: 364px;
-  height: 228px;
-}
-
-.gym__wrapper::after{
-  position: absolute;
-  content: "";
-  top: 284px;
-  left: 498px;
-  background-image: url("../img/svg/video.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 100px;
-  height: 100px;
-}
-
-
-
-// .gym__container::after{
-//   width: 364px;
-// height: 228px;
-// background: rgba(20, 54, 122, 0.50);
-// content: "";
-// top: 284px;
-// left: 394px;
-// position: static;
-// }
-
 .gym__description--second {
   margin: 10px 0 0;
+}
+
+.gym__video{
+  width: 55.1515151515%;
+  margin: -113px 0 0 -63px;
 }

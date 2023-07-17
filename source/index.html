@@ -41,26 +41,26 @@
             <li class="zone__item">Групповые занятия</li>
             <li class="zone__item">Кардио-зона</li>
           </ul>
+
+          <div class="main-header__town">
+            <span class="main-header__description">омск</span>
+            <h1 class="main-header__title">ФИТНЕС ЦЕНТР</h1>
+            <a class="main-header__button" href="#">купить абонемент</a>
+          </div>
         </div>
-        <div class="main-header__town">
-          <span class="main-header__description">омск</span>
-          <h1 class="main-header__title">ФИТНЕС ЦЕНТР</h1>
-          <a class="main-header__button" href="#">купить абонемент</a>
-        </div>
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
+          <source type="image/webp" srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
+
+          <source media="(min-width: 1200px)" srcset="img/Clark-desktop.png 1x, img/Clark-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/Clark-desktop.png 1x, img/Clark-desktop@2x.png 2x">
+          <img class="main-header__picture" src="img/Clark-desktop.png" width="500" height="556"
+            srcset="img/Clark-desktop@2x.png" alt="главное изображение">
+        </picture>
       </div>
-      <picture>
-        <source type="image/webp" media="(min-width: 1200px)"
-          srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)"
-          srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
-        <source type="image/webp" srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
-
-        <source media="(min-width: 1200px)" srcset="img/Clark-desktop.png 1x, img/Clark-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/Clark-desktop.png 1x, img/Clark-desktop@2x.png 2x">
-        <img class="main-header__picture" src="img/Clark-desktop.png" width="500" height="556"
-          srcset="img/Clark-desktop@2x.png" alt="главное изображение">
-      </picture>
-
     </div>
   </header>
   <main class="main-container">
@@ -78,18 +78,33 @@
               Также в фитнес центре есть
               несколько оборудованных залов для различных видов групповых занятий. </p>
           </div>
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
-            <source type="image/webp" srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
+          <div class="gym__media">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
 
-            <source media="(min-width: 1200px)" srcset="img/gym-desktop.png 1x, img/Clark-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/Clark-desktop.png 1x, img/Clark-desktop@2x.png 2x">
-            <img class="gym__picture" src="img/gym-desktop.png" width="660" height="401" srcset="img/gym-desktop@2x.png"
-              alt="тренажерный зал">
-          </picture>
+              <source media="(min-width: 1200px)" srcset="img/gym-desktop.png 1x, img/Clark-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/Clark-desktop.png 1x, img/Clark-desktop@2x.png 2x">
+              <img class="gym__picture" src="img/gym-desktop.png" width="660" height="401"
+                srcset="img/gym-desktop@2x.png" alt="тренажерный зал">
+            </picture>
+
+            <div class="gym__video">
+              <div class="video" data-video="">
+                <iframe class="video__player" id="9TZXsZItgdw" frameborder="0" allowfullscreen="1"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  title="Бесплатные интерактивные онлайн-курсы" width="640" height="360"
+                  src="https://www.youtube.com/embed/9TZXsZItgdw?enablejsapi=1&amp;origin=https%3A%2F%2Fefiand.github.io&amp;widgetid=1"></iframe>
+                <button class="video__control"
+                  style="--bg-default: url('../img/grey-gym-desktop.png');--bg-default2x: url('../img/grey-gym-desktop@2x.png');--bg-webp: url('../img/grey-gym-desktop.webp');--bg-webp2x: url('../img/grey-gym-desktop@2x.webp');--bg-webpTablet: url('../img/grey-gym-desktop.webp');/* --bg-webpTablet2x: url('../img/grey-gym-desktop@2x.webp'); */--bg-webpMobile: url('../img/grey-gym-desktop.webp');/* --bg-webpMobile2x: url('../img/grey-gym@2x.webp'); */">
+                  <span class="visually-hidden">Проиграть видео.</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- <h1>Тестовая страница.</h1>
         <p>На данной странице показан пример модальных окон.</p>
@@ -512,6 +527,7 @@
     </div>
   </div> -->
 
+  <script src="https://www.youtube.com/player_api"></script>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

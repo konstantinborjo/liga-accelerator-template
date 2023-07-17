@@ -1,0 +1,112 @@
+.video {
+  position: relative;
+  padding-top: 62.6373626374%;
+  background-color: #000;
+  background-size: cover;
+}
+
+.video__player {
+  display: none;}
+
+.video__control::before {
+  content: "";
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background-image: url("../img/svg/video.svg");
+}
+
+.video.is-active .video__player {
+  display: block;
+}
+
+.video.is-active .video__control {
+  display: none;
+}
+
+.video__control, .video__player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video__control {
+  display: flex;
+  background-color: transparent;
+  background-size: cover;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  transition: opacity .3s ease;
+
+}
+
+@supports (background-image: var(--bg-webp)) {
+  @media (min-width:1024px) {
+      .video__control {
+          background-image:var(--bg-webp)
+      }
+  }
+
+  @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio:1.5),(min-width:1024px) and (min-resolution:144dpi),(min-width:1024px) and (min-resolution:1.5dppx) {
+      .video__control {
+          background-image:var(--bg-webp2x, none)
+      }
+  }
+
+  @media (max-width: 1199px) {
+      .video__control {
+          background-image:var(--bg-webpTablet, none)
+      }
+  }
+
+  @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio:1.5),(max-width:1199px) and (min-resolution:144dpi),(max-width:1199px) and (min-resolution:1.5dppx) {
+      .video__control {
+          background-image:var(--bg-webpTablet2x, none)
+      }
+  }
+
+  @media (max-width: 767px) {
+      .video__control {
+          background-image:var(--bg-webpMobile, none)
+      }
+  }
+
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio:1.5),(max-width:767px) and (min-resolution:144dpi),(max-width:767px) and (min-resolution:1.5dppx) {
+      .video__control {
+          background-image:var(--bg-webpMobile2x, none)
+      }
+  }
+}
+
+@supports not (background-image: var(--bg-webp, none)) {
+  .video__control {
+      background-image:var(--bg-default, none)
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 1.5),(min-resolution:144dpi),(min-resolution:1.5dppx) {
+      .video__control {
+          background-image:var(--bg-default2x, none)
+      }
+  }
+}
+
+.video__control:focus-visible {
+  opacity: 0.8;
+}
+
+@supports not selector(:focus-visible) {
+  .video__control.focus-visible:focus {
+      opacity: 0.8;
+  }
+}
+
+.video.is-active .video__player {
+  display: block;
+}
+
+.video.is-active .video__control {
+  display: none;
+}

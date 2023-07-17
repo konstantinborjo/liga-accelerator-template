@@ -1,6 +1,6 @@
 .main-header {
   border: 1px solid rgba(0, 0, 0, 0.20);
-  background: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
+  background: conic-gradient(from 145deg at 16% 39%, #003D85 32deg, #B80027 313deg, #003D85 360deg);
   flex-shrink: 0;
   min-height: 658px;
 }
@@ -28,15 +28,15 @@
 
 .main-header__image {
   display: flex;
+  justify-content: space-between;
   position: relative;
   color: #ffffff;
-  margin-top: 98px;
+  width: 1017px;
+  // margin-top: 98px;
 }
 
-.main-header__picture {
-  position: absolute;
-  top: 49px;
-  right: 289px;
+.main-header__container{
+display: flex;
 }
 
 .main-header__list {
@@ -49,7 +49,7 @@
   line-height: 21px;
   margin: 0;
   padding: 0;
-  margin-top: 193px;
+  margin-top: 257px;
 }
 
 .main-header__description {

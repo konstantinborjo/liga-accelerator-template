@@ -1238,7 +1238,7 @@ button,
 
 .main-header {
   border: 1px solid rgba(0, 0, 0, 0.2);
-  background: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.2363382578deg, #B80027 313.3060026169deg);
+  background: conic-gradient(from 145deg at 16% 39%, #003D85 32deg, #B80027 313deg, #003D85 360deg);
   -ms-flex-negative: 0;
       flex-shrink: 0;
   min-height: 658px;
@@ -1273,15 +1273,18 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
   color: #ffffff;
-  margin-top: 98px;
+  width: 1017px;
 }
 
-.main-header__picture {
-  position: absolute;
-  top: 49px;
-  right: 289px;
+.main-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .main-header__list {
@@ -1294,7 +1297,7 @@ button,
   line-height: 21px;
   margin: 0;
   padding: 0;
-  margin-top: 193px;
+  margin-top: 257px;
 }
 
 .main-header__description {
@@ -1417,7 +1420,6 @@ button,
           justify-content: space-between;
   margin-top: 120px;
   margin-bottom: 235px;
-  position: relative;
 }
 
 .gym__wrapper {
@@ -1469,44 +1471,120 @@ button,
   line-height: 27px;
 }
 
-.gym__container::before {
-  position: absolute;
-  content: "";
-  top: 284px;
-  left: 498px;
-  background-image: url("../img/grey-gym-desktop.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 364px;
-  height: 228px;
-}
-
-.gym__container::after {
-  position: absolute;
-  content: "";
-  top: 284px;
-  left: 498px;
-  background: rgba(20, 54, 122, 0.5);
-  width: 364px;
-  height: 228px;
-}
-
-.gym__wrapper::after {
-  position: absolute;
-  content: "";
-  top: 284px;
-  left: 498px;
-  background-image: url("../img/svg/video.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 100px;
-  height: 100px;
-}
-
 .gym__description--second {
   margin: 10px 0 0;
+}
+
+.gym__video {
+  width: 55.1515151515%;
+  margin: -113px 0 0 -63px;
+}
+
+.video {
+  position: relative;
+  padding-top: 62.6373626374%;
+  background-color: #000;
+  background-size: cover;
+}
+
+.video__player {
+  display: none;
+}
+
+.video__control::before {
+  content: "";
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background-image: url("../img/svg/video.svg");
+}
+
+.video.is-active .video__player {
+  display: block;
+}
+
+.video.is-active .video__control {
+  display: none;
+}
+
+.video__control, .video__player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: transparent;
+  background-size: cover;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+@supports (background-image: var(--bg-webp)) {
+  @media (min-width: 1024px) {
+    .video__control {
+      background-image: var(--bg-webp);
+    }
+  }
+  @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) {
+    .video__control {
+      background-image: var(--bg-webp2x, none);
+    }
+  }
+  @media (max-width: 1199px) {
+    .video__control {
+      background-image: var(--bg-webpTablet, none);
+    }
+  }
+  @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+    .video__control {
+      background-image: var(--bg-webpTablet2x, none);
+    }
+  }
+  @media (max-width: 767px) {
+    .video__control {
+      background-image: var(--bg-webpMobile, none);
+    }
+  }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .video__control {
+      background-image: var(--bg-webpMobile2x, none);
+    }
+  }
+}
+@supports not (background-image: var(--bg-webp, none)) {
+  .video__control {
+    background-image: var(--bg-default, none);
+  }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .video__control {
+      background-image: var(--bg-default2x, none);
+    }
+  }
+}
+.video__control:focus-visible {
+  opacity: 0.8;
+}
+
+@supports not selector(:focus-visible) {
+  .video__control.focus-visible:focus {
+    opacity: 0.8;
+  }
+}
+.video.is-active .video__player {
+  display: block;
+}
+
+.video.is-active .video__control {
+  display: none;
 }
 
 /* @mixin hover-focus {
