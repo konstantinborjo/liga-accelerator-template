@@ -66,24 +66,31 @@
   <main class="main-container">
     <section class="gym">
       <div class="container">
-        <h2 class="gym__title">тренажерный зал</h2>
-        <p class="gym__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления
-          тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
-          В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
-          несколько оборудованных залов для различных видов групповых занятий. </p>
+        <div class="gym__container">
+          <div class="gym__wrapper">
+            <h2 class="gym__title">Тренажерный зал</h2>
+            <span class="gym__area">Просторный зал площадью 900 кв/м</span>
+            <p class="gym__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления
+              тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+            </p>
+            <p class="gym__description gym__description--second">В зале расположены отдельная зона для Crossfit и
+              кардио-зона с 40 тренажерами.
+              Также в фитнес центре есть
+              несколько оборудованных залов для различных видов групповых занятий. </p>
+          </div>
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
 
-        <picture>
-          <source type="image/webp" media="(min-width: 1200px)"
-            srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
-          <source type="image/webp" srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
-
-          <source media="(min-width: 1200px)" srcset="img/gym-desktop.png 1x, img/Clark-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/Clark-desktop.png 1x, img/Clark-desktop@2x.png 2x">
-          <img class="main-picture__pic" src="img/gym-desktop.png" width="660" height="401"
-            srcset="img/gym-desktop@2x.png" alt="тренажерный зал">
-        </picture>
+            <source media="(min-width: 1200px)" srcset="img/gym-desktop.png 1x, img/Clark-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/Clark-desktop.png 1x, img/Clark-desktop@2x.png 2x">
+            <img class="gym__picture" src="img/gym-desktop.png" width="660" height="401" srcset="img/gym-desktop@2x.png"
+              alt="тренажерный зал">
+          </picture>
+        </div>
         <!-- <h1>Тестовая страница.</h1>
         <p>На данной странице показан пример модальных окон.</p>
         <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.

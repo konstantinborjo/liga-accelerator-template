@@ -1408,6 +1408,107 @@ button,
   max-width: 74px;
 }
 
+.gym__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 120px;
+  margin-bottom: 235px;
+  position: relative;
+}
+
+.gym__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.gym__description {
+  width: 355px;
+  color: #102654;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 55px;
+}
+
+.gym__title {
+  width: 323px;
+  color: #102654;
+  font-family: Alumni Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  margin: 0;
+  margin-top: 49px;
+}
+
+.gym__area {
+  width: 279px;
+  margin: 0;
+  margin-top: 25px;
+  color: #102654;
+  font-family: Roboto Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.gym__container::before {
+  position: absolute;
+  content: "";
+  top: 284px;
+  left: 498px;
+  background-image: url("../img/grey-gym-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 364px;
+  height: 228px;
+}
+
+.gym__container::after {
+  position: absolute;
+  content: "";
+  top: 284px;
+  left: 498px;
+  background: rgba(20, 54, 122, 0.5);
+  width: 364px;
+  height: 228px;
+}
+
+.gym__wrapper::after {
+  position: absolute;
+  content: "";
+  top: 284px;
+  left: 498px;
+  background-image: url("../img/svg/video.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+}
+
+.gym__description--second {
+  margin: 10px 0 0;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
