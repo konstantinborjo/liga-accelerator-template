@@ -1,8 +1,10 @@
 .gym__container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 120px;
-  margin-bottom: 235px;
+  display: grid;
+  grid-template-columns: 415fr 660fr;
+  gap: 85px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
   }
 
 .gym__wrapper {
@@ -56,4 +58,8 @@
 .gym__video{
   width: 55.1515151515%;
   margin: -113px 0 0 -63px;
+}
+
+.gym__media{
+  position: relative;
 }
