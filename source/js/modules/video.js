@@ -26,7 +26,7 @@ function setupVideo(video) {
 }
 
 function parseMediaURL(media) {
-  let regexp = /https:\/\/i\.ytimgi\.com\vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
+  let regexp = /https:\/\/i\.ytimgi\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
   let url = media.src;
   let match = url.match(regexp);
 

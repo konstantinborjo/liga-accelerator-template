@@ -92,16 +92,15 @@
                 srcset="img/gym-desktop@2x.png" alt="тренажерный зал">
             </picture>
 
-            <div class="video video--enable">
+            <div class="video ">
               <a class="video__link" href="https://www.youtube.com/embed/9TZXsZItgdw">
                 <picture>
 
                   <source type="image/webp" srcset="https://i.ytimg.com/vi/9TZXsZItgdw/maxresdefaul.jpg 1x">
 
-                  <img class="video__img" src="https://i.ytimg.com/vi/9TZXsZItgdw/maxresdefaul.jpg" width="364" height="228"
-                     alt="тренажерный зал">
+                  <img class="video__img" src="https://i.ytimg.com/vi/9TZXsZItgdw/maxresdefaul.jpg" width="364"
+                    height="228" alt="тренажерный зал">
                 </picture>
-                <img src="img/grey-gym-desktop.png" alt="зал">
               </a>
               <button class="video__button" aria-label="Проиграть видео.">
                 <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -156,10 +155,11 @@
             </p>
             <a class="cards__link" href="#">купить абонемент</a>
           </li>
-          <li>
-            <h3>Дневной</h3>
-            <span>с 8:00 до 17:00</span>
-            <p>1700
+          <li class="cards__item">
+            <h3 class="cards__title">Дневной</h3>
+            <span class="cards__description"> с 8:00 до 17:00 </span>
+            <p class="cards__cost"> 1700
+
               <svg width="30" height="42">
                 <use xlink:href="img/sprite.svg#rub"></use>
               </svg>
@@ -547,7 +547,7 @@
       </div>
     </div>
   </div> -->
-  <script src="js/video.js"></script>
+
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
