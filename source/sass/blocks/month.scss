@@ -1,0 +1,13 @@
+.month__item {
+  width: 107px;
+  color: rgba(16, 38, 84, 0.50);
+  font-family: $ff-roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.month__item--active{
+  color: #102654;
+}

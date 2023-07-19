@@ -92,13 +92,13 @@
                 srcset="img/gym-desktop@2x.png" alt="тренажерный зал">
             </picture>
 
-            <div class="video ">
+            <div class="video video--enabled">
               <a class="video__link" href="https://www.youtube.com/embed/9TZXsZItgdw">
                 <picture>
 
-                  <source type="image/webp" srcset="https://i.ytimg.com/vi/9TZXsZItgdw/maxresdefaul.jpg 1x">
+                  <source type="image/webp" srcset="https://i.ytimg.com/vi/9TZXsZItgdw/maxresdefault.jpg 1x">
 
-                  <img class="video__img" src="https://i.ytimg.com/vi/9TZXsZItgdw/maxresdefaul.jpg" width="364"
+                  <img class="video__img" src="https://i.ytimg.com/vi/9TZXsZItgdw/maxresdefault.jpg" width="364"
                     height="228" alt="тренажерный зал">
                 </picture>
               </a>
@@ -122,7 +122,6 @@
                   </defs>
                 </svg>
               </button>
-              <!-- </div> -->
             </div>
           </div>
         </div>
@@ -139,9 +138,9 @@
       <div class="container">
         <h2 class="tickets__title">Абонементы</h2>
         <ul class="tickets__list month">
-          <li class="month__item">1 месяц</li>
-          <li class="month__item">6 месяцов</li>
-          <li class="month__item">12 месяцов</li>
+          <li class="month__item month__item--active">1 месяц</li>
+          <li class="month__item">6 месяцев</li>
+          <li class="month__item">12 месяцев</li>
         </ul>
 
         <ul class="tickets__subs cards">
@@ -164,17 +163,17 @@
                 <use xlink:href="img/sprite.svg#rub"></use>
               </svg>
             </p>
-            <a href="#">купить абонемент</a>
+            <a class="cards__link" href="#">купить абонемент</a>
           </li>
-          <li>
-            <h3>Полный день</h3>
-            <span>с 8:00 до 22:00</span>
-            <p>2700
+          <li class="cards__item">
+            <h3 class="cards__title">Полный день</h3>
+            <span class="cards__description">с 8:00 до 22:00</span>
+            <p class="cards__cost">2700
               <svg width="30" height="42">
                 <use xlink:href="img/sprite.svg#rub"></use>
               </svg>
             </p>
-            <a href="#">купить абонемент</a>
+            <a class="cards__link" href="#">купить абонемент</a>
           </li>
         </ul>
       </div>
