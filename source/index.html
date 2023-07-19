@@ -95,17 +95,11 @@
             <div class="video video--enable">
               <a class="video__link" href="https://www.youtube.com/embed/9TZXsZItgdw">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="img/grey-gym-desktop.webp 1x, img/grey-gym-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
-                  <source type="image/webp" srcset="img/grey-gym-desktop.webp 1x, img/grey-gym-desktop@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)"
-                    srcset="img/grey-gym-desktop.png 1x, img/grey-gym-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/grey-gym-desktop.png 1x, img/Clark-desktop@2x.png 2x">
-                  <img class="video__img" src="img/grey-gym-desktop.png" width="364" height="228"
-                    srcset="img/gym-desktop@2x.png" alt="тренажерный зал">
+                  <source type="image/webp" srcset="https://i.ytimg.com/vi/9TZXsZItgdw/maxresdefaul.jpg 1x">
+
+                  <img class="video__img" src="https://i.ytimg.com/vi/9TZXsZItgdw/maxresdefaul.jpg" width="364" height="228"
+                     alt="тренажерный зал">
                 </picture>
                 <img src="img/grey-gym-desktop.png" alt="зал">
               </a>
@@ -142,25 +136,25 @@
       </div>
     </section>
 
-    <section>
+    <section class="tickets">
       <div class="container">
-        <h2>Абонементы</h2>
-        <ul>
-          <li>1 месяц</li>
-          <li>6 месяцов</li>
-          <li>12 месяцов</li>
+        <h2 class="tickets__title">Абонементы</h2>
+        <ul class="tickets__list month">
+          <li class="month__item">1 месяц</li>
+          <li class="month__item">6 месяцов</li>
+          <li class="month__item">12 месяцов</li>
         </ul>
 
-        <ul>
-          <li>
-            <h3>С тренером</h3>
-            <span>12 занятий</span>
-            <p>5000
+        <ul class="tickets__subs cards">
+          <li class="cards__item">
+            <h3 class="cards__title">С тренером</h3>
+            <span class="cards__description">12 занятий</span>
+            <p class="cards__cost">5000
               <svg width="30" height="42">
                 <use xlink:href="img/sprite.svg#rub"></use>
               </svg>
             </p>
-            <a href="#">купить абонемент</a>
+            <a class="cards__link" href="#">купить абонемент</a>
           </li>
           <li>
             <h3>Дневной</h3>
