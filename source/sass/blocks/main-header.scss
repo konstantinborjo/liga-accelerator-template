@@ -14,7 +14,7 @@
 
 .main-header__link {
   color: #ffffff;
-  font-family: Alumni Sans;
+  font-family:$ff-alumni;
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
@@ -32,8 +32,7 @@
   position: relative;
   color: #ffffff;
   width: 1017px;
-  // margin-top: 98px;
-}
+  }
 
 .main-header__container{
 display: flex;
@@ -42,7 +41,7 @@ display: flex;
 .main-header__list {
   list-style-type: none;
   text-align: right;
-  font-family: Roboto Condensed;
+  font-family: $ff-roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -53,7 +52,7 @@ display: flex;
 }
 
 .main-header__description {
-  font-family: Alumni Sans;
+  font-family: $ff-alumni;
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
@@ -64,7 +63,7 @@ display: flex;
 
 .main-header__title {
   text-align: right;
-  font-family: Alumni Sans;
+  font-family: $ff-alumni;
   font-size: 92px;
   font-style: normal;
   font-weight: 600;
@@ -85,9 +84,9 @@ display: flex;
 }
 
 .main-header__button {
-  width: 240px;
+  width: 260px;
   color: #ffffff;
-  font-family: Roboto Condensed;
+  font-family: $ff-roboto;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;

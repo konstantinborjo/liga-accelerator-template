@@ -96,9 +96,9 @@
               <a class="video__link" href="https://www.youtube.com/embed/9TZXsZItgdw">
                 <picture>
 
-                  <source type="image/webp" srcset="https://i.ytimg.com/vi/9TZXsZItgdw/maxresdefault.jpg 1x">
+                  <source type="image/webp" srcset="img/grey-gym-desktop.webp 1x">
 
-                  <img class="video__img" src="https://i.ytimg.com/vi/9TZXsZItgdw/maxresdefault.jpg" width="364"
+                  <img class="video__img" src="img/grey-gym-desktop.png" width="364"
                     height="228" alt="тренажерный зал">
                 </picture>
               </a>
@@ -144,7 +144,7 @@
         </ul>
 
         <ul class="tickets__subs cards">
-          <li class="cards__item">
+          <li class="cards__item cards__item--5000">
             <h3 class="cards__title">С тренером</h3>
             <span class="cards__description">12 занятий</span>
             <p class="cards__cost">5000
@@ -154,7 +154,7 @@
             </p>
             <a class="cards__link" href="#">купить абонемент</a>
           </li>
-          <li class="cards__item">
+          <li class="cards__item cards__item--active cards__item--1700">
             <h3 class="cards__title">Дневной</h3>
             <span class="cards__description"> с 8:00 до 17:00 </span>
             <p class="cards__cost"> 1700
@@ -163,9 +163,9 @@
                 <use xlink:href="img/sprite.svg#rub"></use>
               </svg>
             </p>
-            <a class="cards__link" href="#">купить абонемент</a>
+            <a class="cards__link cards__link--active" href="#">купить абонемент</a>
           </li>
-          <li class="cards__item">
+          <li class="cards__item cards__item--2700">
             <h3 class="cards__title">Полный день</h3>
             <span class="cards__description">с 8:00 до 22:00</span>
             <p class="cards__cost">2700
@@ -179,21 +179,21 @@
       </div>
     </section>
 
-    <section>
+    <section class="super-games">
       <div class="container">
-        <div>
-          <div>
-            <div>
-              <h2>SUPER GAMES</h2>
-              <dl>
-                <dd>Дата</dd>
-                <dt>7 марта 2019</dt>
-                <dd>Время</dd>
-                <dt>12:00</dt>
+        <div class="super-games__wrapper">
+          <div class="super-games__text">
+            <div class="super-games__data">
+              <h2 class="super-games__title">SUPER GAMES</h2>
+              <dl class="super-games__list time">
+                <dd class="time__date">Дата</dd>
+                <dt class="time__calendar">7 марта 2019</dt>
+                <dd class="time__time">Время</dd>
+                <dt class="time__clock">12:00</dt>
               </dl>
             </div>
-            <span>Ежегодные соревнования по CrossFit</span>
-            <a href="#">заполнить заявку</a>
+            <span class="super-games__description">Ежегодные соревнования по CrossFit</span>
+            <a class="super-games__link" href="#">заполнить заявку</a>
           </div>
 
           <picture>
@@ -205,8 +205,8 @@
 
             <source media="(min-width: 1200px)" srcset="img/dust-desktop.png 1x, img/dust-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/dust-desktop.png 1x, img/dust-desktop@2x.png 2x">
-            <img class="main-picture__pic" src="img/dust-desktop.png" width="660" height="401"
-              srcset="img/dust-desktop@2x.png" alt="тренажерный зал">
+            <img class="super-games__picture" src="img/dust-desktop.png" width="660" height="500"
+              srcset="img/dust-desktop@2x.png" alt="качек в пыли">
           </picture>
         </div>
       </div>

@@ -3,7 +3,6 @@
   grid-template-columns: 415fr 660fr;
   gap: 85px;
   padding-top: 120px;
-  padding-bottom: 120px;
 
   }
 
@@ -17,7 +16,7 @@
   width: 355px;
   color: #102654;
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  font-family: Roboto Condensed;
+  font-family: $ff-roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -29,7 +28,7 @@
 .gym__title {
   width: 323px;
   color: #102654;
-  font-family: Alumni Sans;
+  font-family: $ff-alumni;
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
@@ -40,11 +39,11 @@
 }
 
 .gym__area {
-  width: 279px;
+  width: 310px;
   margin: 0;
   margin-top: 25px;
   color: #102654;
-  font-family: Roboto Condensed;
+  font-family: $ff-roboto;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -53,11 +52,6 @@
 
 .gym__description--second {
   margin: 10px 0 0;
-}
-
-.gym__video{
-  width: 55.1515151515%;
-  margin: -113px 0 0 -63px;
 }
 
 .gym__media{

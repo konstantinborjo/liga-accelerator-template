@@ -1,9 +1,25 @@
-.tickets{
+.tickets {
   background: #F8F9FC;
   padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+  z-index: -2;
 }
 
-.tickets__title{
+.tickets::before{
+  position: absolute;
+  content: "";
+  top: 608px;
+  right: 39px;
+  background-image: url(../img/round.png);
+  width: 321px;
+  height: 467px;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tickets__title {
   margin: 0 auto;
   color: #102654;
   font-family: $ff-alumni;
@@ -15,7 +31,7 @@
   width: 230px;
 }
 
-.tickets__list{
+.tickets__list {
   display: flex;
   gap: 46px;
   width: 416px;
@@ -23,6 +39,10 @@
   margin: 0 auto;
   margin-top: 25px;
   padding: 0;
+  padding-bottom: 20px;
   gap: 46px;
-
+  position: relative;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.20);
 }
+
+

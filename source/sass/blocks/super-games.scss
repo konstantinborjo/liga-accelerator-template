@@ -1,0 +1,18 @@
+.super-games__wrapper{
+  display: flex;
+}
+
+.super-games__text{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  background: #ED0233;
+  align-items: center;
+}
+
+.super-games__data{
+  margin: 0;
+  margin-top:85px;
+  display: flex;
+  gap: 50px;
+}
