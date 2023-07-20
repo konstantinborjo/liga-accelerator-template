@@ -2025,8 +2025,8 @@ button,
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  -webkit-transform: translate3d(-3300px, 0px, 0px);
-          transform: translate3d(-3300px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+          transform: translate3d(0px, 0px, 0px);
   -webkit-transition-duration: 0ms;
           transition-duration: 0ms;
 }
