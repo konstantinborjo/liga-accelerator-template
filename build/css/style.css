@@ -1863,7 +1863,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 40px;
   padding: 0;
 }
 
@@ -2025,8 +2024,8 @@ button,
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  -webkit-transform: translate3d(25px, 0px, 0px);
-          transform: translate3d(25px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+          transform: translate3d(0px, 0px, 0px);
   -webkit-transition-duration: 0ms;
           transition-duration: 0ms;
   margin-top: 48px;
@@ -2037,6 +2036,7 @@ button,
       flex-shrink: 0;
   max-width: 100%;
   width: 260px;
+  margin-right: 60px;
 }
 
 .slider__slide {
@@ -2113,6 +2113,17 @@ button,
 
 .slider.no-js .slider__control {
   display: none;
+}
+
+.advantages {
+  background-color: #F8F9FC;
+  padding-top: 108px;
+  margin-top: 105px;
+}
+
+.advantages__title {
+  width: 383px;
+  margin: 0 auto;
 }
 
 /* @mixin hover-focus {

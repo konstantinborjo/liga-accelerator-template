@@ -18,7 +18,7 @@
   padding: 0;
   list-style: none;
   transition: transform 0.3s ease;
-  transform: translate3d(25px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
   transition-duration: 0ms;
   margin-top: 48px;
 }
@@ -27,6 +27,7 @@
   flex-shrink: 0;
   max-width: 100%;
   width: 260px;
+  margin-right:60px;
 }
 
 .slider__slide {
