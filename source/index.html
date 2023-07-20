@@ -95,11 +95,9 @@
             <div class="video video--enabled">
               <a class="video__link" href="https://www.youtube.com/embed/9TZXsZItgdw">
                 <picture>
-
                   <source type="image/webp" srcset="img/grey-gym-desktop.webp 1x">
-
-                  <img class="video__img" src="img/grey-gym-desktop.png" width="364"
-                    height="228" alt="тренажерный зал" data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
+                  <img class="video__img" src="img/grey-gym-desktop.png" width="364" height="228" alt="тренажерный зал"
+                    data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
                 </picture>
               </a>
               <button class="video__button" aria-label="Проиграть видео.">
@@ -125,14 +123,15 @@
             </div>
           </div>
         </div>
-        <!-- <h1>Тестовая страница.</h1>
+      </div>
+    </section>
+
+    <!-- <h1>Тестовая страница.</h1>
         <p>На данной странице показан пример модальных окон.</p>
         <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.
         </p>
         <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
         <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p> -->
-      </div>
-    </section>
 
     <section class="tickets">
       <div class="container">
@@ -212,45 +211,138 @@
       </div>
     </section>
 
-    <section>
+    <section class="people">
       <div class="container">
-        <h2>Тренеры</h2>
-        <ul>
-          <li>
-            <picture>
-              <source type="image/webp" srcset="img/anna-desktop.webp 1x, img/anna-desktop@2x.webp 2x">
-              <img class="main-picture__pic" src="img/anna-desktop.png" width="268" height="294"
-                srcset="img/anna-desktop@2x.png" alt="тренер">
-            </picture>
-            <p>Анна Павлова</p>
-          </li>
+        <h2 class="people__title">Тренеры</h2>
+        <div class="slider people__slider people__slider--wide" data-slider="" data-multiple="" data-loop="">
 
-          <li>
-            <picture>
-              <source type="image/webp" srcset="img/aleksey-desktop.webp 1x, img/aleksey-desktop@2x.webp 2x">
-              <img class="main-picture__pic" src="img/aleksey-desktop.png" width="268" height="294"
-                srcset="img/aleksey-desktop@2x.png" alt="тренер">
-            </picture>
-            <p>Алексей Лавров</p>
-          </li>
+          <button class="slider__control slider__control--prev" type="button" data-prev="">
+            <span class="visually-hidden">Предыдущий слайд.</span>
+          </button>
 
-          <li>
-            <picture>
-              <source type="image/webp" srcset="img/alex-desktop.webp 1x, img/alex-desktop@2x.webp 2x">
-              <img class="main-picture__pic" src="img/alex-desktop.png" width="268" height="294"
-                srcset="img/alex-desktop@2x.png" alt="тренер">
-            </picture>
-            <!-- переделать бэкграундом -->
-            <p>Александр Пашков</p>
-            <span>CrossFit</span>
-            <ul>
-              <li>Certified Level 3 Trainer</li>
-              <li>Победитель чемпионата России по CrossFit </li>
-              <li>Опыт — 6 лет</li>
+          <div class="slider__body swiper-initialized swiper-horizontal swiper-pointer-events" data-slider-body="">
+            <ul class="people__list coach slider__list slider__list--gapped">
+              <li class="coach__item slider__item slider__item--card swiper-slide-duplicate"
+                data-swiper-slide-index="4">
+
+                <figure class="figure" tabindex="0">
+                  <picture>
+                    <source type="image/webp" srcset="img/anna-desktop.webp 1x, img/anna-desktop@2x.webp 2x">
+                    <img class="figure__pic" src="img/anna-desktop.png" width="268" height="294"
+                      srcset="img/anna-desktop@2x.png" alt="тренер">
+                  </picture>
+                  <figcaption class="figure__information">
+                    <p class="figure__name">Анна Павлова</p>
+                    <span class="figure__description">CrossFit</span>
+                    <ul class="figure__list">
+                      <li class="figure__item">Certified Level 3 Trainer</li>
+                      <li class="figure__item">Победитель чемпионата России по CrossFit </li>
+                      <li class="figure__item">Опыт — 6 лет</li>
+                    </ul>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li class="coach__item">
+                <figure class="figure" tabindex="0">
+                  <picture>
+                    <source type="image/webp" srcset="img/aleksey-desktop.webp 1x, img/aleksey-desktop@2x.webp 2x">
+                    <img class="figure__pic" src="img/aleksey-desktop.png" width="268" height="294"
+                      srcset="img/aleksey-desktop@2x.png" alt="тренер">
+                  </picture>
+                  <figcaption class="figure__information">
+                    <p class="figure__name">Алексей Лавров</p>
+                    <span class="figure__description">CrossFit</span>
+                    <ul class="figure__list">
+                      <li class="figure__item">Certified Level 3 Trainer</li>
+                      <li class="figure__item">Победитель чемпионата России по CrossFit </li>
+                      <li class="figure__item">Опыт — 6 лет</li>
+                    </ul>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li class="coach__item">
+                <figure class="figure" tabindex="0">
+                  <picture>
+                    <source type="image/webp" srcset="img/alex-desktop.webp 1x, img/alex-desktop@2x.webp 2x">
+                    <img class="figure__pic" src="img/alex-desktop.png" width="268" height="294"
+                      srcset="img/alex-desktop@2x.png" alt="тренер">
+                  </picture>
+                  <figcaption class="figure__information">
+                    <p class="figure__name">Александр Пашков</p>
+                    <span class="figure__description">CrossFit</span>
+                    <ul class="figure__list">
+                      <li class="figure__item">Certified Level 3 Trainer</li>
+                      <li class="figure__item">Победитель чемпионата России по CrossFit </li>
+                      <li class="figure__item">Опыт — 6 лет</li>
+                    </ul>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li class="coach__item">
+                <figure class="figure" tabindex="0">
+                  <picture>
+                    <source type="image/webp" srcset="img/mary-desktop.webp 1x, img/mary-desktop@2x.webp 2x">
+                    <img class="figure__pic" src="img/mary-desktop.png" width="268" height="294"
+                      srcset="img/mary-desktop@2x.png" alt="тренер">
+                  </picture>
+                  <figcaption class="figure__information">
+                    <p class="figure__name">Мария Кетова</p>
+                    <span class="figure__description">CrossFit</span>
+                    <ul class="figure__list">
+                      <li class="figure__item">Certified Level 3 Trainer</li>
+                      <li class="figure__item">Победитель чемпионата России по CrossFit </li>
+                      <li class="figure__item">Опыт — 6 лет</li>
+                    </ul>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li class="coach__item">
+                <figure class="figure" tabindex="0">
+                  <picture>
+                    <source type="image/webp" srcset="img/mary-desktop.webp 1x, img/mary-desktop@2x.webp 2x">
+                    <img class="figure__pic" src="img/mary-desktop.png" width="268" height="294"
+                      srcset="img/mary-desktop@2x.png" alt="тренер">
+                  </picture>
+                  <figcaption class="figure__information">
+                    <p class="figure__name">Мария Кетова</p>
+                    <span class="figure__description">CrossFit</span>
+                    <ul class="figure__list">
+                      <li class="figure__item">Certified Level 3 Trainer</li>
+                      <li class="figure__item">Победитель чемпионата России по CrossFit </li>
+                      <li class="figure__item">Опыт — 6 лет</li>
+                    </ul>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li class="coach__item">
+                <figure class="figure" tabindex="0">
+                  <picture>
+                    <source type="image/webp" srcset="img/mary-desktop.webp 1x, img/mary-desktop@2x.webp 2x">
+                    <img class="figure__pic" src="img/mary-desktop.png" width="268" height="294"
+                      srcset="img/mary-desktop@2x.png" alt="тренер">
+                  </picture>
+                  <figcaption class="figure__information">
+                    <p class="figure__name">Мария Кетова</p>
+                    <span class="figure__description">CrossFit</span>
+                    <ul class="figure__list">
+                      <li class="figure__item">Certified Level 3 Trainer</li>
+                      <li class="figure__item">Победитель чемпионата России по CrossFit </li>
+                      <li class="figure__item">Опыт — 6 лет</li>
+                    </ul>
+                  </figcaption>
+                </figure>
+              </li>
             </ul>
-          </li>
-        </ul>
-      </div>
+            <button class="slider__control slider__control--next" type="button" data-next="">
+              <span class="visually-hidden">Следующий слайд.</span>
+            </button>
+          </div>
+        </div>
     </section>
 
     <section>

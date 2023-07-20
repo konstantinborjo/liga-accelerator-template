@@ -1,0 +1,121 @@
+.figure {
+  position: relative;
+  color: #ffffff;
+  background-color: rgba(16, 38, 84, .89);
+  margin: 0;
+}
+
+.figure__information {
+  margin: 0;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  padding: 35px 30px 23px;
+  display: flex;
+  flex-direction: column;
+  transition: background-color .3s ease;
+}
+
+.figure__name {
+  margin: auto 0 0;
+  width: 175px;
+  font-family: $ff-roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+}
+
+.figure__description {
+  margin: 0;
+}
+
+.figure__list {
+  margin: 0;
+  list-style-type: disc;
+  padding: 0;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+
+}
+
+.figure__list,.figure__description {
+  max-height: 0;
+  transform: scaleY(0);
+  transform-origin: 50% 100%;
+  transition: transform .3s ease,max-height .3s ease,margin .3s ease;
+}
+
+
+// .figure__list li::before {
+//   content: "";
+//   position: absolute;
+//   top: 7px;
+//   left: 0;
+//   width: 6px;
+//   height: 6px;
+//   background-color: currentColor;
+//   border-radius: 50%;
+// }
+
+.figure__item {
+  width: 160px;
+  font-family: $ff-roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.figure:focus,.figure:focus-within,.figure:hover {
+  box-shadow: 0 0 35px rgba(42,59,99,.17)
+}
+
+.figure:focus .figure__information,.figure:focus-within .figure__information,.figure:hover .figure__information {
+  background-color: inherit
+}
+
+.figure:focus .figure__figure__name,.figure:focus-within .figure__figure__name,.figure:hover .figure__figure__name {
+  margin-top: 0
+}
+
+.figure:focus .figure__list,.figure:focus .figure__description,.figure:focus-within .figure__list,.figure:focus-within .figure__description,.figure:hover .figure__list,.figure:hover .figure__description {
+  max-height: 100%;
+  transform: scaleY(1)
+}
+
+.figure:focus .figure__description,.figure:focus-within .figure__description,.figure:hover .figure__description {
+  margin: -4px 0 34px
+}
+
+.figure__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.figure__information::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: transparent
+}
+
+.figure__information::-webkit-scrollbar-track {
+  background-color: transparent
+}
+
+.figure__information::-webkit-scrollbar-thumb {
+  background-color: currentColor;
+  border: 0;
+  border-radius: 1px
+}
+
