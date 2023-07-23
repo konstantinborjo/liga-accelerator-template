@@ -12,11 +12,6 @@
 }
 
 .people__slider {
-  width: 680px;
-  margin: 0 auto;
+  position: relative;
 }
 
-.people__slider--wide {
-  width: calc(100% + 120px);
-  margin: 0 0 0 -60px;
-}

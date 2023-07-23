@@ -214,16 +214,10 @@
     <section class="people">
       <div class="container">
         <h2 class="people__title">Тренеры</h2>
-        <div class="swiper people__swiper people__swiper--wide">
-
-          <button class="swiper__button swiper__button--prev" type="button">
-            <span class="visually-hidden">Предыдущий слайд.</span>
-          </button>
-
-          <div class="swiper swiper__body swiper-initialized swiper-horizontal swiper-pointer-events">
-            <div class="swiper__wrapper people__list coach swiper__list swiper__list--gapped">
-              <div class="coach__item swiper__item swiper__item--card swiper-slide" data-swiper-slide-index="4">
-
+        <div class="people__slider">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
                 <figure class="figure" tabindex="0">
                   <picture>
                     <source type="image/webp" srcset="img/anna-desktop.webp 1x, img/anna-desktop@2x.webp 2x">
@@ -241,8 +235,7 @@
                   </figcaption>
                 </figure>
               </div>
-
-              <div class="coach__item swiper__item swiper__item--card swiper-slide" data-swiper-slide-index="3">
+              <div class="swiper-slide">
                 <figure class="figure" tabindex="0">
                   <picture>
                     <source type="image/webp" srcset="img/aleksey-desktop.webp 1x, img/aleksey-desktop@2x.webp 2x">
@@ -260,8 +253,7 @@
                   </figcaption>
                 </figure>
               </div>
-
-              <div class="coach__item swiper__item swiper__item--card swiper-slide" data-swiper-slide-index="2">
+              <div class="swiper-slide">
                 <figure class="figure" tabindex="0">
                   <picture>
                     <source type="image/webp" srcset="img/alex-desktop.webp 1x, img/alex-desktop@2x.webp 2x">
@@ -279,8 +271,7 @@
                   </figcaption>
                 </figure>
               </div>
-
-              <div class="coach__item swiper__item swiper__item--card swiper-slide" data-swiper-slide-index="1">
+              <div class="swiper-slide">
                 <figure class="figure" tabindex="0">
                   <picture>
                     <source type="image/webp" srcset="img/mary-desktop.webp 1x, img/mary-desktop@2x.webp 2x">
@@ -298,27 +289,7 @@
                   </figcaption>
                 </figure>
               </div>
-
-              <div class="coach__item swiper__item swiper__item--card swiper-slide" data-swiper-slide-index="5">
-                <figure class="figure" tabindex="0">
-                  <picture>
-                    <source type="image/webp" srcset="img/mary-desktop.webp 1x, img/mary-desktop@2x.webp 2x">
-                    <img class="figure__pic" src="img/mary-desktop.png" width="268" height="294"
-                      srcset="img/mary-desktop@2x.png" alt="тренер">
-                  </picture>
-                  <figcaption class="figure__information">
-                    <p class="figure__name">Мария Кетова</p>
-                    <span class="figure__description">CrossFit</span>
-                    <ul class="figure__list">
-                      <li class="figure__item">Certified Level 3 Trainer</li>
-                      <li class="figure__item">Победитель чемпионата России по CrossFit </li>
-                      <li class="figure__item">Опыт — 6 лет</li>
-                    </ul>
-                  </figcaption>
-                </figure>
-              </div>
-
-              <div class="coach__item swiper__item swiper__item--card swiper-slide" data-swiper-slide-index="6">
+              <div class="swiper-slide">
                 <figure class="figure" tabindex="0">
                   <picture>
                     <source type="image/webp" srcset="img/mary-desktop.webp 1x, img/mary-desktop@2x.webp 2x">
@@ -337,11 +308,12 @@
                 </figure>
               </div>
             </div>
-            <button class="swiper__button swiper__button--next" type="button" data-next="">
-              <span class="visually-hidden">Следующий слайд.</span>
-            </button>
+
           </div>
+          <div class="swiper__button swiper__button--prev"></div>
+          <div class="swiper__button swiper__button--next"></div>
         </div>
+      </div>
     </section>
 
     <section class="advantages">
@@ -409,14 +381,14 @@
       </div>
     </section>
 
-    <section>
+    <section class="action">
       <div class="container">
-        <h2>Акции</h2>
-        <div>
-          <div>
-            <div>
-              <h3>Год</h3>
-              <span>4999</span>
+        <h2 class="action__title">Акции</h2>
+        <div class="action__wrapper">
+          <div class="action__container">
+            <div class="action__main">
+              <h3 class="action__year">Год</h3>
+              <span class="action__cost">4999</span>
               <span>Безлимитный абонемент в тренажерный зал</span>
               <a href="">подробнее</a>
             </div>
@@ -642,33 +614,7 @@
       </div>
     </div>
   </div> -->
-  <script>
-    new Swiper('.swiper', {
-    loop: true,
-    navigation: {
-      nextEl: '.swiper__button--next',
-      prevEl: '.swiper__button--prev',
-    },
-    breakpoints: {
-      // when window width is >= 320px
-      320: {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-      },
-      // when window width is >= 768px
-      768: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 30,
-      },
-      // when window width is >= 1280px
-      1280: {
-        slidesPerView: 4,
-        slidesPerGroup: 4,
-      },
-    },
-  })
-  </script>
+
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>

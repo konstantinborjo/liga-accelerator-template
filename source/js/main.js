@@ -2,11 +2,12 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import './modules/video.js';
-import './vendor/swiper.js';
-
+import './init.js';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
+
+
 
   // Utils
   // ---------------------------------
@@ -25,7 +26,6 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
   });
 });
-
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
@@ -49,4 +49,4 @@ window.addEventListener('DOMContentLoaded', () => {
 // breakpoint.addListener(breakpointChecker);
 // breakpointChecker();
 
-// используйте .closest(el)
+// используйте .closest(el);
