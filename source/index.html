@@ -214,16 +214,15 @@
     <section class="people">
       <div class="container">
         <h2 class="people__title">Тренеры</h2>
-        <div class="slider people__slider people__slider--wide" data-slider="" data-multiple="" data-loop="">
+        <div class="swiper people__swiper people__swiper--wide">
 
-          <button class="slider__control slider__control--prev" type="button" data-prev="">
+          <button class="swiper__button swiper__button--prev" type="button">
             <span class="visually-hidden">Предыдущий слайд.</span>
           </button>
 
-          <div class="slider__body swiper-initialized swiper-horizontal swiper-pointer-events" data-slider-body="">
-            <ul class="people__list coach slider__list slider__list--gapped">
-              <li class="coach__item slider__item slider__item--card swiper-slide-duplicate"
-                data-swiper-slide-index="4">
+          <div class="swiper swiper__body swiper-initialized swiper-horizontal swiper-pointer-events">
+            <div class="swiper__wrapper people__list coach swiper__list swiper__list--gapped">
+              <div class="coach__item swiper__item swiper__item--card swiper-slide" data-swiper-slide-index="4">
 
                 <figure class="figure" tabindex="0">
                   <picture>
@@ -241,10 +240,9 @@
                     </ul>
                   </figcaption>
                 </figure>
-              </li>
+              </div>
 
-              <li class="coach__item slider__item slider__item--card swiper-slide-duplicate"
-                data-swiper-slide-index="3">
+              <div class="coach__item swiper__item swiper__item--card swiper-slide" data-swiper-slide-index="3">
                 <figure class="figure" tabindex="0">
                   <picture>
                     <source type="image/webp" srcset="img/aleksey-desktop.webp 1x, img/aleksey-desktop@2x.webp 2x">
@@ -261,10 +259,9 @@
                     </ul>
                   </figcaption>
                 </figure>
-              </li>
+              </div>
 
-              <li class="coach__item slider__item slider__item--card swiper-slide-duplicate"
-                data-swiper-slide-index="2">
+              <div class="coach__item swiper__item swiper__item--card swiper-slide" data-swiper-slide-index="2">
                 <figure class="figure" tabindex="0">
                   <picture>
                     <source type="image/webp" srcset="img/alex-desktop.webp 1x, img/alex-desktop@2x.webp 2x">
@@ -281,10 +278,9 @@
                     </ul>
                   </figcaption>
                 </figure>
-              </li>
+              </div>
 
-              <li class="coach__item slider__item slider__item--card swiper-slide-duplicate"
-                data-swiper-slide-index="1">
+              <div class="coach__item swiper__item swiper__item--card swiper-slide" data-swiper-slide-index="1">
                 <figure class="figure" tabindex="0">
                   <picture>
                     <source type="image/webp" srcset="img/mary-desktop.webp 1x, img/mary-desktop@2x.webp 2x">
@@ -301,10 +297,9 @@
                     </ul>
                   </figcaption>
                 </figure>
-              </li>
+              </div>
 
-              <li class="coach__item slider__item slider__item--card swiper-slide-duplicate"
-                data-swiper-slide-index="5">
+              <div class="coach__item swiper__item swiper__item--card swiper-slide" data-swiper-slide-index="5">
                 <figure class="figure" tabindex="0">
                   <picture>
                     <source type="image/webp" srcset="img/mary-desktop.webp 1x, img/mary-desktop@2x.webp 2x">
@@ -321,10 +316,9 @@
                     </ul>
                   </figcaption>
                 </figure>
-              </li>
+              </div>
 
-              <li class="coach__item slider__item slider__item--card swiper-slide-duplicate"
-                data-swiper-slide-index="6">
+              <div class="coach__item swiper__item swiper__item--card swiper-slide" data-swiper-slide-index="6">
                 <figure class="figure" tabindex="0">
                   <picture>
                     <source type="image/webp" srcset="img/mary-desktop.webp 1x, img/mary-desktop@2x.webp 2x">
@@ -341,9 +335,9 @@
                     </ul>
                   </figcaption>
                 </figure>
-              </li>
-            </ul>
-            <button class="slider__control slider__control--next" type="button" data-next="">
+              </div>
+            </div>
+            <button class="swiper__button swiper__button--next" type="button" data-next="">
               <span class="visually-hidden">Следующий слайд.</span>
             </button>
           </div>
@@ -648,6 +642,33 @@
       </div>
     </div>
   </div> -->
+  <script>
+    new Swiper('.swiper', {
+    loop: true,
+    navigation: {
+      nextEl: '.swiper__button--next',
+      prevEl: '.swiper__button--prev',
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 30,
+      },
+      // when window width is >= 1280px
+      1280: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+      },
+    },
+  })
+  </script>
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
