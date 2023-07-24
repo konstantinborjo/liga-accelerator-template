@@ -1,0 +1,69 @@
+.free {
+  background-color: #102654;
+  color: #ffffff;
+  padding: 56px 170px 70px 103px
+}
+
+.free__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.free__data {
+  border: none;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.free__title {
+  width: 380px;
+  font-family: $ff-alumni;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 84px;
+  letter-spacing: 1.62px;
+  margin: 0;
+}
+
+.free__input {
+  border: none;
+  background: none;
+  color: #ffffff;
+  font-family: $ff-roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-bottom: 1px solid #74819C;
+  width: 190px;
+}
+
+.free__input::placeholder {
+  width: 60px;
+  color: #ffffff;
+  opacity: 1;
+  font-family: $ff-roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.free__button {
+  margin-top: 30px;
+  width: 415px;
+  padding: 21px 0;
+  color: #ffffff;
+  background: none;
+  border: 3px solid #ffffff;
+  font-family: $ff-roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}

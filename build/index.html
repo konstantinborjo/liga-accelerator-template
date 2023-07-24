@@ -406,7 +406,7 @@
               <a class="action__link-dop" href="#">подробнее</a>
             </div>
 
-            <div сlass="action__card">
+            <div class="action__card">
               <h3 class="action__title-dop">Скидка 20%</h3>
               <span class="action__text-dop">Корпоративный фитнес с командой</span>
               <a class="action__link-dop" href="#">подробнее</a>
@@ -445,7 +445,7 @@
             </div>
 
             <div class="ask__answer-list ">
-              <button class="ask__card accordion">Занятия с тренером входят в абонемент?</button>
+              <button class="ask__card accordion">Можно ли заморозить абонемент?</button>
               <div class="acordion__panel"></div>
             </div>
 
@@ -468,91 +468,77 @@
     <section class="comment">
       <div class="container">
         <h2 class="comment__title">Отзывы</h2>
-        <!-- <div class="comment__slider">
+
+        <div class="comment__scroll">
           <div class="swiper comment__swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <figure class="figure" tabindex="0">
-                <h3>Анна Орлова</h3>
-                <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
-                  дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            <div class="swiper-wrapper swiper-wrapper--comment">
+              <div class="swiper-slide comment__slide">
+                <picture>
+                  <source type="image/webp" srcset="img/face.webp 1x, img/face@2x.webp 2x">
+
+                  <img class="comment__pic" src="img/face.png" width="90" height="90" srcset="img/face@2x.png"
+                    alt="лицо">
+                </picture>
+                <figure class="figure comment__figure" tabindex="0">
+                  <h3 class="comment__name">Анна Орлова</h3>
+                  <p class="comment__description">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
+                    дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                 </figure>
               </div>
-              <div class="swiper-slide">
-                <h3>Анна Орлова</h3>
-                <p>«rrrrrr»</p>
-              </div>
-              <div class="swiper-slide">
-                <h3>Анна Орлова</h3>
-                <p>«ffffffff»</p>
-              </div>
+              <div class="swiper-slide">тут будет кто то еще</div>
+              <div class="swiper-slide">и тут тоже</div>
             </div>
-            <div class="swiper__button swiper__button--prev"></div>
-            <div class="swiper__button swiper__button--next"></div>
-          </div>
 
-        </div> -->
-        <div class="comment__scroll">
-        <div class="swiper comment__swiper">
-          <div class="swiper-wrapper swiper-wrapper--comment">
-            <div class="swiper-slide">
-              <figure class="figure" tabindex="0">
-              <h3>Анна Орлова</h3>
-              <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
-                дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-              </figure>
-            </div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
           </div>
-
-        </div>
-        <div class="swiper__button swiper__button--prev"></div>
+          <div class="swiper__button swiper__button--prev"></div>
           <div class="swiper__button swiper__button--next"></div>
+        </div>
       </div>
-    </div>
     </section>
 
-    <section>
-      <div class="container">
-        <div>
-          <h3>Бесплатное занятие </h3>
-          <form action="">
-            <fieldset>
-              <label for="">
-                <input type="text" placeholder="Имя">
-              </label>
-              <label for="">
-                <input type="text" placeholder="Имя"></label>
-              <button>отправить</button>
-            </fieldset>
-          </form>
+    <section class="additionall">
+      <!-- <div class="container"> -->
+        <div class="additionall__container">
+          <div class="additionall__form-wrapper free">
+            <h3 class="free__title">Бесплатное занятие </h3>
+            <form class="free__form" action="#" method="get">
+              <fieldset class="free__data">
+                <label class="free__label" for="name">
+                  <input class="free__input" type="text" placeholder="Имя" id="name">
+                </label>
+                <label class="free__label" for="phone">
+                  <input class="free__input" type="text" placeholder="Телефон" id="phone">
+                </label>
+              </fieldset>
+              <button class="free__button">отправить</button>
+            </form>
+          </div>
+          <div class="additionall__form-wrapper contacts">
+            <h2 class="contacts__title">Контакты</h2>
+            <ul class="contacts__list information">
+              <li class="information__item">
+                <h3 class="information__title">Адрес:</h3>
+                <span class="information__description">г. Омск, ул. 60 лет Октября, 7</span>
+              </li>
+
+              <li class="information__item">
+                <h3 class="information__title">График работы:</h3>
+                <span class="information__description">Пн-Вс: с 8:00 до 22:00</span>
+              </li>
+
+              <li class="information__item">
+                <h3 class="information__title">Телефон:</h3>
+                <a class="information__link" href="tel:88005555555">8-800-555-55-55</a>
+              </li>
+
+              <li class="information__item">
+                <h3 class="information__title">Email:</h3>
+                <a class="information__link" href="#">omsk@supergym.ru</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h2>Контакты</h2>
-          <ul>
-            <li>
-              <h3>Адрес:</h3>
-              <span>г. Омск, ул. 60 лет Октября, 7</span>
-            </li>
-
-            <li>
-              <h3>График работы:</h3>
-              <span>Пн-Вс: с 8:00 до 22:00</span>
-            </li>
-
-            <li>
-              <h3>Телефон:</h3>
-              <a class="" href="tel:88005555555">8-800-555-55-55</a>
-            </li>
-
-            <li>
-              <h3>Email:</h3>
-              <a class="" href="#">omsk@supergym.ru</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <!-- </div> -->
     </section>
   </main>
 

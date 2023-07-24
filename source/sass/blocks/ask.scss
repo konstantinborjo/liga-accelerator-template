@@ -36,7 +36,7 @@
   padding: 18px 88px;
   text-align: center;
   text-align: center;
-  font-family:$ff-roboto;
+  font-family: $ff-roboto;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -52,8 +52,18 @@
   width: 85px;
   margin: 0 auto;
   color: #102654;
+
 }
 
 .ask__link--checked {
-  color:#ffffff;
+  color: #ffffff;
+}
+
+.ask__card {
+  color: #102654;
+  font-family: $ff-roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
 }

@@ -1,8 +1,74 @@
-.comment__swiper{
+.comment__swiper {
   position: relative;
-  width: 560px;
+  width: 580px;
 }
 
-.comment__scroll{
+.comment__scroll {
   position: relative;
+  width: 580px;
+  margin: 0 auto;
+  margin-top: 37px;
+  margin-bottom: 121px;
+}
+
+.comment__title {
+  width: 155px;
+  color: #102654;
+  font-family: $ff-alumni;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.62px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+.comment__slide {
+  display: grid;
+  grid-template-columns: 90px 355px;
+  column-gap: 28px;
+  background-color: #1C3374;
+  padding: 62px;
+  width: 580px;
+}
+
+.comment__figure {
+  background: none;
+}
+
+.comment__text {
+  width: 355px;
+  color: #FFF;
+  font-family: $ff-roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.comment__pic {
+  margin-top: 25px;
+}
+
+.comment__name {
+  width: 135px;
+  color: #FFF;
+  font-family: $ff-roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.comment__description {
+  width: 355px;
+  font-family:$ff-roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 25px;
+
 }
