@@ -23,4 +23,31 @@ new Swiper('.swiper', {
       slidesPerGroup: 4,
     },
   },
+})
+
+new Swiper('.comment__swiper', {
+  loop: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.swiper__button--next',
+    prevEl: '.swiper__button--prev',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+
+    },
+    // when window width is >= 1280px
+    1280: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+  },
 });

@@ -2900,6 +2900,10 @@ button,
   display: none;
 }
 
+.swiper-wrapper--comment {
+  width: 560px;
+}
+
 .advantages {
   background-color: #F8F9FC;
   padding-top: 108px;
@@ -3311,6 +3315,15 @@ button,
 
 .ask__link--checked {
   color: #ffffff;
+}
+
+.comment__swiper {
+  position: relative;
+  width: 560px;
+}
+
+.comment__scroll {
+  position: relative;
 }
 
 /* @mixin hover-focus {

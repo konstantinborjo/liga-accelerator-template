@@ -1,37 +1,3 @@
-// .swiper {
-//   position: relative;
-//   touch-action: pan-y;
-//   padding: 0;
-// }
-
-// .swiper__body--shadow {
-//   box-shadow: 0 0 40px rgba(28, 51, 116, .2)ж
-// }
-
-// .swiper__list {
-//   display: flex;
-//   margin: 0;
-//   padding: 0;
-//   list-style: none;
-//   transition: transform 0.3s ease;
-//   transform: translate3d(0px, 0px, 0px);
-//   transition-duration: 0ms;
-//   margin-top: 48px;
-// }
-
-// .swiper__item {
-//   flex-shrink: 0;
-//   max-width: 100%;
-//   width: 260px;
-//   margin-right:60px;
-// }
-
-// .swiper__slide {
-//   height: 100%;
-//   min-height: 242px;
-//   margin: 0;
-// }
-
 .swiper__button {
   position: absolute;
   top: 50%;
@@ -87,4 +53,8 @@
 
 .swiper.no-js .swiper__button {
   display: none;
+}
+
+.swiper-wrapper--comment{
+  width: 560px;
 }
