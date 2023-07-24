@@ -51,12 +51,6 @@
   opacity: 0.8;
 }
 
-// @supports not selector(:focus-visible) {
-//   .swiper__button.focus-visible:focus {
-//     opacity: 0.8;
-//   }
-// }
-
 .swiper__button::before {
   content: "";
   position: absolute;
@@ -85,12 +79,12 @@
   transform: rotate(-135deg);
 }
 
-// .swiper.no-js .swiper__list,
-// .socials {
-//   flex-wrap: wrap;
-//   gap: 40px;
-// }
+.swiper.no-js .swiper__list,
+.socials {
+  flex-wrap: wrap;
+  gap: 40px;
+}
 
-// .swiper.no-js .swiper__button {
-//   display: none;
-// }
+.swiper.no-js .swiper__button {
+  display: none;
+}

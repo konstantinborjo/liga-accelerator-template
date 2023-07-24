@@ -126,13 +126,6 @@
       </div>
     </section>
 
-    <!-- <h1>Тестовая страница.</h1>
-        <p>На данной странице показан пример модальных окон.</p>
-        <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.
-        </p>
-        <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-        <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p> -->
-
     <section class="tickets">
       <div class="container">
         <h2 class="tickets__title">Абонементы</h2>
@@ -389,8 +382,8 @@
             <div class="action__main">
               <h3 class="action__year">Год</h3>
               <span class="action__cost">4999</span>
-              <span>Безлимитный абонемент в тренажерный зал</span>
-              <a href="">подробнее</a>
+              <span class="action__text">Безлимитный абонемент в тренажерный зал</span>
+              <a class="action__link" href="#">подробнее</a>
             </div>
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
@@ -401,81 +394,72 @@
 
               <source media="(min-width: 1200px)" srcset="img/girl-desktop.png 1x, img/girl-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/dust-desktop.png 1x, img/dust-desktop@2x.png 2x">
-              <img class="main-picture__pic" src="img/girl-desktop.png" width="280" height="462"
+              <img class="action__pic" src="img/girl-desktop.png" width="280" height="462"
                 srcset="img/dust-desktop@2x.png" alt="тренажерный зал">
             </picture>
           </div>
 
-          <div>
-            <h3>Месяц бесплатно</h3>
-            <span>Приведи друга, получи абонемент в подарок</span>
-            <a href="">подробнее</a>
-          </div>
+          <div class="action__grid">
+            <div class="action__card">
+              <h3 class="action__title-dop">Месяц бесплатно</h3>
+              <span class="action__text-dop">Приведи друга, получи абонемент в подарок</span>
+              <a class="action__link-dop" href="#">подробнее</a>
+            </div>
 
-          <div>
-            <h3>Скидка 20%</h3>
-            <span>Корпоративный фитнес с командой</span>
-            <a href="">подробнее</a>
+            <div сlass="action__card">
+              <h3 class="action__title-dop">Скидка 20%</h3>
+              <span class="action__text-dop">Корпоративный фитнес с командой</span>
+              <a class="action__link-dop" href="#">подробнее</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="ask">
       <div class="container">
-        <h2>Вопросы и ответы</h2>
-        <div>
-          <ul>
-            <li>
-              <a href="#">Центр</a>
+        <h2 class="ask__title">Вопросы и ответы</h2>
+        <div class="ask__container">
+          <ul class="ask__list">
+            <li class="ask__item">
+              <a class="ask__link" href="#">Центр</a>
             </li>
-            <li>
-              <a href="#">Абонемент</a>
+            <li class="ask__item ask__item--checked">
+              <a class="ask__link ask__link--checked" href="#">Абонемент</a>
             </li>
-            <li>
-              <a href="#">Услуги</a>
+            <li class="ask__item">
+              <a class="ask__link" href="#">Услуги</a>
             </li>
-            <li>
-              <a href="#">Правила</a>
+            <li class="ask__item">
+              <a class="ask__link" href="#">Правила</a>
             </li>
           </ul>
 
-          <ul>
-            <li>
-              <h3>Занятия с тренером входят в абонемент?</h3>
-              <p>При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда
+          <div class="ask__answer-list ">
+            <button class="ask__card accordion">Занятия с тренером входят в абонемент?</button>
+            <div class="acordion__panel">
+              <p class="ask__answer">При посещении тренажерного зала вам необходимо оплачить занятия с тренером
+                отдельно. В зале всегда
                 присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру
                 или технике выполнения упражнения.</p>
-              <button>
-                <svg width="42" height="42">
-                  <use xlink:href="img/sprite.svg#icon-close"></use>
-                </svg>
-            </li>
+            </div>
 
-            <li>
-              <h3>Занятия с тренером входят в абонемент?</h3>
-              <button>
-                <svg width="42" height="42">
-                  <use xlink:href="img/sprite.svg#open"></use>
-                </svg>
-            </li>
+            <div class="ask__answer-list ">
+              <button class="ask__card accordion">Занятия с тренером входят в абонемент?</button>
+              <div class="acordion__panel"></div>
+            </div>
 
-            <li>
-              <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
-              <button>
-                <svg width="42" height="42">
-                  <use xlink:href="img/sprite.svg#open"></use>
-                </svg>
-            </li>
+            <div class="ask__answer-list ">
+              <button class="ask__card accordion">Есть ли лимит по посещениям тренажерного зала и групповых
+                занятий?</button>
+              <div class="acordion__panel"></div>
+            </div>
 
-            <li>
-              <h3>Что такое семейный доступ и доступ для друзей?</h3>
-              <button>
-                <svg width="42" height="42">
-                  <use xlink:href="img/sprite.svg#open"></use>
-                </svg>
-            </li>
-          </ul>
+            <div class="ask__answer-list ">
+              <button class="ask__card accordion accordion--last">Что такое семейный доступ и доступ для друзей?</button>
+              <div class="acordion__panel"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -586,8 +570,14 @@
   </footer>
   </div>
 
-  <!-- Модалки -->
-  <!-- <div class="modal modal--preload" data-modal="feedback">
+  <!-- Модалки
+  <h1>Тестовая страница.</h1>
+        <p>На данной странице показан пример модальных окон.</p>
+        <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.
+        </p>
+        <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
+        <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+   <div class="modal modal--preload" data-modal="feedback">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">

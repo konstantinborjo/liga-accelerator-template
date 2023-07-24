@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import './modules/video.js';
 import './init.js';
+import './acordion.js';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
