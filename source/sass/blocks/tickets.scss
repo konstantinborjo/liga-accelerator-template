@@ -9,15 +9,15 @@
 .tickets::before{
   position: absolute;
   content: "";
-  top: 608px;
-  right: 39px;
-  background-image: url(../img/round.png);
-  width: 321px;
-  height: 467px;
+  background-image: url("../img/round.png");
+  right: -181px;
+  bottom: -148px;
   z-index: -1;
+  width: 470px;
+  height: 494px;
   background-size: cover;
   background-repeat: no-repeat;
-}
+  }
 
 .tickets__title {
   margin: 0 auto;

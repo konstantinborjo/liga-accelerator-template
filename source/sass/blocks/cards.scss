@@ -4,14 +4,15 @@
   margin-top: 59px;
   gap: 40px;
   list-style-type: none;
-  width: 1115px;
+  width: 980px;
   padding: 0;
 }
 
 .cards__item {
-  width: 345px;
+  width: 300px;
+  background: #fff;
+  padding: 68px 0;
   background: #ffffff;
-  padding: 68px 66px;
   display: flex;
   flex-direction: column;
   align-items: center;

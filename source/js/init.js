@@ -17,6 +17,11 @@ new Swiper('.swiper', {
       slidesPerGroup: 2,
 
     },
+
+    1200: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    },
     // when window width is >= 1280px
     1280: {
       slidesPerView: 4,

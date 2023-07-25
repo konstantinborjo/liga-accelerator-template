@@ -2118,7 +2118,7 @@ button,
           justify-content: space-between;
   position: relative;
   color: #ffffff;
-  width: 1017px;
+  width: 990px;
 }
 
 .main-header__container {
@@ -2212,6 +2212,7 @@ button,
   }
   .main-header__image {
     width: 670px;
+    margin: 0 auto;
   }
   .main-header__list {
     margin: auto 0;
@@ -2451,12 +2452,12 @@ button,
 .tickets::before {
   position: absolute;
   content: "";
-  top: 608px;
-  right: 39px;
-  background-image: url(../img/round.png);
-  width: 321px;
-  height: 467px;
+  background-image: url("../img/round.png");
+  right: -181px;
+  bottom: -148px;
   z-index: -1;
+  width: 470px;
+  height: 494px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2522,14 +2523,15 @@ button,
   margin-top: 59px;
   gap: 40px;
   list-style-type: none;
-  width: 1115px;
+  width: 980px;
   padding: 0;
 }
 
 .cards__item {
-  width: 345px;
+  width: 300px;
+  background: #fff;
+  padding: 68px 0;
   background: #ffffff;
-  padding: 68px 66px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2622,6 +2624,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
+  max-width: 1160px;
 }
 
 .super-games__text {
@@ -2632,21 +2635,22 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 520px;
   background: #ED0233;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 30px 35px 0;
+  width: 500px;
 }
 
 .super-games__data {
   margin: 0;
-  margin-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
   text-align: left;
+  width: 330px;
 }
 
 .super-games__title {
@@ -2676,18 +2680,17 @@ button,
 }
 
 .super-games__link {
-  width: 390px;
-  padding: 29px 120px;
   color: #ffffff;
   font-family: "roboto", "Arial", sans-serif;
+  border: 4px solid #ffffff;
+  width: 292px;
+  padding: 29px 73px;
   font-size: 12px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  border: 4px solid #ffffff;
-  margin-top: 55px;
+  margin-top: 30px;
 }
 
 .time {
@@ -2798,7 +2801,7 @@ button,
   bottom: 0;
   left: 0;
   overflow: auto;
-  padding: 35px 30px 23px;
+  padding: 51px 30px 23px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2997,11 +3000,8 @@ button,
 .advantages__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 365px 240px 350px;
-  grid-template-columns: 365px 240px 350px;
-  -webkit-column-gap: 60px;
-     -moz-column-gap: 60px;
-          column-gap: 60px;
+  -ms-grid-columns: 365px 240px 370px;
+  grid-template-columns: 365px 240px 370px;
   margin: 0 auto;
   margin-top: 55px;
   list-style-type: none;
