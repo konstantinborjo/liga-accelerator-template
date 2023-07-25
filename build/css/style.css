@@ -2118,7 +2118,7 @@ button,
           justify-content: space-between;
   position: relative;
   color: #ffffff;
-  width: 990px;
+  width: 975px;
 }
 
 .main-header__container {
@@ -3655,7 +3655,7 @@ button,
 
 .contacts {
   border-top: 1px solid #74819C;
-  padding: 56px 100px 70px 100px;
+  padding: 56px 15px 70px;
 }
 
 .contacts__title {
