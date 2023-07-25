@@ -19,7 +19,7 @@
 
 .super-games__data {
   margin: 0;
-   display: flex;
+  display: flex;
   gap: 50px;
   text-align: left;
   width: 330px;
@@ -63,4 +63,37 @@
   letter-spacing: 0.6px;
   text-transform: uppercase;
   margin-top: 30px;
+}
+
+@media (max-width: 1199px) {
+  .super-games__title {
+    font-size: 48px;
+    line-height: 46px;
+  }
+
+  .super-games__description {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+    width: 240px;
+  }
+
+  .super-games__link {
+    width: 254px;
+    padding: 16px 53px;
+    font-size: 10px;
+    letter-spacing: 0.5px
+
+  }
+
+  .super-games__text {
+    padding: 30px 35px 51px;
+    width: 292px;
+    padding: 13px 35px 8px;
+    width: 323px;
+  }
+
+  .super-games__data{
+    width: 250px;
+  }
 }

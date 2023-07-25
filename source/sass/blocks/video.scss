@@ -33,7 +33,7 @@
   transform: translate(-50%, -50%);
   background: none;
   padding: 0;
-cursor: pointer;
+  cursor: pointer;
 }
 
 .video--enabled {
@@ -42,4 +42,25 @@ cursor: pointer;
 
 .video--enable .video__button {
   display: block;
+}
+
+@media (max-width: 1199px) {
+
+  .video__img,
+  .video {
+    width: 266px;
+    height: 167px;
+    padding: 0;
+  }
+
+  .video{
+    top: -95px;
+    left: 190px;
+}
+
+
+  .video__media{
+    width: 266px;
+    height: 167px;
+  }
 }

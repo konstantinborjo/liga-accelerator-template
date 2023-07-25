@@ -55,3 +55,20 @@
   display: none;
 }
 
+@media (max-width: 1199px) {
+  .swiper {
+    width: 665px;
+  }
+
+  .swiper-slide {
+    width: 268px;
+  }
+
+  .swiper__button--prev {
+    left: -32px;
+  }
+
+  .swiper__button--next {
+    right: -32px;
+  }
+}

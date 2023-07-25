@@ -25,10 +25,21 @@
   display: flex;
   gap: 40px;
   list-style-type: none;
+  padding: 0;
 }
 
 .main-footer__social {
   display: flex;
   gap: 20px;
   padding: 0;
+}
+
+@media (max-width: 1199px) {
+  .main-footer__list{
+    gap: 30px;
+  }
+
+  .main-footer__social{
+    gap: 15px;
+  }
 }

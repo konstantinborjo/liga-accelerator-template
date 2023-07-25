@@ -93,7 +93,13 @@
             <div class="video video--enabled">
               <a class="video__link" href="https://www.youtube.com/embed/9TZXsZItgdw">
                 <picture>
-                  <source type="image/webp" srcset="img/grey-gym-desktop.webp 1x">
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/grey-gym-tablet.webp 1x, img/grey-gym-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/grey-gym-desktop.webp 1x, img/grey-gym-desktop@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/gym-desktop.png 1x, img/Clark-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/grey-gym-tablet.png 1x, img/grey-gym-tablet@2x.png 2x">
                   <img class="video__img" src="img/grey-gym-desktop.png" width="364" height="228" alt="тренажерный зал"
                     data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
                 </picture>
@@ -387,13 +393,13 @@
               <source type="image/webp" media="(min-width: 1200px)"
                 srcset="img/girl-desktop.webp 1x, img/girl-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/dust-desktop.webp 1x, img/dust-desktop@2x.webp 2x">
+                srcset="img/girl-tablet.webp 1x, img/girl-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/dust-desktop.webp 1x, img/dust-desktop@2x.webp 2x">
 
               <source media="(min-width: 1200px)" srcset="img/girl-desktop.png 1x, img/girl-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/dust-desktop.png 1x, img/dust-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/girl-tablet.png 1x, img/girl-tablet@2x.png 2x">
               <img class="action__pic" src="img/girl-desktop.png" width="280" height="462"
-                srcset="img/dust-desktop@2x.png" alt="тренажерный зал">
+                srcset="img/girl-desktop@2x.png" alt="тренажерный зал">
             </picture>
           </div>
 

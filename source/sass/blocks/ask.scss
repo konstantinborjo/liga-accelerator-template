@@ -67,3 +67,18 @@
   font-weight: 500;
   line-height: 28px;
 }
+
+@media (max-width: 1199px) {
+  .ask__container {
+    flex-direction: column;
+  }
+
+  .ask__list {
+    flex-direction: row;
+  }
+
+  .ask__item {
+    width: 178px;
+    padding: 18px 33px;
+  }
+}

@@ -1,4 +1,4 @@
-.action{
+.action {
   padding-bottom: 120px;
 }
 
@@ -123,4 +123,34 @@
   text-transform: uppercase;
   margin-top: 50px;
   text-decoration: underline;
+}
+
+@media (max-width: 1199px) {
+  .action__wrapper {
+    grid-template-columns: none;
+    grid-template-rows: 462px 211px;
+    row-gap: 30px;
+  }
+
+  .action__card{
+    width: 324px;
+  }
+
+  .action__grid{
+    grid-template-rows: none;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+  }
+
+  .action__year{
+    font-size: 28px;
+  }
+
+  .action__pic{
+    width: 399px;
+  }
+
+  .action__text-dop{
+    width: 180px;
+  }
 }

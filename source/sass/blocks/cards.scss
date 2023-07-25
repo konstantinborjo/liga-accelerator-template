@@ -86,3 +86,14 @@
   color: #ffffff;
   border: none;
 }
+
+@media (max-width: 1199px) {
+  .cards {
+    flex-direction: column;
+    width: 445px;
+  }
+
+  .cards__item{
+    width: 445px;
+  }
+}

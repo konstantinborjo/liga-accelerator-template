@@ -92,3 +92,10 @@
   flex-direction: column;
   gap: 167px;
 }
+
+@media (max-width: 1199px) {
+  .advantages__title{
+    font-size: 42px;
+    letter-spacing: 1.26px;
+  }
+}
