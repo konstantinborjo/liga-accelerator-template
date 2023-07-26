@@ -44,7 +44,7 @@
   display: block;
 }
 
-@media (max-width: 1199px) {
+@include vp-1199 {
 
   .video__img,
   .video {

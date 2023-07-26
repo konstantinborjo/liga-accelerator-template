@@ -68,7 +68,7 @@
   line-height: 28px;
 }
 
-@media (max-width: 1199px) {
+@include vp-1199 {
   .ask__container {
     flex-direction: column;
   }

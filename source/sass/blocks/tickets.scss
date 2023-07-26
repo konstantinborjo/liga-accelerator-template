@@ -46,7 +46,7 @@
   border-bottom: 2px solid rgba(120, 120, 120, 0.20);
 }
 
-@media (max-width: 1199px) {
+@include vp-1199{
   .tickets::before {
     right: -107px;
     bottom: -126px;

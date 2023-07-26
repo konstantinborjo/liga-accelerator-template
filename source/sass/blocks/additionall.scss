@@ -2,3 +2,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+@include vp-1199 {
+  .additionall__container {
+    grid-template-columns: 1fr;
+  }
+}

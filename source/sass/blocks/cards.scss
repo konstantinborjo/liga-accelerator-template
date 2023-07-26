@@ -87,7 +87,7 @@
   border: none;
 }
 
-@media (max-width: 1199px) {
+@include vp-1199 {
   .cards {
     flex-direction: column;
     width: 445px;

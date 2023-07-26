@@ -99,7 +99,7 @@
 }
 
 
-@media (max-width: 1199px) {
+@include vp-1199 {
   .main-header {
     min-height: 554px;
   }

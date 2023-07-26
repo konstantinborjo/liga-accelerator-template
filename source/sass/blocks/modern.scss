@@ -33,3 +33,12 @@
   font-weight: 400;
   text-align: center;
 }
+
+@include vp-1199 {
+  .modern {
+    width: 515px;
+    padding: 29px 0px;
+    margin: 35px auto;
+    gap: 30px;
+  }
+}

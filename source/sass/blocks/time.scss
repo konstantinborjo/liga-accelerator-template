@@ -49,7 +49,7 @@
   margin-top: 23px;
 }
 
-@media (max-width: 1199px) {
+@include vp-1199 {
   .time__date {
     font-size: 12px;
     line-height: 18px;
