@@ -125,7 +125,13 @@
   text-decoration: underline;
 }
 
-@media (max-width: 1199px) {
+.action__pic{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@include vp-1199 {
   .action__wrapper {
     grid-template-columns: none;
     grid-template-rows: 462px 211px;

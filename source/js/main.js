@@ -4,12 +4,17 @@ import {Form} from './modules/form-validate/form';
 import './modules/video.js';
 import './init.js';
 import './acordion.js';
+import {initTabs} from './init-tabs';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
 
 
-
+  window.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener('load', () => {
+      initTabs();
+    });
+  });
   // Utils
   // ---------------------------------
 
