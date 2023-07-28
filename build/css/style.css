@@ -3532,14 +3532,6 @@ button,
   letter-spacing: 1.62px;
 }
 
-.ask__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 40px;
-  margin-top: 40px;
-}
-
 .ask__list {
   list-style-type: none;
   margin: 0;
@@ -3565,6 +3557,7 @@ button,
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
+  background: none;
 }
 
 .ask__item--checked {
@@ -3573,7 +3566,7 @@ button,
 }
 
 .ask__link {
-  width: 85px;
+  width: 100px;
   margin: 0 auto;
   color: #102654;
 }
@@ -3589,6 +3582,15 @@ button,
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
+}
+
+.ask__tabs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 260px 1fr;
+  grid-template-columns: 260px 1fr;
+  grid-column-gap: 40px;
+  margin-top: 40px;
 }
 
 @media (max-width: 1199px) {

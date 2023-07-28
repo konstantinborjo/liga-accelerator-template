@@ -15,12 +15,6 @@
   letter-spacing: 1.62px;
 }
 
-.ask__container {
-  display: flex;
-  gap: 40px;
-  margin-top: 40px;
-}
-
 .ask__list {
   list-style-type: none;
   margin: 0;
@@ -41,6 +35,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
+  background: none;
 }
 
 .ask__item--checked {
@@ -49,7 +44,7 @@
 }
 
 .ask__link {
-  width: 85px;
+  width: 100px;
   margin: 0 auto;
   color: #102654;
 
@@ -66,6 +61,13 @@
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
+}
+
+.ask__tabs{
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-column-gap: 40px;
+  margin-top: 40px;
 }
 
 @include vp-1199 {

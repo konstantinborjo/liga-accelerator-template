@@ -424,15 +424,22 @@
     <section class="ask ">
       <div class="container">
         <h2 class="ask__title">Вопросы и ответы</h2>
-        <section class="component component-demo data-tabs=" element"">
-          <div class="tabs no-transition-global" data-tabs="parent" data-delay="300">
+        <section class="component component-demo data-tabs">
+          <div class="ask__tabs tabs no-transition-global" data-tabs="parent" data-delay="300" data-height="max">
             <div class="ask__list tabs__controls" data-tabs="controls">
-              <button class="ask__item tabs__control btn" type="button" data-tabs="control"
-                data-index="0">Центр</button>
+              <button class="ask__item tabs__control btn" type="button" data-tabs="control" data-index="0">
+                <p class="ask__link">Центр</p>
+              </button>
               <button class="ask__item ask__item--checked tabs__control btn is-active" type="button" data-tabs="control"
-                data-index="1">Абонемент</button>
-              <button class="ask__item tabs__control btn" type="button" data-tabs="control" data-index="2">Услуги</button>
-              <button class="ask__item tabs__control btn" type="button" data-tabs="control" data-index="3">Правила</button>
+                data-index="1">
+                <p class="ask__link ask__link--checked">Абонемент</p>
+              </button>
+              <button class="ask__item tabs__control btn" type="button" data-tabs="control" data-index="2">
+                <p class="ask__link">Услуги</p>
+              </button>
+              <button class="ask__item tabs__control btn" type="button" data-tabs="control" data-index="3">
+                <p class="ask__link">Правила</p>
+              </button>
             </div>
             <div class="tabs__content" data-tabs="content">
               <div class="tabs__element" data-tabs="element">
