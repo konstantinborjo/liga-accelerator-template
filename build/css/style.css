@@ -2201,6 +2201,10 @@ button,
   .main-header {
     min-height: 554px;
   }
+  .main-header__link {
+    font-size: 24px;
+    letter-spacing: 0.48px;
+  }
   .main-header__picture {
     width: 324px;
     height: 390px;
@@ -2233,6 +2237,30 @@ button,
     font-size: 34px;
     letter-spacing: 1.02px;
     width: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .main-header {
+    min-height: 491px;
+  }
+  .main-header__picture {
+    display: none;
+  }
+  .main-header__link {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+  }
+  .main-header__list {
+    font-size: 12px;
+    width: 110px;
+  }
+  .main-header__town {
+    margin-left: -45px;
+  }
+  .main-header__button {
+    padding: 25px 70px;
+    width: 287px;
+    margin-left: -65px;
   }
 }
 .main-footer {
@@ -2401,6 +2429,30 @@ button,
   }
   .gym__description--second {
     display: none;
+  }
+}
+@media (max-width: 767px) {
+  .gym__wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .gym__container {
+    padding-top: 70px;
+  }
+  .gym__title {
+    font-size: 32px;
+    width: 211px;
+    letter-spacing: 0.96px;
+  }
+  .gym__area {
+    width: 279px;
+    font-size: 16px;
+  }
+  .gym__description {
+    font-size: 14px;
+    width: 258px;
+    text-align: left;
   }
 }
 .video {
@@ -3594,21 +3646,28 @@ button,
 }
 
 @media (max-width: 1199px) {
-  .ask__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .ask__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .ask__tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+  }
   .ask__item {
     width: 178px;
-    padding: 18px 33px;
+    padding: 18px 30px;
+  }
+  .ask__link {
+    font-weight: 500;
   }
 }
 .comment__swiper {

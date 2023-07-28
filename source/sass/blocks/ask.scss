@@ -63,7 +63,7 @@
   line-height: 28px;
 }
 
-.ask__tabs{
+.ask__tabs {
   display: grid;
   grid-template-columns: 260px 1fr;
   grid-column-gap: 40px;
@@ -71,16 +71,22 @@
 }
 
 @include vp-1199 {
-  .ask__container {
-    flex-direction: column;
-  }
-
   .ask__list {
     flex-direction: row;
   }
 
+  .ask__tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
   .ask__item {
     width: 178px;
-    padding: 18px 33px;
+    padding: 18px 30px;
+  }
+
+  .ask__link {
+    font-weight: 500;
   }
 }
