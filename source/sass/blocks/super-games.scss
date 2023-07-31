@@ -65,7 +65,7 @@
   margin-top: 30px;
 }
 
-@include vp-1199{
+@include vp-1199 {
   .super-games__title {
     font-size: 48px;
     line-height: 46px;
@@ -83,7 +83,6 @@
     padding: 16px 53px;
     font-size: 10px;
     letter-spacing: 0.5px
-
   }
 
   .super-games__text {
@@ -93,7 +92,31 @@
     width: 323px;
   }
 
-  .super-games__data{
+  .super-games__data {
     width: 250px;
+  }
+}
+
+@include vp-767 {
+  .super-games {
+    padding: 70px 0 0;
+  }
+
+  .super-games__text {
+    padding: 50px 18px 67px;
+    width: 290px;
+  }
+
+  .super-games__title {
+    width: 110px;
+    letter-spacing: 1.44px;
+  }
+
+  .super-games__link {
+    width: 230px;
+  }
+
+  .super-games__wrapper {
+    flex-direction: column;
   }
 }

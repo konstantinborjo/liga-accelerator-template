@@ -22,3 +22,14 @@ left: 0;
   height: 2px;
   background-color:#D10A42; ;
 }
+
+@include vp-1199{
+  .month__item{
+    font-size: 16px;
+    width: 86px;
+  }
+
+  .month__item--active::after{
+    width: 65px;
+  }
+}

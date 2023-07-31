@@ -55,11 +55,7 @@
   display: none;
 }
 
-@include vp-1199{
-  .swiper {
-    width: 665px;
-  }
-
+@include vp-1199 {
   .swiper-slide {
     width: 268px;
   }
@@ -72,3 +68,30 @@
     right: -32px;
   }
 }
+
+@include vp-767 {
+  .swiper__button {
+    width: 12px;
+    height: 12px;
+  }
+
+  .swiper__button--prev {
+    left: 0;
+  }
+
+  .swiper__button--next {
+    right: 0;
+  }
+
+  .swiper__button::before {
+    width: 12px;
+    height: 12px;
+
+  }
+
+  .swiper__button--prev {
+    width: 12px;
+    height: 12px;
+  }
+
+  }

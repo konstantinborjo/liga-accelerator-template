@@ -53,14 +53,38 @@
     padding: 0;
   }
 
-  .video{
+  .video {
     top: -95px;
     left: 190px;
-}
+  }
 
 
-  .video__media{
+  .video__media {
     width: 266px;
     height: 167px;
+  }
+}
+
+@include vp-767 {
+  .video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .video__img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .video__button{
+    width: 73px;
+    height: 73px;
+  }
+
+  .video__click{
+    width: 73px;
+    height: 73px;
   }
 }

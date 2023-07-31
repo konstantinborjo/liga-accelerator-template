@@ -48,6 +48,7 @@
   font-weight: 700;
   line-height: 156%;
   margin: 0;
+  width: 60px;
 }
 
 .action__cost {
@@ -125,7 +126,7 @@
   text-decoration: underline;
 }
 
-.action__pic{
+.action__pic {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -138,25 +139,85 @@
     row-gap: 30px;
   }
 
-  .action__card{
+  .action__card {
     width: 324px;
   }
 
-  .action__grid{
+  .action__grid {
     grid-template-rows: none;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
   }
 
-  .action__year{
+  .action__year {
     font-size: 28px;
   }
 
-  .action__pic{
+  .action__pic {
     width: 399px;
   }
 
-  .action__text-dop{
+  .action__text-dop {
     width: 180px;
+  }
+}
+
+
+@include vp-767 {
+  .action__wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+
+  .action__title {
+    margin: 70px auto 50px;
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    width: 70px;
+  }
+
+  .action__container {
+    flex-direction: column;
+    width: 290px;
+  }
+
+  .action__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .action__card {
+    width: 290px;
+  }
+
+  .action__year {
+    margin: 0 auto;
+  }
+
+  .action__cost {
+    margin: 0 auto;
+  }
+
+  .action__text {
+    text-align: center;
+    margin: 30px auto 40px;
+  }
+
+  .action__link {
+    font-size: 14px;
+    margin: 0 auto;
+  }
+
+  .action__text-dop {
+    margin: 20px auto 0;
+    text-align: center;
+  }
+
+  .action__link-dop {
+    margin: 35px auto 0;
+  }
+
+  .action__title-dop{
+    margin: 0 auto;
+    text-align: center;
   }
 }

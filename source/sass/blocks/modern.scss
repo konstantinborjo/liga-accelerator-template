@@ -42,3 +42,9 @@
     gap: 30px;
   }
 }
+
+@include vp-767{
+.modern{
+  width: 290px;
+}
+}

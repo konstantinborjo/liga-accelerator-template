@@ -118,12 +118,36 @@
     font-size: 20px;
   }
 
-  .advantages__area{
+  .advantages__area {
     display: inline;
     // flex-direction: column;
   }
 
-  .advantages__item{
+  .advantages__item {
     gap: 0;
+  }
+}
+
+
+@include vp-767 {
+.advantages__title{
+  font-size: 32px;
+  letter-spacing: 0.96px;
+  width: 230px;
+}
+
+  .advantages__container {
+    flex-direction: column;
+  }
+
+  .advantages__item {
+    flex-direction: column;
+    width: 290px;
+  }
+
+  .advantages__list{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
   }
 }

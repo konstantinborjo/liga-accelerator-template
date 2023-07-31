@@ -5,7 +5,7 @@
   margin: 0;
 }
 
-.figure__pic{
+.figure__pic {
   width: 100%;
 }
 
@@ -50,11 +50,12 @@
 
 }
 
-.figure__list,.figure__description {
+.figure__list,
+.figure__description {
   max-height: 0;
   transform: scaleY(0);
   transform-origin: 50% 100%;
-  transition: transform .3s ease,max-height .3s ease,margin .3s ease;
+  transition: transform .3s ease, max-height .3s ease, margin .3s ease;
 }
 
 
@@ -78,24 +79,37 @@
   line-height: 150%;
 }
 
-.figure:focus,.figure:focus-within,.figure:hover {
-  box-shadow: 0 0 35px rgba(42,59,99,.17)
+.figure:focus,
+.figure:focus-within,
+.figure:hover {
+  box-shadow: 0 0 35px rgba(42, 59, 99, .17)
 }
 
-.figure:focus .figure__information,.figure:focus-within .figure__information,.figure:hover .figure__information {
+.figure:focus .figure__information,
+.figure:focus-within .figure__information,
+.figure:hover .figure__information {
   background-color: inherit
 }
 
-.figure:focus .figure__figure__name,.figure:focus-within .figure__figure__name,.figure:hover .figure__figure__name {
+.figure:focus .figure__figure__name,
+.figure:focus-within .figure__figure__name,
+.figure:hover .figure__figure__name {
   margin-top: 0
 }
 
-.figure:focus .figure__list,.figure:focus .figure__description,.figure:focus-within .figure__list,.figure:focus-within .figure__description,.figure:hover .figure__list,.figure:hover .figure__description {
+.figure:focus .figure__list,
+.figure:focus .figure__description,
+.figure:focus-within .figure__list,
+.figure:focus-within .figure__description,
+.figure:hover .figure__list,
+.figure:hover .figure__description {
   max-height: 100%;
   transform: scaleY(1)
 }
 
-.figure:focus .figure__description,.figure:focus-within .figure__description,.figure:hover .figure__description {
+.figure:focus .figure__description,
+.figure:focus-within .figure__description,
+.figure:hover .figure__description {
   margin: -4px 0 34px
 }
 
@@ -122,3 +136,8 @@
   border-radius: 1px
 }
 
+@include vp-767 {
+  .figure {
+    margin: 0 22px;
+  }
+}

@@ -51,4 +51,35 @@
     right: -107px;
     bottom: -126px;
   }
+
+  .tickets__title{
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    width: 180px;
+  }
+
+  .tickets__list{
+    gap: 54px;
+  }
+}
+
+@include vp-767{
+  .tickets{
+    padding-top: 70px;
+    margin-top: 70px;
+  }
+
+  .tickets__title{
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    width: 140px;
+  }
+
+  .tickets__list{
+    gap: 16px;
+  }
+
+  .tickets::before{
+    display: none;
+  }
 }

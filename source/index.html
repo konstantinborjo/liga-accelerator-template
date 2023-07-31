@@ -63,7 +63,7 @@
   </header>
   <main class="main-container">
     <section class="gym">
-      <div class="container">
+      <div class="container__mobile container">
         <div class="gym__container">
           <div class="gym__wrapper">
             <h2 class="gym__title">Тренажерный зал</h2>
@@ -78,13 +78,13 @@
           </div>
           <div class="gym__media">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px)"
+                srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/Clark-desktop.webp 1x, img/Clark-desktop@2x.webp 2x">
 
-              <source media="(min-width: 1200px)" srcset="img/gym-desktop.png 1x, img/Clark-desktop@2x.png 2x">
+              <source media="(min-width: 320px)" srcset="img/gym-mobile.png 1x, img/gym-mobile@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/gym-tablet.png 1x, img/gym-tablet@2x.png 2x">
               <img class="gym__picture" src="img/gym-desktop.png" width="660" height="401"
                 srcset="img/gym-desktop@2x.png" alt="тренажерный зал">
@@ -93,19 +93,19 @@
             <div class="video video--enabled">
               <a class="video__link" href="https://www.youtube.com/embed/9TZXsZItgdw">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)"
+                    srcset="img/grey-gym-mobile.webp 1x, img/grey-gym-mobile@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
                     srcset="img/grey-gym-tablet.webp 1x, img/grey-gym-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/grey-gym-desktop.webp 1x, img/grey-gym-desktop@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/gym-desktop.png 1x, img/Clark-desktop@2x.png 2x">
+                  <source media="(min-width: 320px)" srcset="img/grey-gym-mobile.png 1x, img/grey-gym-mobile@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/grey-gym-tablet.png 1x, img/grey-gym-tablet@2x.png 2x">
                   <img class="video__img" src="img/grey-gym-desktop.png" width="364" height="228" alt="тренажерный зал"
                     data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
                 </picture>
               </a>
               <button class="video__button" aria-label="Проиграть видео.">
-                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="video__click" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="50" cy="50" r="49" stroke="url(#paint0_linear_1_293)" stroke-opacity="0.2"
                     stroke-width="2" />
                   <circle cx="50" cy="50" r="36" fill="url(#paint1_linear_1_293)" />
@@ -193,13 +193,13 @@
           </div>
 
           <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/dust-desktop.webp 1x, img/dust-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 320px)"
+              srcset="img/dust.webp 1x, img/dust@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
               srcset="img/dust-desktop.webp 1x, img/dust-desktop@2x.webp 2x">
             <source type="image/webp" srcset="img/dust-desktop.webp 1x, img/dust-desktop@2x.webp 2x">
 
-            <source media="(min-width: 1200px)" srcset="img/dust-desktop.png 1x, img/dust-desktop@2x.png 2x">
+            <source media="(min-width: 320px)" srcset="img/dust.png 1x, img/dust@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/dust-desktop.png 1x, img/dust-desktop@2x.png 2x">
             <img class="super-games__picture" src="img/dust-desktop.png" width="660" height="500"
               srcset="img/dust-desktop@2x.png" alt="качек в пыли">
@@ -317,10 +317,9 @@
       <div class="container">
         <h2 class="advantages__title">Наши преимущества</h2>
         <div class="advantages__wrapper">
-
           <ul class="advantages__list">
-            <div class="advantages__container">
-              <li class="advantages__item">
+            <li class="advantages__container">
+              <div class="advantages__item">
                 <div class="advantages__area">
                   <span class="advantages__number">900</span>
                   <span class="advantages__mini">кв/м</span>
@@ -329,28 +328,9 @@
                   <h3 class="advantages__title-description">Площадь </h3>
                   <span class="advantages__description">Занимайтесь без очередей<br>и толпучки</span>
                 </div>
-              </li>
+              </div>
 
-              <li class="advantages__item advantages__item--bottom">
-                <div class="advantages__area">
-                  <span class="advantages__number">350</span>
-                  <span class="advantages__mini">мест</span>
-                </div>
-                <div class="advantages__text">
-                  <h3 class="advantages__title-description">Комфорт</h3>
-                  <span class="advantages__description">Просторные раздевалки,<br>душевые, фен, Wi-Fi, кулеры</span>
-                </div>
-              </li>
-            </div>
-
-            <li class="advantages__item modern">
-              <span class="modern__number">100</span>
-              <span class="modern__title">Тренажеров</span>
-              <span class="modern__text">Современные тренажеры на все группы мышц</span>
-            </li>
-
-            <div class="advantages__container">
-              <li class="advantages__item">
+              <div class="advantages__item">
                 <div class="advantages__area">
                   <span class="advantages__number">70</span>
                   <span class="advantages__mini">машин</span>
@@ -360,9 +340,28 @@
                   <span class="advantages__description">Вы всегда найдете место для своей машины на нашей
                     парковке</span>
                 </div>
-              </li>
+              </div>
+            </li>
 
-              <li class="advantages__item">
+            <li class="advantages__item modern">
+              <span class="modern__number">100</span>
+              <span class="modern__title">Тренажеров</span>
+              <span class="modern__text">Современные тренажеры на все группы мышц</span>
+            </li>
+
+            <div class="advantages__container">
+              <li class="advantages__item advantages__item--bottom">
+                <div class="advantages__area">
+                  <span class="advantages__number">350</span>
+                  <span class="advantages__mini">мест</span>
+                </div>
+                <div class="advantages__text">
+                  <h3 class="advantages__title-description">Комфорт</h3>
+                  <span class="advantages__description">Просторные раздевалки,<br>душевые, фен, Wi-Fi, кулеры</span>
+                </div>
+              </div>
+
+              <div class="advantages__item">
                 <div class="advantages__area">
                   <span class="advantages__number">5+</span>
                   <span class="advantages__mini">лет</span>
@@ -372,8 +371,8 @@
                   <span class="advantages__description">Добивайтесь своих целей быстрее с профессиональным
                     тренером</span>
                 </div>
-              </li>
-            </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -391,13 +390,13 @@
               <a class="action__link" href="#">подробнее</a>
             </div>
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/girl-desktop.webp 1x, img/girl-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px)"
+                srcset="img/girl.webp 1x, img/girl@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/girl-tablet.webp 1x, img/girl-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/dust-desktop.webp 1x, img/dust-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/girl-desktop.webp 1x, img/girl-desktop@2x.webp 2x">
 
-              <source media="(min-width: 1200px)" srcset="img/girl-desktop.png 1x, img/girl-desktop@2x.png 2x">
+              <source media="(min-width: 320px)" srcset="img/girl.png 1x, img/girl@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/girl-tablet.png 1x, img/girl-tablet@2x.png 2x">
               <img class="action__pic" src="img/girl-desktop.png" width="280" height="462"
                 srcset="img/girl-desktop@2x.png" alt="девушка">
@@ -428,17 +427,16 @@
           <div class="ask__tabs tabs no-transition-global" data-tabs="parent" data-delay="300" data-height="max">
             <div class="ask__list tabs__controls" data-tabs="controls">
               <button class="ask__item tabs__control btn" type="button" data-tabs="control" data-index="0">
-                <p class="ask__link">Центр</p>
+                Центр
               </button>
-              <button class="ask__item ask__item--checked tabs__control btn is-active" type="button" data-tabs="control"
-                data-index="1">
-                <p class="ask__link ask__link--checked">Абонемент</p>
+              <button class="ask__item tabs__control btn is-active" type="button" data-tabs="control"
+                data-index="1">Абонемент
               </button>
               <button class="ask__item tabs__control btn" type="button" data-tabs="control" data-index="2">
-                <p class="ask__link">Услуги</p>
+                Услуги
               </button>
               <button class="ask__item tabs__control btn" type="button" data-tabs="control" data-index="3">
-                <p class="ask__link">Правила</p>
+                Правила
               </button>
             </div>
             <div class="tabs__content" data-tabs="content">

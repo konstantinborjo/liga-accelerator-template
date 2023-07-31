@@ -72,3 +72,39 @@
   margin-top: 25px;
 
 }
+
+
+@include vp-767{
+  .comment__title{
+    margin: 70px auto 0;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0.96px;
+  }
+
+  .comment__swiper{
+    width: 226px;
+  }
+
+  .comment__scroll{
+    width: 290px;
+  }
+
+  .comment__figure{
+    margin: 0 auto;
+  }
+
+  .comment__slide{
+    width: 226px;
+    display: flex;
+    flex-direction: column;
+    width: 226px;
+    padding: 55px 25px 40px;
+  }
+
+  .comment__description{
+    width: 177px;
+    text-align: center;
+    line-height: 22px;
+  }
+}
