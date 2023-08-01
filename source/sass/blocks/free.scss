@@ -67,3 +67,27 @@
   letter-spacing: 0.7px;
   text-transform: uppercase;
 }
+
+@include vp-767{
+.free{
+  padding: 70px 15px 70px 15px;
+}
+
+  .free__title{
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    width: 250px;
+  }
+
+  .free__data{
+    flex-direction: column;
+  }
+
+  .free__button{
+    width: 290px;
+  }
+
+  .free__input{
+    width: 285px;
+  }
+}

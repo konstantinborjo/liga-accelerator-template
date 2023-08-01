@@ -100,11 +100,30 @@
     flex-direction: column;
     width: 226px;
     padding: 55px 25px 40px;
+    position: relative;
   }
 
   .comment__description{
-    width: 177px;
+    width: 190px;
     text-align: center;
     line-height: 22px;
   }
+
+  .comment__pic{
+    position: absolute;
+    top: 25px;
+    left: 36px;
+    width: 68px;
+    height: 68px;
+  }
+
+  .comment__name{
+    margin: 0 0 0 95px;
+    width: 85px;
+  }
+
+  .comment__scroll{
+    margin: 37px auto 70px;
+  }
+
 }

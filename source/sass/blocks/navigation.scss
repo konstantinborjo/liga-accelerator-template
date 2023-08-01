@@ -7,3 +7,10 @@
   line-height: normal;
   max-width: 74px;
 }
+
+
+@include vp-767 {
+  .navigation__item {
+    margin-top: 30px;
+  }
+}
