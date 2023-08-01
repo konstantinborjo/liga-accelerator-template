@@ -21,7 +21,7 @@
 }
 
 .tickets__title {
-  margin: 0 auto;
+  margin: 6px auto 0;
   color: #102654;
   font-family: $ff-alumni;
   font-size: 54px;
@@ -33,17 +33,24 @@
 }
 
 .tickets__list {
+  // display: flex;
+  // gap: 46px;
+  // width: 416px;
+  // list-style-type: none;
+  // margin: 0 auto;
+  // margin-top: 25px;
+  // padding: 0;
+  // padding-bottom: 20px;
+  // gap: 46px;
+  // position: relative;
+  // border-bottom: 2px solid rgba(120, 120, 120, 0.20);
   display: flex;
-  gap: 46px;
-  width: 416px;
-  list-style-type: none;
-  margin: 0 auto;
-  margin-top: 25px;
-  padding: 0;
-  padding-bottom: 20px;
-  gap: 46px;
-  position: relative;
-  border-bottom: 2px solid rgba(120, 120, 120, 0.20);
+  flex-wrap: wrap;
+  gap: 0 46px;
+  margin: 0;
+  padding: 7px 0 0;
+  list-style: none;
+  border-bottom: 2px solid rgba(120,120,120,.2);
 }
 
 @include vp-1199{
@@ -73,6 +80,7 @@
     font-size: 32px;
     letter-spacing: 0.96px;
     width: 140px;
+
   }
 
   .tickets__list{

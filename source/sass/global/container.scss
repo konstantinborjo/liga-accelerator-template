@@ -1,21 +1,21 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 103px;}
+  padding: 0 85px;
+}
 
-  @include vp-1199 {
-    .container {
-      padding: 0 45px;
-    }
+@include vp-1199 {
+  .container {
+    padding: 0 45px;
+  }
+}
+
+@include vp-767 {
+  .container {
+    padding: 0 15px;
   }
 
-  @include vp-767 {
-    .container {
-      padding: 0 15px;
-    }
-
-    .container__mobile {
-      padding: 0;
-    }
+  .container__mobile {
+    padding: 0;
   }
-
+}
