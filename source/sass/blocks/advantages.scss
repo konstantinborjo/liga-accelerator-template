@@ -2,12 +2,12 @@
   background-color: #F8F9FC;
   padding-top: 108px;
   padding-bottom: 129px;
-  margin-top: 105px;
+  margin-top: 100px;
 }
 
 .advantages__title {
   width: 383px;
-  margin: 0 auto;
+  margin: 0 411px 0;
   font-family: $ff-alumni;
   font-size: 54px;
   font-style: normal;
@@ -29,9 +29,10 @@
 
 .advantages__item {
   display: flex;
-  gap: 30px;
+  gap: 34px;
   align-items: flex-start;
-  width: 360px;
+  width: 385px;
+  margin-left: 93px;
 
 }
 
@@ -47,7 +48,7 @@
   font-size: 71px;
   font-style: normal;
   font-weight: 700;
-  line-height: 80%;
+  line-height: 66%;
   background: linear-gradient(129deg, #D10A42 0%, #0041CA 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -62,18 +63,21 @@
   font-weight: 400;
   line-height: 21px;
   width: 40px;
+  margin-left: 5px;
 }
 
 .advantages__title-description {
-  margin: 0;
-  margin-bottom: 20px;
+  margin: -6px 2px 0;
+  width: 228px;
+  color: #102654;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 150%;
   width: 255px;
   color: #102654;
   font-family: $ff-roboto;
-  font-size: 22px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
+
 }
 
 .advantages__description {
@@ -81,16 +85,17 @@
   display: flex;
   color: #102654;
   font-family: $ff-roboto;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: 140%;
+  margin-top: 10px;
 }
 
 .advantages__container {
   display: flex;
   flex-direction: column;
-  gap: 167px;
+  gap: 150px;
 }
 
 @include vp-1199 {
@@ -130,11 +135,11 @@
 
 
 @include vp-767 {
-.advantages__title{
-  font-size: 32px;
-  letter-spacing: 0.96px;
-  width: 230px;
-}
+  .advantages__title {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    width: 230px;
+  }
 
   .advantages__container {
     flex-direction: column;
@@ -145,7 +150,7 @@
     width: 290px;
   }
 
-  .advantages__list{
+  .advantages__list {
     align-items: flex-start;
     display: flex;
     flex-direction: column;

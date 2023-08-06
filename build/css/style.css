@@ -1208,7 +1208,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #000000;
   height: 100%;
   -webkit-font-smoothing: antialiased;
@@ -2282,13 +2282,13 @@ button,
 .main-header__list {
   list-style-type: none;
   text-align: right;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  padding: 0;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
-  margin: 225px 0 0 8px;
-  padding: 0;
+  margin: 225px 9px 0px 8px;
 }
 
 .main-header__description {
@@ -2334,8 +2334,8 @@ button,
 .main-header__button {
   width: 237px;
   color: #ffffff;
-  font-family: "roboto", "Arial", sans-serif;
-  font-size: 11px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -2531,9 +2531,9 @@ button,
 .gym__description {
   width: 355px;
   color: #102654;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 24px;
   margin: 39px 0 0;
@@ -2556,9 +2556,9 @@ button,
   width: 310px;
   margin: 9px 0 0;
   color: #102654;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 25px;
 }
@@ -2720,7 +2720,7 @@ button,
 }
 .tickets {
   background: #F8F9FC;
-  padding-top: 120px;
+  padding-top: 114px;
   padding-bottom: 120px;
   position: relative;
   z-index: -2;
@@ -2731,8 +2731,8 @@ button,
   position: absolute;
   content: "";
   background-image: url("../img/round.png");
-  right: -181px;
-  bottom: -148px;
+  right: -200px;
+  bottom: -153px;
   z-index: -1;
   width: 470px;
   height: 494px;
@@ -2744,7 +2744,7 @@ button,
   margin: 6px auto 0;
   color: #102654;
   font-family: "Alumni Sans", "Arial", sans-serif;
-  font-size: 54px;
+  font-size: 56px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -2758,11 +2758,13 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 0 46px;
-  margin: 0;
+  gap: 0 44px;
+  margin: 10px auto 0;
   padding: 7px 0 0;
   list-style: none;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  width: 375px;
+  min-height: 50px;
 }
 
 @media (max-width: 1199px) {
@@ -2799,7 +2801,7 @@ button,
 .month__item {
   max-width: 107px;
   color: rgba(16, 38, 84, 0.5);
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -2811,14 +2813,15 @@ button,
 .month__item--active {
   color: #102654;
   position: relative;
+  margin-left: 21px;
 }
 
 .month__item--active::after {
   position: absolute;
   content: "";
-  top: 50px;
-  left: 0;
-  width: 75px;
+  top: 41px;
+  left: 4px;
+  width: 67px;
   height: 2px;
   background-color: #D10A42;
 }
@@ -2836,18 +2839,20 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
-  margin-top: 59px;
-  gap: 40px;
-  list-style-type: none;
   width: 100%;
   padding: 0;
+  margin: 38px auto 0;
+  gap: 42px;
+  list-style-type: none;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .cards__item {
-  width: 300px;
+  width: 400px;
   background: #fff;
-  padding: 68px 0;
+  padding: 63px 0 56px;
   background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2867,12 +2872,14 @@ button,
      border-image: -webkit-gradient(linear, left top, right top, from(#B80027), color-stop(75%, #003D85));
      border-image: linear-gradient(90deg, #B80027 0%, #003D85 75%);
   border-image-slice: 1;
+  padding-top: 59px;
 }
 
 .cards__item--5000 {
   background-image: url("../img/svg/5000.svg");
   background-repeat: no-repeat;
   background-position: center;
+  margin-left: 18px;
 }
 
 .cards__item--1700 {
@@ -2892,20 +2899,19 @@ button,
   margin: 0 auto;
   color: #102654;
   text-align: center;
-  font-family: "roboto", "Arial", sans-serif;
-  font-size: 26px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 27px;
   font-style: normal;
   font-weight: 700;
-  line-height: 28.641px;
+  line-height: 25.641px;
 }
 
 .cards__description {
   width: 112px;
-  margin: 0 auto;
-  margin-top: 22px;
+  margin: 10px auto 0;
+  font-size: 15px;
   color: #102654;
-  font-family: "roboto", "Arial", sans-serif;
-  font-size: 16px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
@@ -2914,14 +2920,13 @@ button,
 
 .cards__cost {
   color: #103AAE;
-  font-family: "roboto", "Arial", sans-serif;
-  font-size: 60px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+  font-size: 59px;
   width: 183px;
-  margin: 0 auto;
-  margin-top: 96px;
+  margin: 67px auto 0;
 }
 
 .cards__link {
@@ -2935,8 +2940,8 @@ button,
   letter-spacing: 0.6px;
   text-transform: uppercase;
   border: 2px solid #102654;
-  padding: 27px 44px;
-  margin-top: 59px;
+  padding: 26px 44px;
+  margin-top: 32px;
 }
 
 .cards__link--active {
@@ -2978,8 +2983,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
   max-width: 1160px;
+  margin: 4px auto 0 18px;
 }
 
 .super-games__text {
@@ -2994,7 +2999,7 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 35px 0;
+  padding: 56px 35px 0;
   width: 500px;
 }
 
@@ -3018,34 +3023,32 @@ button,
   font-weight: 600;
   line-height: 96%;
   letter-spacing: 2.46px;
-  margin: 0;
-  margin-top: 30px;
+  margin: 30px 0px 0px 4px;
 }
 
 .super-games__description {
   width: 315px;
   color: #ffffff;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  margin: 0 auto;
-  margin-top: 33px;
+  margin: 30px 31px 0 0;
 }
 
 .super-games__link {
   color: #ffffff;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   border: 4px solid #ffffff;
-  width: 292px;
-  padding: 29px 73px;
+  max-width: 85%;
+  padding: 24px 111px;
   font-size: 12px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  margin-top: 30px;
+  margin-top: 46px;
 }
 
 @media (max-width: 1199px) {
@@ -3098,15 +3101,16 @@ button,
   }
 }
 .time {
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   color: #ffffff;
   line-height: 150%;
+  margin: 26px 0px 0px 10px;
 }
 
 .time__date {
   width: 37px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
   margin: 0;
 }
@@ -3115,7 +3119,7 @@ button,
   width: 80px;
   font-size: 40px;
   font-weight: 700;
-  margin: 0;
+  margin: 6px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3143,18 +3147,18 @@ button,
   text-align: left;
   margin: 0;
   width: 48px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 150%;
-  margin-top: 23px;
+  margin: 0px 0 0 0;
+  margin: 17px 0 0;
 }
 
 .time__clock {
   width: 100px;
-  font-size: 40px;
+  font-size: 37px;
   font-weight: 700;
-  margin: 0;
-  margin-top: 23px;
+  margin: 18px 0 0;
 }
 
 @media (max-width: 1199px) {
@@ -3189,8 +3193,7 @@ button,
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.62px;
-  margin: 0;
-  margin-top: 106px;
+  margin: 106px 20px 0;
 }
 
 .people__slider {
@@ -3256,7 +3259,7 @@ button,
 .figure__name {
   margin: auto 0 0;
   width: 175px;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -3300,7 +3303,7 @@ button,
 
 .figure__item {
   width: 160px;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -3405,7 +3408,7 @@ button,
 }
 
 .swiper__button--prev {
-  left: -60px;
+  left: -42px;
 }
 
 .swiper__button--prev::before {
@@ -3472,12 +3475,12 @@ button,
   background-color: #F8F9FC;
   padding-top: 108px;
   padding-bottom: 129px;
-  margin-top: 105px;
+  margin-top: 100px;
 }
 
 .advantages__title {
   width: 383px;
-  margin: 0 auto;
+  margin: 0 411px 0;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   font-style: normal;
@@ -3502,11 +3505,12 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  gap: 34px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 360px;
+  width: 385px;
+  margin-left: 93px;
 }
 
 .advantages__area {
@@ -3516,11 +3520,11 @@ button,
 
 .advantages__number {
   width: 118px;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 71px;
   font-style: normal;
   font-weight: 700;
-  line-height: 80%;
+  line-height: 66%;
   background: linear-gradient(129deg, #D10A42 0%, #0041CA 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -3529,24 +3533,26 @@ button,
 
 .advantages__mini {
   color: #2E35AC;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
   width: 40px;
+  margin-left: 5px;
 }
 
 .advantages__title-description {
-  margin: 0;
-  margin-bottom: 20px;
-  width: 255px;
+  margin: -6px 2px 0;
+  width: 228px;
   color: #102654;
-  font-family: "roboto", "Arial", sans-serif;
-  font-size: 22px;
-  font-style: normal;
+  font-size: 21px;
   font-weight: 700;
   line-height: 150%;
+  width: 255px;
+  color: #102654;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
 }
 
 .advantages__description {
@@ -3555,11 +3561,12 @@ button,
   display: -ms-flexbox;
   display: flex;
   color: #102654;
-  font-family: "roboto", "Arial", sans-serif;
-  font-size: 16px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: 140%;
+  margin-top: 10px;
 }
 
 .advantages__container {
@@ -3570,7 +3577,7 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 167px;
+  gap: 150px;
 }
 
 @media (max-width: 1199px) {
@@ -3653,7 +3660,7 @@ button,
       -ms-flex-pack: center;
           justify-content: center;
   color: #ffffff;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   margin: 0 auto;
 }
@@ -3663,7 +3670,7 @@ button,
   font-size: 74px;
   font-style: normal;
   font-weight: 700;
-  line-height: 39px;
+  line-height: 70px;
 }
 
 .modern__title {
@@ -3720,7 +3727,7 @@ button,
   -webkit-column-gap: 40px;
      -moz-column-gap: 40px;
           column-gap: 40px;
-  margin-top: 34px;
+  margin-top: 31px;
 }
 
 .action__container {
@@ -3740,7 +3747,7 @@ button,
 .action__main {
   background: #ED0233;
   color: #ffffff;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3749,7 +3756,8 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
   font-style: normal;
-  padding: 45px;
+  padding: 33px 48px 0px 43px;
+  margin-left: 18px;
 }
 
 .action__year {
@@ -3769,19 +3777,19 @@ button,
 
 .action__text {
   width: 189px;
-  margin-top: 35px;
-  font-size: 16px;
+  margin-top: 25px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
 }
 
 .action__link {
-  margin-top: 165px;
+  margin-top: 189px;
   width: 85px;
   color: #ffffff;
-  font-family: "roboto", "Arial", sans-serif;
-  font-size: 12px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -3791,7 +3799,7 @@ button,
 }
 
 .action__card {
-  padding: 28px 28px 33px;
+  padding: 23px 28px 31px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3803,13 +3811,14 @@ button,
   -o-border-image: linear-gradient(150deg, #b80027 0, #003d85 75%);
      border-image: linear-gradient(150deg, #b80027 0, #003d85 75%);
   border-image-slice: 1;
+  width: 560px;
 }
 
 .action__title-dop {
   margin: 0;
   width: 235px;
   color: #1C3374;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -3819,25 +3828,25 @@ button,
 .action__text-dop {
   width: 345px;
   color: #1C3374;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-  margin-top: 20px;
+  margin-top: 8px;
 }
 
 .action__link-dop {
   width: 85px;
   color: #1C3374;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  margin-top: 50px;
+  margin-top: 70px;
   text-decoration: underline;
 }
 
@@ -3986,6 +3995,7 @@ button,
 
 .ask__title {
   margin: 0;
+  margin-left: 19px;
   width: 341px;
   color: #102654;
   font-family: "Alumni Sans", "Arial", sans-serif;
@@ -4016,7 +4026,7 @@ button,
   padding: 18px 88px;
   text-align: center;
   text-align: center;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -4036,7 +4046,7 @@ button,
 
 .ask__card {
   color: #102654;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -4048,8 +4058,8 @@ button,
   display: grid;
   -ms-grid-columns: 260px 1fr;
   grid-template-columns: 260px 1fr;
-  grid-column-gap: 40px;
-  margin-top: 40px;
+  grid-column-gap: 59px;
+  margin-top: 37px;
 }
 
 @media (max-width: 1199px) {
@@ -4147,7 +4157,7 @@ button,
 .comment__text {
   width: 355px;
   color: #FFF;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -4161,7 +4171,7 @@ button,
 .comment__name {
   width: 135px;
   color: #FFF;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -4170,7 +4180,7 @@ button,
 
 .comment__description {
   width: 355px;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -4282,7 +4292,7 @@ button,
   border: none;
   background: none;
   color: #ffffff;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -4295,7 +4305,7 @@ button,
   width: 60px;
   color: #ffffff;
   opacity: 1;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -4306,7 +4316,7 @@ button,
   width: 60px;
   color: #ffffff;
   opacity: 1;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -4317,7 +4327,7 @@ button,
   width: 60px;
   color: #ffffff;
   opacity: 1;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -4328,7 +4338,7 @@ button,
   width: 60px;
   color: #ffffff;
   opacity: 1;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -4339,7 +4349,7 @@ button,
   width: 60px;
   color: #ffffff;
   opacity: 1;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -4353,7 +4363,7 @@ button,
   color: #ffffff;
   background: none;
   border: 3px solid #ffffff;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -4415,7 +4425,7 @@ button,
   margin: 0;
   width: 135px;
   color: #102654;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -4425,7 +4435,7 @@ button,
 .information__description {
   width: 195px;
   color: #102654;
-  font-family: "roboto", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

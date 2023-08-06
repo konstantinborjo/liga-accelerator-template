@@ -12,14 +12,15 @@
 .month__item--active {
   color: #102654;
   position: relative;
+  margin-left: 21px;
 }
 
 .month__item--active::after {
   position:absolute;
   content: "";
-  top: 50px;
-left: 0;
-  width: 75px;
+  top: 41px;
+  left: 4px;
+  width: 67px;
   height: 2px;
   background-color:#D10A42; ;
 }

@@ -5,6 +5,7 @@
 
 .ask__title {
   margin: 0;
+  margin-left: 19px;
   width: 341px;
   color: #102654;
   font-family: $ff-alumni;
@@ -62,8 +63,8 @@
 .ask__tabs {
   display: grid;
   grid-template-columns: 260px 1fr;
-  grid-column-gap: 40px;
-  margin-top: 40px;
+  grid-column-gap: 59px;
+  margin-top: 37px;
 }
 
 @include vp-1199 {

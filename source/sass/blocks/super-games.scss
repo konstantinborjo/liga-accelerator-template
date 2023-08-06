@@ -4,8 +4,8 @@
 
 .super-games__wrapper {
   display: flex;
-  margin: 0 auto;
   max-width: 1160px;
+  margin: 4px auto 0 18px;
 }
 
 .super-games__text {
@@ -13,7 +13,7 @@
   flex-direction: column;
   background: #ED0233;
   align-items: center;
-  padding: 30px 35px 0;
+  padding: 56px 35px 0;
   width: 500px;
 }
 
@@ -35,8 +35,7 @@
   font-weight: 600;
   line-height: 96%;
   letter-spacing: 2.46px;
-  margin: 0;
-  margin-top: 30px;
+  margin: 30px 0px 0px 4px;
 }
 
 .super-games__description {
@@ -47,22 +46,21 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  margin: 0 auto;
-  margin-top: 33px;
+  margin: 30px 31px 0 0;
 }
 
 .super-games__link {
   color: #ffffff;
   font-family: $ff-roboto;
   border: 4px solid #ffffff;
-  width: 292px;
-  padding: 29px 73px;
+  max-width: 85%;
+  padding: 24px 111px;
   font-size: 12px;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.6px;
+  letter-spacing: .6px;
   text-transform: uppercase;
-  margin-top: 30px;
+  margin-top: 46px;
 }
 
 @include vp-1199 {
