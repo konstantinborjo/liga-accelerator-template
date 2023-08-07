@@ -1,6 +1,6 @@
 .comment__swiper {
   position: relative;
-  width: 580px;
+  width: 560px;
 }
 
 .comment__scroll {
@@ -8,7 +8,7 @@
   width: 580px;
   margin: 0 auto;
   margin-top: 37px;
-  margin-bottom: 121px;
+  margin-bottom: 120px;
 }
 
 .comment__title {
@@ -21,7 +21,7 @@
   line-height: normal;
   letter-spacing: 1.62px;
   margin: 0 auto;
-  margin-top: 120px;
+  margin-top: 116px;
 }
 
 .comment__slide {
@@ -29,8 +29,8 @@
   grid-template-columns: 90px 355px;
   column-gap: 28px;
   background-color: #1C3374;
-  padding: 62px;
-  width: 580px;
+  padding: 36px 0 54px 52px;
+  width: 560px;
 }
 
 .comment__figure {
@@ -48,7 +48,8 @@
 }
 
 .comment__pic {
-  margin-top: 25px;
+  margin: 24px 0px 0px 9px;
+  width: 84px;
 }
 
 .comment__name {
@@ -59,18 +60,16 @@
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
+  margin: 18px 0 0 0;
 }
 
 .comment__description {
-  width: 355px;
   font-family:$ff-roboto;
+  width: 330px;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 24px;
-  margin: 0;
-  margin-top: 25px;
-
+  line-height: 23px;
+  margin: 12px 0 0;
 }
 
 

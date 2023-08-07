@@ -11,6 +11,7 @@
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0.52px;
+  margin: 13px 0px 0px 19px
 }
 
 .main-footer__wrapper {
@@ -18,7 +19,7 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 44px 0 32px;
+  padding: 25px 0 27px;
 }
 
 .main-footer__list {
@@ -30,8 +31,13 @@
 
 .main-footer__social {
   display: flex;
-  gap: 20px;
+  gap: 11px;
   padding: 0;
+  margin: 7px 20px 0 0px;
+}
+
+.main-footer__nav{
+  margin: 1px 0 0px 8px;
 }
 
 @include vp-1199 {

@@ -31,6 +31,10 @@
   left: -42px;
 }
 
+.swiper__button--prev-s{
+  right: -50px;
+}
+
 .swiper__button--prev::before {
   left: 8px;
   transform: rotate(45deg);
@@ -38,6 +42,10 @@
 
 .swiper__button--next {
   right: -60px;
+}
+
+.swiper__button--next-s{
+  right: -50px;
 }
 
 .swiper__button--next::before {

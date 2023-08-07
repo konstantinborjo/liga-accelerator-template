@@ -2425,6 +2425,7 @@ button,
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0.52px;
+  margin: 13px 0px 0px 19px;
 }
 
 .main-footer__wrapper {
@@ -2438,7 +2439,7 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 44px 0 32px;
+  padding: 25px 0 27px;
 }
 
 .main-footer__list {
@@ -2454,8 +2455,13 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 11px;
   padding: 0;
+  margin: 7px 20px 0 0px;
+}
+
+.main-footer__nav {
+  margin: 1px 0 0px 8px;
 }
 
 @media (max-width: 1199px) {
@@ -3411,6 +3417,10 @@ button,
   left: -42px;
 }
 
+.swiper__button--prev-s {
+  right: -50px;
+}
+
 .swiper__button--prev::before {
   left: 8px;
   -webkit-transform: rotate(45deg);
@@ -3420,6 +3430,10 @@ button,
 
 .swiper__button--next {
   right: -60px;
+}
+
+.swiper__button--next-s {
+  right: -50px;
 }
 
 .swiper__button--next::before {
@@ -3990,7 +4004,7 @@ button,
 
 .ask {
   background-color: #F8F9FC;
-  padding: 120px 0 120px;
+  padding: 120px 0 69px 0;
 }
 
 .ask__title {
@@ -4113,7 +4127,7 @@ button,
 }
 .comment__swiper {
   position: relative;
-  width: 580px;
+  width: 560px;
 }
 
 .comment__scroll {
@@ -4121,7 +4135,7 @@ button,
   width: 580px;
   margin: 0 auto;
   margin-top: 37px;
-  margin-bottom: 121px;
+  margin-bottom: 120px;
 }
 
 .comment__title {
@@ -4134,7 +4148,7 @@ button,
   line-height: normal;
   letter-spacing: 1.62px;
   margin: 0 auto;
-  margin-top: 120px;
+  margin-top: 116px;
 }
 
 .comment__slide {
@@ -4146,8 +4160,8 @@ button,
      -moz-column-gap: 28px;
           column-gap: 28px;
   background-color: #1C3374;
-  padding: 62px;
-  width: 580px;
+  padding: 36px 0 54px 52px;
+  width: 560px;
 }
 
 .comment__figure {
@@ -4165,7 +4179,8 @@ button,
 }
 
 .comment__pic {
-  margin-top: 25px;
+  margin: 24px 0px 0px 9px;
+  width: 84px;
 }
 
 .comment__name {
@@ -4176,17 +4191,16 @@ button,
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
+  margin: 18px 0 0 0;
 }
 
 .comment__description {
-  width: 355px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
+  width: 330px;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 24px;
-  margin: 0;
-  margin-top: 25px;
+  line-height: 23px;
+  margin: 12px 0 0;
 }
 
 @media (max-width: 767px) {
@@ -4254,7 +4268,7 @@ button,
 .free {
   background-color: #102654;
   color: #ffffff;
-  padding: 55px 90px 70px 70px;
+  padding: 56px 139px 0px 100px;
 }
 
 .free__form {
@@ -4265,7 +4279,7 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 24px;
+  margin-top: 20px;
 }
 
 .free__data {
@@ -4278,13 +4292,13 @@ button,
 }
 
 .free__title {
-  width: 380px;
+  width: 410px;
   font-family: "Alumni Sans", "Arial", sans-serif;
-  font-size: 54px;
+  font-size: 55px;
   font-style: normal;
   font-weight: 800;
   line-height: 84px;
-  letter-spacing: 1.62px;
+  letter-spacing: 2px;
   margin: 0;
 }
 
@@ -4359,7 +4373,7 @@ button,
 .free__button {
   margin-top: 30px;
   width: 415px;
-  padding: 21px 0;
+  padding: 16px 0;
   color: #ffffff;
   background: none;
   border: 3px solid #ffffff;
@@ -4403,12 +4417,11 @@ button,
   grid-template-rows: 1fr 1fr;
   padding: 0;
   list-style-type: none;
-  -webkit-column-gap: 120px;
-     -moz-column-gap: 120px;
-          column-gap: 120px;
-  row-gap: 30px;
-  margin: 0;
-  margin-top: 35px;
+  -webkit-column-gap: 96px;
+     -moz-column-gap: 96px;
+          column-gap: 96px;
+  row-gap: 18px;
+  margin: 37px 0 0;
 }
 
 .information__item {
@@ -4440,7 +4453,17 @@ button,
   font-style: normal;
   font-weight: 400;
   line-height: 152.344%;
-  /* 21.328px */
+  margin-top: 3px;
+}
+
+.information__link {
+  color: #102654;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 152.344%;
+  margin-top: 3px;
 }
 
 @media (max-width: 767px) {
@@ -4457,7 +4480,7 @@ button,
 }
 .contacts {
   border-top: 1px solid #74819C;
-  padding: 55px 55px 70px;
+  padding: 56px 89px 64px 123px;
 }
 
 .contacts__title {
@@ -4478,6 +4501,11 @@ button,
     border: none;
   }
 }
+.site__svg {
+  width: 25px;
+  height: 35px;
+}
+
 @media (max-width: 767px) {
   .site__svg {
     width: 25px;
