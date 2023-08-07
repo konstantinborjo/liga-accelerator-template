@@ -2313,6 +2313,7 @@ button,
   letter-spacing: 4px;
   width: 252px;
   margin: 4px 0 0px;
+  text-transform: uppercase;
 }
 
 .main-header__town {
@@ -2354,23 +2355,28 @@ button,
   .main-header__link {
     font-size: 24px;
     letter-spacing: 0.48px;
+    margin: 3px 0 0 0;
   }
   .main-header__picture {
     width: 324px;
     height: 390px;
+    margin-top: 19px;
+    margin-left: 5px;
   }
   .main-header__title {
     width: 200px;
     letter-spacing: 3.6px;
     font-size: 72px;
+    margin: 6px 24px 0 0;
+    text-transform: none;
   }
   .main-header__image {
     width: 670px;
-    margin: 0 auto;
+    margin: 0;
   }
   .main-header__list {
-    margin: auto 0;
-    width: 125px;
+    margin: 169px 0 0 0;
+    width: 113px;
     font-size: 14px;
   }
   .main-header__town {
@@ -2380,13 +2386,22 @@ button,
     margin-left: -25px;
   }
   .main-header__button {
-    padding: 24px 33px;
-    width: 220px;
+    padding: 20px 0px;
+    width: 187px;
+    font-size: 13px;
+    margin-top: 35px;
+    margin-left: 0px;
+    margin-right: 23px;
   }
   .main-header__description {
     font-size: 34px;
     letter-spacing: 1.02px;
     width: 60px;
+    margin: 32px 29px 0 0px;
+  }
+  .main-header__container {
+    margin-top: 36px;
+    margin-left: 0;
   }
 }
 @media (max-width: 767px) {
@@ -2598,19 +2613,20 @@ button,
     letter-spacing: 1.26px;
   }
   .gym__wrapper {
-    margin: 0 auto;
+    margin: 0 0px 0px 47px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   .gym__area {
-    margin-top: 6px;
+    margin: 0px 15px 0 0;
     font-size: 18px;
   }
   .gym__description {
-    width: 580px;
+    width: 505px;
     font-size: 16px;
     text-align: center;
+    margin: 35px 0 0 -49px;
   }
   .gym__description--second {
     display: none;
@@ -2696,12 +2712,16 @@ button,
     padding: 0;
   }
   .video {
-    top: -95px;
-    left: 190px;
+    top: -82px;
+    left: 197px;
   }
   .video__media {
     width: 266px;
     height: 167px;
+  }
+  .video__click {
+    width: 70px;
+    height: 70px;
   }
 }
 @media (max-width: 767px) {
@@ -2785,6 +2805,7 @@ button,
   }
   .tickets__list {
     gap: 54px;
+    width: 400px;
   }
 }
 @media (max-width: 767px) {
@@ -2966,6 +2987,7 @@ button,
   }
   .cards__item {
     width: 445px;
+    margin-left: 118px;
   }
 }
 @media (max-width: 767px) {
