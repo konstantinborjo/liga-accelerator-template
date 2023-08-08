@@ -99,9 +99,14 @@
 }
 
 @include vp-1199 {
+  .advantages {
+    padding-top: 24px;
+  }
+
   .advantages__title {
     font-size: 42px;
     letter-spacing: 1.26px;
+    margin: 0 178px;
   }
 
   .advantages__list {
@@ -130,6 +135,7 @@
 
   .advantages__item {
     gap: 0;
+    margin: 0;
   }
 }
 

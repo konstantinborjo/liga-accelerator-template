@@ -60,6 +60,10 @@
     gap: 54px;
     width: 400px;
   }
+
+  .tickets{
+    padding-bottom: 100px;
+  }
 }
 
 @include vp-767 {

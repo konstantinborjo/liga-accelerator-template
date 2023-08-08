@@ -139,6 +139,7 @@
     grid-template-columns: none;
     grid-template-rows: 462px 211px;
     row-gap: 30px;
+    margin-top: 40px;
   }
 
   .action__card {
@@ -161,6 +162,20 @@
 
   .action__text-dop {
     width: 180px;
+  }
+
+  .action__title{
+    margin: 43px 0 0px 289px;
+    font-size: 43px;
+  }
+
+  .action__main{
+    padding: 33px 46px 0 43px;
+    margin-left: 1px;
+  }
+
+  .action__link-dop{
+    margin-top: 47px;
   }
 }
 
