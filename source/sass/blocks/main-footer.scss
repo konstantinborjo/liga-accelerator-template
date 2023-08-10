@@ -36,7 +36,7 @@
   margin: 7px 20px 0 0px;
 }
 
-.main-footer__nav{
+.main-footer__nav {
   margin: 1px 0 0px 8px;
 }
 
@@ -46,7 +46,21 @@
   }
 
   .main-footer__social {
-    gap: 15px;
+    gap: 11px;
+    margin: 12px 0 0 0;
+  }
+
+  .main-footer__link {
+    font-size: 24px;
+    margin: 2px 0 0 0;
+  }
+
+  .main-footer__nav {
+    margin: 4px 0 0 14px;
+  }
+
+  .main-footer__wrapper{
+    padding: 25px 0 29px;
   }
 }
 

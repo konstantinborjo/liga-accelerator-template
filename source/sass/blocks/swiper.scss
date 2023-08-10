@@ -75,6 +75,14 @@
   .swiper__button--next {
     right: -32px;
   }
+
+  .swiper__button--prev-s {
+    left: -53px;
+  }
+
+  .swiper__button--next-s {
+    right: -53px;
+  }
 }
 
 @include vp-767 {

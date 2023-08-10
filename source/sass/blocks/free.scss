@@ -69,26 +69,52 @@
   text-transform: uppercase;
 }
 
-@include vp-767{
-.free{
-  padding: 70px 15px 70px 15px;
+@include vp-1199 {
+  .free {
+    padding: 42px 139px 0 100px;
+  }
+
+  .free__title {
+    letter-spacing: 1.9px;
+    margin: 2px 0 0 33px;
+    font-size: 41px;
+  }
+
+  .free__input{
+    width: 208px;
+    margin-left: 29px;
+  }
+
+  .free__form{
+    margin-top: 18px;
+  }
+
+  .free__button{
+    margin: 30px 0 68px 32px;
+    width: 474px;
+  }
 }
 
-  .free__title{
+@include vp-767 {
+  .free {
+    padding: 70px 15px 70px 15px;
+  }
+
+  .free__title {
     font-size: 32px;
     letter-spacing: 0.96px;
     width: 250px;
   }
 
-  .free__data{
+  .free__data {
     flex-direction: column;
   }
 
-  .free__button{
+  .free__button {
     width: 290px;
   }
 
-  .free__input{
+  .free__input {
     width: 285px;
   }
 }

@@ -64,7 +64,7 @@
 }
 
 .comment__description {
-  font-family:$ff-roboto;
+  font-family: $ff-roboto;
   width: 330px;
   font-size: 16px;
   font-weight: 400;
@@ -73,27 +73,39 @@
 }
 
 
-@include vp-767{
-  .comment__title{
+@include vp-1199 {
+  .comment__title {
+    letter-spacing: 1.4px;
+    margin: 125px 0 0 277px;
+    font-size: 42px;
+  }
+
+  .comment__scroll{
+    margin: 40px auto 100px;
+  }
+}
+
+@include vp-767 {
+  .comment__title {
     margin: 70px auto 0;
     font-size: 32px;
     text-align: center;
     letter-spacing: 0.96px;
   }
 
-  .comment__swiper{
+  .comment__swiper {
     width: 226px;
   }
 
-  .comment__scroll{
+  .comment__scroll {
     width: 290px;
   }
 
-  .comment__figure{
+  .comment__figure {
     margin: 0 auto;
   }
 
-  .comment__slide{
+  .comment__slide {
     width: 226px;
     display: flex;
     flex-direction: column;
@@ -102,13 +114,13 @@
     position: relative;
   }
 
-  .comment__description{
+  .comment__description {
     width: 190px;
     text-align: center;
     line-height: 22px;
   }
 
-  .comment__pic{
+  .comment__pic {
     position: absolute;
     top: 25px;
     left: 36px;
@@ -116,12 +128,12 @@
     height: 68px;
   }
 
-  .comment__name{
+  .comment__name {
     margin: 0 0 0 95px;
     width: 85px;
   }
 
-  .comment__scroll{
+  .comment__scroll {
     margin: 37px auto 70px;
   }
 
