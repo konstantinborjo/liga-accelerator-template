@@ -145,7 +145,7 @@
             <h3 class="cards__title">С тренером</h3>
             <span class="cards__description">12 занятий</span>
             <p class="cards__cost">5000
-              <svg width="30" height="42">
+              <svg class="cards__rub" width="30" height="42">
                 <use xlink:href="img/sprite.svg#rub"></use>
               </svg>
             </p>
@@ -156,7 +156,7 @@
             <span class="cards__description"> с 8:00 до 17:00 </span>
             <p class="cards__cost"> 1700
 
-              <svg width="30" height="42">
+              <svg class="cards__rub" width="30" height="42">
                 <use xlink:href="img/sprite.svg#rub"></use>
               </svg>
             </p>
@@ -166,7 +166,7 @@
             <h3 class="cards__title">Полный день</h3>
             <span class="cards__description">с 8:00 до 22:00</span>
             <p class="cards__cost">2700
-              <svg width="30" height="42">
+              <svg class="cards__rub" width="30" height="42">
                 <use xlink:href="img/sprite.svg#rub"></use>
               </svg>
             </p>
@@ -318,59 +318,52 @@
         <h2 class="advantages__title">Наши преимущества</h2>
         <div class="advantages__wrapper">
           <ul class="advantages__list">
-            <li class="advantages__container">
-              <div class="advantages__item">
-                <div class="advantages__area">
-                  <span class="advantages__number">900</span>
-                  <span class="advantages__mini">кв/м</span>
-                </div>
-                <div class="advantages__text">
-                  <h3 class="advantages__title-description">Площадь </h3>
-                  <span class="advantages__description">Занимайтесь без очередей<br>и толпучки</span>
-                </div>
-              </div>
-
-              <div class="advantages__item">
-                <div class="advantages__area">
-                  <span class="advantages__number">70</span>
-                  <span class="advantages__mini">машин</span>
-                </div>
-                <div class="advantages__text">
-                  <h3 class="advantages__title-description">Собственная парковка</h3>
-                  <span class="advantages__description">Вы всегда найдете место для своей машины на нашей
-                    парковке</span>
-                </div>
-              </div>
-            </li>
-
             <li class="advantages__item modern">
               <span class="modern__number">100</span>
               <span class="modern__title">Тренажеров</span>
               <span class="modern__text">Современные тренажеры на все группы мышц</span>
             </li>
-
-            <li class="advantages__container">
-              <div class="advantages__item advantages__item--bottom">
-                <div class="advantages__area">
-                  <span class="advantages__number">350</span>
-                  <span class="advantages__mini">мест</span>
-                </div>
-                <div class="advantages__text">
-                  <h3 class="advantages__title-description">Комфорт</h3>
-                  <span class="advantages__description">Просторные раздевалки,<br>душевые, фен, Wi-Fi, кулеры</span>
-                </div>
+            <li class="advantages__item">
+              <div class="advantages__area">
+                <span class="advantages__number">900</span>
+                <span class="advantages__mini">кв/м</span>
               </div>
+              <div class="advantages__text">
+                <h3 class="advantages__title-description">Площадь </h3>
+                <span class="advantages__description">Занимайтесь без очередей<br>и толпучки</span>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__area">
+                <span class="advantages__number">70</span>
+                <span class="advantages__mini">машин</span>
+              </div>
+              <div class="advantages__text">
+                <h3 class="advantages__title-description">Собственная парковка</h3>
+                <span class="advantages__description">Вы всегда найдете место для своей машины на нашей
+                  парковке</span>
+              </div>
+            </li>
 
-              <div class="advantages__item">
-                <div class="advantages__area">
-                  <span class="advantages__number">5+</span>
-                  <span class="advantages__mini">лет</span>
-                </div>
-                <div class="advantages__text">
-                  <h3 class="advantages__title-description">Тренерский опыт</h3>
-                  <span class="advantages__description">Добивайтесь своих целей быстрее с профессиональным
-                    тренером</span>
-                </div>
+            <li class="advantages__item">
+              <div class="advantages__area">
+                <span class="advantages__number">350</span>
+                <span class="advantages__mini">мест</span>
+              </div>
+              <div class="advantages__text">
+                <h3 class="advantages__title-description">Комфорт</h3>
+                <span class="advantages__description">Просторные раздевалки,<br>душевые, фен, Wi-Fi, кулеры</span>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__area">
+                <span class="advantages__number">5+</span>
+                <span class="advantages__mini">лет</span>
+              </div>
+              <div class="advantages__text">
+                <h3 class="advantages__title-description">Тренерский опыт</h3>
+                <span class="advantages__description">Добивайтесь своих целей быстрее с профессиональным
+                  тренером</span>
               </div>
             </li>
           </ul>
@@ -428,8 +421,8 @@
               <button class="ask__item tabs__control btn" type="button" data-tabs="control" data-index="0">
                 Центр
               </button>
-              <button class="ask__item tabs__control btn is-active" type="button" data-tabs="control"
-                data-index="1" checked>Абонемент
+              <button class="ask__item tabs__control btn is-active" type="button" data-tabs="control" data-index="1"
+                checked>Абонемент
               </button>
               <button class="ask__item tabs__control btn" type="button" data-tabs="control" data-index="2">
                 Услуги
@@ -448,23 +441,24 @@
                       договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на
                       почту.</p>
                   </div>
-
-                  <div class="ask__answer-list ">
-                    <button class="ask__card accordion">Где можно посмотреть расписание?</button>
-                    <div class="acordion__panel"></div>
-                  </div>
-
-                  <div class="ask__answer-list ">
-                    <button class="ask__card accordion">Есть кулеры в центре? Предоставляются полотенца?</button>
-                    <div class="acordion__panel"></div>
-                  </div>
-
-                  <div class="ask__answer-list ">
-                    <button class="ask__card accordion accordion--last">Сколько тренеров работает в клубе и какова их
-                      квалификация?</button>
-                    <div class="acordion__panel"></div>
-                  </div>
                 </div>
+
+                <div class="ask__answer-list ">
+                  <button class="ask__card accordion">Где можно посмотреть расписание?</button>
+                  <div class="acordion__panel"></div>
+                </div>
+
+                <div class="ask__answer-list ">
+                  <button class="ask__card accordion">Есть кулеры в центре? Предоставляются полотенца?</button>
+                  <div class="acordion__panel"></div>
+                </div>
+
+                <div class="ask__answer-list ">
+                  <button class="ask__card accordion accordion--last">Сколько тренеров работает в клубе и какова их
+                    квалификация?</button>
+                  <div class="acordion__panel"></div>
+                </div>
+
               </div>
 
               <div class="tabs__element" data-tabs="element">
@@ -526,49 +520,7 @@
             </div>
           </div>
         </section>
-        <!-- <div class="ask__container"> -->
-        <!-- <ul class="ask__list">
-            <li class="ask__item">
-              <a class="ask__link" href="#">Центр</a>
-            </li>
-            <li class="ask__item ask__item--checked">
-              <a class="ask__link ask__link--checked" href="#">Абонемент</a>
-            </li>
-            <li class="ask__item">
-              <a class="ask__link" href="#">Услуги</a>
-            </li>
-            <li class="ask__item">
-              <a class="ask__link" href="#">Правила</a>
-            </li>
-          </ul> -->
-
-        <!-- <div class="ask__answer-list ">
-            <button class="ask__card accordion">Занятия с тренером входят в абонемент?</button>
-            <div class="acordion__panel">
-              <p class="ask__answer">При посещении тренажерного зала вам необходимо оплачить занятия с тренером
-                отдельно. В зале всегда
-                присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру
-                или технике выполнения упражнения.</p>
-            </div>
-
-            <div class="ask__answer-list ">
-              <button class="ask__card accordion">Можно ли заморозить абонемент?</button>
-              <div class="acordion__panel"></div>
-            </div>
-
-            <div class="ask__answer-list ">
-              <button class="ask__card accordion">Есть ли лимит по посещениям тренажерного зала и групповых
-                занятий?</button>
-              <div class="acordion__panel"></div>
-            </div>
-
-            <div class="ask__answer-list ">
-              <button class="ask__card accordion accordion--last">Что такое семейный доступ и доступ для
-                друзей?</button>
-              <div class="acordion__panel"></div>
-            </div>
-          </div> -->
-      </div>
+         </div>
       </div>
     </section>
 
@@ -605,8 +557,7 @@
     </section>
 
     <section class="additionall">
-      <!-- <div class="container"> -->
-      <div class="additionall__container">
+       <div class="additionall__container">
         <div class="additionall__form-wrapper free">
           <h3 class="free__title">Бесплатное занятие </h3>
           <form class="free__form" action="#" method="get">

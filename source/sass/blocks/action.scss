@@ -164,30 +164,35 @@
     width: 180px;
   }
 
-  .action__title{
-    margin: 49px 0 0px 289px;
+  .action__title {
+    margin: 90px auto 0;
+    text-align: center;
     font-size: 43px;
   }
 
-  .action__main{
+  .action__main {
     padding: 33px 46px 0 43px;
     margin-left: 1px;
   }
 
-  .action__link-dop{
+  .action__link-dop {
     margin-top: 47px;
   }
 }
 
 
 @include vp-767 {
+  .action {
+    padding-bottom: 70px;
+  }
+
   .action__wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: none;
   }
 
   .action__title {
-    margin: 43px auto 50px;
+    margin: 63px auto 42px;
     font-size: 32px;
     letter-spacing: 0.96px;
     width: 70px;
@@ -200,10 +205,12 @@
 
   .action__grid {
     grid-template-columns: 1fr;
+    row-gap: 30px;
   }
 
   .action__card {
     width: 290px;
+    padding: 23px 28px 41px;
   }
 
   .action__year {
@@ -216,7 +223,7 @@
 
   .action__text {
     text-align: center;
-    margin: 30px auto 40px;
+    margin: 19px auto 30px;
   }
 
   .action__link {
@@ -225,16 +232,24 @@
   }
 
   .action__text-dop {
-    margin: 20px auto 0;
+    margin: 9px auto 0;
     text-align: center;
   }
 
   .action__link-dop {
-    margin: 35px auto 0;
+    margin: 26px auto 0;
+    width: auto;
+    text-align: center;
   }
 
   .action__title-dop {
-    margin: 0 auto;
+    margin-top: 10px;
     text-align: center;
+    width: auto;
+  }
+
+  .action__main {
+    padding: 33px 46px 46px 43px;
+    margin-left: 0px;
   }
 }

@@ -99,23 +99,31 @@
   }
 
   .gym__container {
-    padding-top: 70px;
+    padding-top: 63px;
+    gap: 33px;
+  }
+
+  .gym__wrapper{
+    margin: 0;
   }
 
   .gym__title {
     font-size: 32px;
     width: 211px;
     letter-spacing: 0.96px;
+    margin-left: 2px;
   }
 
   .gym__area {
     width: 279px;
-    font-size: 16px;
+    font-size: 18px;
+    margin: 6px 15px 0 0;
   }
 
   .gym__description {
-    font-size: 14px;
+    font-size: 16px;
     width: 258px;
     text-align: left;
+    margin: 25px 0 0 2px;
   }
 }

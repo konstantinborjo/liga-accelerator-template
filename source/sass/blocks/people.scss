@@ -1,5 +1,4 @@
 .people__title {
-  width: 158px;
   color: #102654;
   font-family: $ff-alumni;
   font-size: 54px;
@@ -7,7 +6,8 @@
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.62px;
-  margin: 106px 20px 0;
+  margin-top: 106px;
+  text-align: center;
 }
 
 .people__slider {
@@ -19,17 +19,27 @@
   .people__title{
     font-size: 42px;
     letter-spacing: 1.26px;
-    margin: 100px 0px 0px 275px;
+    margin-top: 100px;
   }
 
   .people__slider{
     margin-top: 31px;
+    padding-left: 56px;
+    padding-right: 56px;
   }
 }
 
 @include vp-767{
 .people__title{
-  margin: 70px auto 0;
+  margin-top: 63px;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.people__slider{
+  margin-top: 42px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 }
 

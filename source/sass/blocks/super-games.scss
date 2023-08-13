@@ -112,7 +112,7 @@
   }
 
   .super-games__text {
-    padding: 50px 18px 67px;
+    padding: 12px 18px 48px;
     width: 290px;
   }
 
@@ -127,5 +127,9 @@
 
   .super-games__wrapper {
     flex-direction: column;
+  }
+
+  .super-games__description{
+    margin: 8px 0 0 26px;
   }
 }

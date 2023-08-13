@@ -83,6 +83,10 @@
   .comment__scroll{
     margin: 40px auto 100px;
   }
+
+  .comment__swiper{
+    width: 566px;
+  }
 }
 
 @include vp-767 {

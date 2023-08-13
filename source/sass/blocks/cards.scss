@@ -116,27 +116,34 @@
     padding: 65px 0 67px 0;
   }
 
-  .cards__description{
+  .cards__description {
     margin: 13px 5px 0px 0px;
   }
 
-  .cards__cost{
+  .cards__cost {
     margin: 67px 0px 0px 17px;
   }
 
-  .cards__link{
+  .cards__link {
     padding: 24px 44px;
     margin-top: 34px;
   }
 
-  .cards__item--center{
+  .cards__item--center {
     padding: 60px 0 60px;
   }
 }
 
 @include vp-767 {
+  .cards {
+    margin: 33px auto 0;
+    gap: 22px;
+  }
+
   .cards__item {
     width: 100%;
+    margin: 0;
+    padding: 50px 0 67px;
   }
 
   .cards__title {
@@ -147,5 +154,31 @@
   .cards__cost {
     font-size: 48px;
     width: 151px;
+  }
+
+  .cards__description {
+    margin: 9px 0px 0 0;
+    font-size: 16px;
+  }
+
+  .cards__cost {
+    margin: 53px 0 0 23px;
+  }
+
+  .cards__rub {
+    width: 24px;
+    height: 33px;
+  }
+
+  .cards__link {
+    padding: 24px 0px 25px;
+    margin-top: 31px;
+    width: 206px;
+    text-align: center;
+  }
+
+  .cards__item--center {
+    padding: 43px 0 48px;
+    margin-bottom: 13px;
   }
 }

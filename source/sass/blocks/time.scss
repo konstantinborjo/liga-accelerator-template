@@ -80,3 +80,13 @@
   }
 
 }
+
+@include vp-767 {
+  .time__clock {
+    margin: 4px 0 0px 0px;
+  }
+
+  .time{
+    margin: 26px 0 0 15px;
+  }
+}

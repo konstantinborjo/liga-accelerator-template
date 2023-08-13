@@ -37,7 +37,7 @@
   justify-content: space-between;
   position: relative;
   color: #ffffff;
-  width: 975px;
+  width: auto;
 }
 
 .main-header__container {
@@ -136,7 +136,6 @@
   }
 
   .main-header__image {
-    width: 670px;
     margin: 0 ;
   }
 
@@ -190,8 +189,9 @@
   }
 
   .main-header__list {
-    font-size: 12px;
-    width: 110px;
+    font-size: 14px;
+    width: 115px;
+    margin: 157px 0 0 -4px;
   }
 
   .main-header__town {
@@ -199,8 +199,23 @@
   }
 
   .main-header__button {
-    padding: 25px 70px;
-    width: 287px;
-    margin-left: -65px;
+    padding: 20px 0px;
+    width: 294px;
+    margin: 21px 35px 0 0px;
+  }
+
+  .main-header__wrapper{
+    margin: 12px 0 0;
+  }
+
+  .main-header__description{
+    font-size: 28px;
+    margin: 32px 38px 0 0;
+  }
+
+  .main-header__title{
+    letter-spacing: 2.8px;
+    font-size: 73px;
+    margin: 12px 37px 0 0;
   }
 }

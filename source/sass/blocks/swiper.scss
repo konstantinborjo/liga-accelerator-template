@@ -31,7 +31,7 @@
   left: -42px;
 }
 
-.swiper__button--prev-s{
+.swiper__button--prev-s {
   right: -50px;
 }
 
@@ -44,7 +44,7 @@
   right: -60px;
 }
 
-.swiper__button--next-s{
+.swiper__button--next-s {
   right: -50px;
 }
 
@@ -69,11 +69,13 @@
   }
 
   .swiper__button--prev {
-    left: -32px;
+    left: -3px;
+    top: 48%;
   }
 
   .swiper__button--next {
-    right: -32px;
+    right: -3px;
+    top: 48%;
   }
 
   .swiper__button--prev-s {
@@ -92,12 +94,15 @@
   }
 
   .swiper__button--prev {
-    left: 0;
+    left: -5px;
+    top: 51%;
   }
 
   .swiper__button--next {
-    right: 0;
+    right: -5px;
+    top: 51%;
   }
+
 
   .swiper__button::before {
     width: 12px;
@@ -110,4 +115,4 @@
     height: 12px;
   }
 
-  }
+}
