@@ -70,49 +70,49 @@
     width: 268px;
   }
 
-  .swiper__button--prev {
+  .swiper-button--prev {
     left: -3px;
     top: 48%;
   }
 
-  .swiper__button--next {
+  .swiper-button--next {
     right: -3px;
     top: 48%;
   }
 
-  .swiper__button--prev-s {
+  .swiper-button--prev-s {
     left: -53px;
   }
 
-  .swiper__button--next-s {
+  .swiper-button--next-s {
     right: -53px;
   }
 }
 
 @include vp-767 {
-  .swiper__button {
+  .swiper-button {
     width: 12px;
     height: 12px;
   }
 
-  .swiper__button--prev {
+  .swiper-button--prev {
     left: -5px;
     top: 51%;
   }
 
-  .swiper__button--next {
+  .swiper-button--next {
     right: -5px;
     top: 51%;
   }
 
 
-  .swiper__button::before {
+  .swiper-button::before {
     width: 12px;
     height: 12px;
 
   }
 
-  .swiper__button--prev {
+  .swiper-button--prev {
     width: 12px;
     height: 12px;
   }
