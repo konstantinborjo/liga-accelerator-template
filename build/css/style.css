@@ -1469,7 +1469,7 @@ button,
   }
 }
 .tabs__control.is-active {
-  opacity: 0.7;
+  opacity: 1;
   pointer-events: none;
   background: var(--1, linear-gradient(151deg, #ED0233 0%, #003EB7 100%));
   border: none;
@@ -2465,7 +2465,7 @@ button,
 
 .main-footer__link {
   color: #ffffff;
-  font-family: Alumni Sans;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 600;
@@ -2504,6 +2504,7 @@ button,
   gap: 11px;
   padding: 0;
   margin: 7px 20px 0 0px;
+  list-style-type: none;
 }
 
 .main-footer__nav {
@@ -2553,6 +2554,9 @@ button,
   }
   .main-footer__list li:first-child {
     margin-top: 55px;
+  }
+  .main-footer__nav {
+    margin: 23px 0 0 14px;
   }
 }
 .navigation__link {
@@ -4347,7 +4351,7 @@ button,
 
 .ask__item {
   width: 260px;
-  border: 2px solid #102654;
+  border: 1px solid rgba(16, 38, 84, 0.2);
   padding: 18px 88px;
   text-align: center;
   text-align: center;
@@ -4357,6 +4361,11 @@ button,
   font-weight: 700;
   line-height: 100%;
   background: none;
+}
+
+.ask__item:focus,
+.ask__item:hover {
+  border: 1px solid var(--primary, #102654);
 }
 
 .ask__link {

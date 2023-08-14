@@ -5,13 +5,13 @@
 
 .main-footer__link {
   color: #ffffff;
-  font-family: Alumni Sans;
+  font-family: $ff-alumni;
   font-size: 26px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0.52px;
-  margin: 13px 0px 0px 19px
+  margin: 13px 0px 0px 19px;
 }
 
 .main-footer__wrapper {
@@ -34,6 +34,7 @@
   gap: 11px;
   padding: 0;
   margin: 7px 20px 0 0px;
+  list-style-type: none;
 }
 
 .main-footer__nav {
@@ -88,6 +89,10 @@
 
   .main-footer__list li:first-child {
     margin-top: 55px;
+  }
+
+  .main-footer__nav{
+    margin: 23px 0 0 14px;
   }
 
 }

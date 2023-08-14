@@ -27,7 +27,7 @@
 
 .ask__item {
   width: 260px;
-  border: 2px solid #102654;
+  border: 1px solid rgba(16, 38, 84, 0.20);
   padding: 18px 88px;
   text-align: center;
   text-align: center;
@@ -37,6 +37,11 @@
   font-weight: 700;
   line-height: 100%;
   background: none;
+}
+
+.ask__item:focus,
+.ask__item:hover{
+  border:1px solid var(--primary, #102654);
 }
 
 .ask__link {
