@@ -1469,7 +1469,7 @@ button,
   }
 }
 .tabs__control.is-active {
-  opacity: 1;
+  opacity: 0.7;
   pointer-events: none;
   background: var(--1, linear-gradient(151deg, #ED0233 0%, #003EB7 100%));
   border: none;
@@ -2350,6 +2350,20 @@ button,
   margin-left: 18px;
 }
 
+.main-header__button:hover,
+.main-header__button:focus {
+  color: #103AAE;
+  background-color: #ffffff;
+}
+
+.main-header__button:active {
+  color: #103AAE;
+}
+
+.main-header__button:disabled {
+  opacity: 0.5;
+}
+
 @media (max-width: 1199px) {
   .main-header {
     min-height: 554px;
@@ -3026,6 +3040,10 @@ button,
   border: none;
 }
 
+.cards__link--active:hover {
+  background: #ffffff;
+}
+
 @media (max-width: 1199px) {
   .cards {
     -webkit-box-orient: vertical;
@@ -3544,6 +3562,18 @@ button,
   cursor: pointer;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+}
+
+.swiper-button:hover,
+.swiper-button:focus {
+  border-radius: 50%;
+  border: 1px solid #000000;
+  width: 38px;
+  height: 38px;
+}
+
+.swiper-button:active {
+  background: #102654;
 }
 
 .swiper-button:focus-visible,
@@ -4317,7 +4347,7 @@ button,
 
 .ask__item {
   width: 260px;
-  border: 1px solid rgba(16, 38, 84, 0.2);
+  border: 2px solid #102654;
   padding: 18px 88px;
   text-align: center;
   text-align: center;

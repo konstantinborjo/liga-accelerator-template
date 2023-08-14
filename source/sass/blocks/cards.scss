@@ -102,6 +102,10 @@
   border: none;
 }
 
+.cards__link--active:hover {
+  background: #ffffff;
+}
+
 @include vp-1199 {
   .cards {
     flex-direction: column;

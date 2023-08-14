@@ -110,6 +110,20 @@
   margin-left: 18px;
 }
 
+.main-header__button:hover,
+.main-header__button:focus{
+color: #103AAE;
+background-color: #ffffff;
+}
+
+.main-header__button:active{
+  color: #103AAE;
+}
+
+.main-header__button:disabled{
+  opacity: 0.5;
+}
+
 
 @include vp-1199 {
   .main-header {
