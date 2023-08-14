@@ -1417,7 +1417,7 @@ button,
   .container {
     padding: 0 15px;
   }
-  .container__mobile {
+  .container-mobile {
     padding: 0;
   }
 }
@@ -3530,7 +3530,7 @@ button,
     margin: 0 22px;
   }
 }
-.swiper__button {
+.swiper-button {
   position: absolute;
   top: 50%;
   width: 24px;
@@ -3546,13 +3546,13 @@ button,
   transition: opacity 0.3s ease;
 }
 
-.swiper__button:focus-visible,
+.swiper-button:focus-visible,
 .socials__link:focus-visible,
 .tabs__button:focus-visible {
   opacity: 0.8;
 }
 
-.swiper__button::before {
+.swiper-button::before {
   content: "";
   position: absolute;
   top: 6px;
@@ -3562,32 +3562,32 @@ button,
   border-left: 1px solid #afafaf;
 }
 
-.swiper__button--prev {
+.swiper-button--prev {
   left: -42px;
   top: 48%;
 }
 
-.swiper__button--prev-s {
+.swiper-button--prev-s {
   right: -50px;
 }
 
-.swiper__button--prev::before {
+.swiper-button--prev::before {
   left: 8px;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.swiper__button--next {
+.swiper-button--next {
   right: -43px;
   top: 48%;
 }
 
-.swiper__button--next-s {
+.swiper-button--next-s {
   right: -50px;
 }
 
-.swiper__button--next::before {
+.swiper-button--next::before {
   right: 8px;
   -webkit-transform: rotate(-135deg);
       -ms-transform: rotate(-135deg);
@@ -3601,7 +3601,7 @@ button,
   gap: 40px;
 }
 
-.swiper.no-js .swiper__button {
+.swiper.no-js .swiper-button {
   display: none;
 }
 
@@ -4260,7 +4260,7 @@ button,
   background: none;
 }
 
-.acordion__panel {
+.acсordion-panel {
   padding: 0;
   background: none;
   max-height: 0;

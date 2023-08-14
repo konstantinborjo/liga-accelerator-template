@@ -63,7 +63,7 @@
   </header>
   <main class="main-container">
     <section class="gym">
-      <div class="container__mobile container">
+      <div class="container-mobile container">
         <div class="gym__container">
           <div class="gym__wrapper">
             <h2 class="gym__title">Тренажерный зал</h2>
@@ -114,7 +114,7 @@
                   <defs>
                     <linearGradient id="paint0_linear_1_293" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444"
                       gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#ED0233" />
+                      <stop stop-color="#ED0233"  />
                       <stop offset="1" stop-color="#003EB7" />
                     </linearGradient>
                     <linearGradient id="paint1_linear_1_293" x1="14" y1="49.52" x2="54.1858" y2="9.18415"
@@ -183,10 +183,10 @@
             <div class="super-games__data">
               <h2 class="super-games__title">SUPER GAMES</h2>
               <dl class="super-games__list time">
-                <dd class="time__date">Дата</dd>
-                <dt class="time__calendar">7<span class="time__description">марта 2019</span></dt>
-                <dd class="time__time">Время</dd>
-                <dt class="time__clock">12:00</dt>
+                <dt class="time__date">Дата</dt>
+                <dd class="time__calendar">7<span class="time__description">марта 2019</span></dd>
+                <dt class="time__time">Время</dt>
+                <dd class="time__clock">12:00</dd>
               </dl>
             </div>
             <span class="super-games__description">Ежегодные соревнования по CrossFit</span>
@@ -307,8 +307,8 @@
             </div>
 
           </div>
-          <div class="swiper__button swiper__button--prev"></div>
-          <div class="swiper__button swiper__button--next"></div>
+          <div class="people__button swiper-button swiper-button--prev"></div>
+          <div class="people__button swiper-button swiper-button--next"></div>
         </div>
       </div>
     </section>
@@ -416,13 +416,14 @@
       <div class="container">
         <h2 class="ask__title">Вопросы и ответы</h2>
         <section class="component component-demo data-tabs">
+          <h3 class="visually-hidden">Табы</h3>
           <div class="ask__tabs tabs no-transition-global" data-tabs="parent" data-delay="300" data-height="max">
             <div class="ask__list tabs__controls" data-tabs="controls">
               <button class="ask__item tabs__control btn" type="button" data-tabs="control" data-index="0">
                 Центр
               </button>
-              <button class="ask__item tabs__control btn is-active" type="button" data-tabs="control" data-index="1"
-                checked>Абонемент
+              <button class="ask__item tabs__control btn is-active" type="button" data-tabs="control"
+                data-index="1">Абонемент
               </button>
               <button class="ask__item tabs__control btn" type="button" data-tabs="control" data-index="2">
                 Услуги
@@ -435,7 +436,7 @@
               <div class="tabs__element" data-tabs="element">
                 <div class="ask__answer-list ">
                   <button class="ask__card accordion">Как стать членом фитнес-центра?</button>
-                  <div class="acordion__panel">
+                  <div class="ask__panel accordion-panel">
                     <p class="ask__answer">При первом посещении и покупке абонемента, необходимо заполнить анкету и
                       подписать
                       договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на
@@ -445,18 +446,18 @@
 
                 <div class="ask__answer-list ">
                   <button class="ask__card accordion">Где можно посмотреть расписание?</button>
-                  <div class="acordion__panel"></div>
+                  <div class="ask__panel accordion-panel"></div>
                 </div>
 
                 <div class="ask__answer-list ">
                   <button class="ask__card accordion">Есть кулеры в центре? Предоставляются полотенца?</button>
-                  <div class="acordion__panel"></div>
+                  <div class="ask__panel accordion-panel"></div>
                 </div>
 
                 <div class="ask__answer-list ">
                   <button class="ask__card accordion accordion--last">Сколько тренеров работает в клубе и какова их
                     квалификация?</button>
-                  <div class="acordion__panel"></div>
+                  <div class="ask__panel accordion-panel"></div>
                 </div>
 
               </div>
@@ -464,38 +465,38 @@
               <div class="tabs__element" data-tabs="element">
                 <div class="ask__answer-list ">
                   <button class="ask__card accordion">Занятия с тренером входят в абонемент?</button>
-                  <div class="acordion__panel">
+                  <div class="ask__panel accordion-panel">
                     <p class="ask__answer">При посещении тренажерного зала вам необходимо оплачить занятия с тренером
                       отдельно. В зале всегда
                       присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по
                       тренажеру
                       или технике выполнения упражнения.</p>
                   </div>
-
-                  <div class="ask__answer-list ">
-                    <button class="ask__card accordion">Можно ли заморозить абонемент?</button>
-                    <div class="acordion__panel"></div>
-                  </div>
-
-                  <div class="ask__answer-list ">
-                    <button class="ask__card accordion">Есть ли лимит по посещениям тренажерного зала и групповых
-                      занятий?</button>
-                    <div class="acordion__panel"></div>
-                  </div>
-
-                  <div class="ask__answer-list ">
-                    <button class="ask__card accordion accordion--last">Что такое семейный доступ и доступ для
-                      друзей?</button>
-                    <div class="acordion__panel"></div>
-                  </div>
                 </div>
+                <div class="ask__answer-list ">
+                  <button class="ask__card accordion">Можно ли заморозить абонемент?</button>
+                  <div class="ask__panel accordion-panel"></div>
+                </div>
+
+                <div class="ask__answer-list ">
+                  <button class="ask__card accordion">Есть ли лимит по посещениям тренажерного зала и групповых
+                    занятий?</button>
+                  <div class="ask__panel accordion-panel"></div>
+                </div>
+
+                <div class="ask__answer-list ">
+                  <button class="ask__card accordion accordion--last">Что такое семейный доступ и доступ для
+                    друзей?</button>
+                  <div class="ask__panel accordion-panel"></div>
+                </div>
+
               </div>
               <div class="tabs__element" data-tabs="element">
 
                 <div class="ask__answer-list ">
                   <button class="ask__card accordion">Предлагает ли клуб услуги
                     по консультированию по вопросам питания?</button>
-                  <div class="acordion__panel">
+                  <div class="ask__panel accordion-panel">
                     <p class="ask__answer">Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу.
                       Специалист уточнит ваши данные, цели и предложит программу питания.</p>
                   </div>
@@ -503,25 +504,25 @@
                   <div class="ask__answer-list ">
                     <button class="ask__card accordion">Проводятся ли в клубе какие-либо мероприятия или
                       соревнования?</button>
-                    <div class="acordion__panel"></div>
+                    <div class="ask__panel accordion-panel"></div>
                   </div>
 
                   <div class="ask__answer-list ">
                     <button class="ask__card accordion">Можно ли приобрести в центре спортивное питание?</button>
-                    <div class="acordion__panel"></div>
+                    <div class="ask__panel accordion-panel"></div>
                   </div>
 
                   <div class="ask__answer-list ">
                     <button class="ask__card accordion accordion--last">Есть ли в центре детская комната?</button>
-                    <div class="acordion__panel"></div>
+                    <div class="ask__panel accordion-panel"></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-         </div>
       </div>
+
     </section>
 
     <section class="comment">
@@ -550,14 +551,14 @@
             </div>
 
           </div>
-          <div class="swiper__button swiper__button--prev swiper__button--prev-s"></div>
-          <div class="swiper__button swiper__button--next swiper__button--next-s"></div>
+          <div class="comment__button swiper-button swiper-button--prev swiper-button--prev-s"></div>
+          <div class="comment__button swiper-button swiper-button--next swiper-button--next-s"></div>
         </div>
       </div>
     </section>
 
     <section class="additionall">
-       <div class="additionall__container">
+      <div class="additionall__container">
         <div class="additionall__form-wrapper free">
           <h3 class="free__title">Бесплатное занятие </h3>
           <form class="free__form" action="#" method="get">
@@ -652,43 +653,6 @@
       </div>
     </div>
   </footer>
-  </div>
-
-  <!-- Модалки
-  <h1>Тестовая страница.</h1>
-        <p>На данной странице показан пример модальных окон.</p>
-        <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.
-        </p>
-        <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-        <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-   <div class="modal modal--preload" data-modal="feedback">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div> -->
-
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
