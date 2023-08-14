@@ -2,8 +2,8 @@ new Swiper('.swiper', {
   loop: true,
   spaceBetween: 40,
   navigation: {
-    nextEl: '.swiper__button--next',
-    prevEl: '.swiper__button--prev',
+    nextEl: '.swiper-button--next',
+    prevEl: '.swiper-button--prev',
   },
   breakpoints: {
     // when window width is >= 320px
@@ -35,8 +35,8 @@ new Swiper('.comment__swiper', {
   loop: true,
   spaceBetween: 10,
   navigation: {
-    nextEl: '.swiper__button--next',
-    prevEl: '.swiper__button--prev',
+    nextEl: '.swiper-button--next',
+    prevEl: '.swiper-button--prev',
   },
   breakpoints: {
     // when window width is >= 320px

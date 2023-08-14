@@ -5724,8 +5724,8 @@ const swiper = () => {
           swiper.originalParams.navigation,
           swiper.params.navigation,
           {
-            nextEl: 'swiper-button-next',
-            prevEl: 'swiper-button-prev',
+            nextEl: 'swiper-button--next',
+            prevEl: 'swiper-button--prev',
           },
         );
         if (!(params.nextEl || params.prevEl)) return;
