@@ -82,6 +82,14 @@
   text-decoration: underline;
 }
 
+.action__link:hover{
+  opacity: 0.8;
+}
+
+.action__link:focus{
+  border: 1px solid #FFF;
+}
+
 .action__card {
   padding: 23px 28px 31px;
   display: flex;

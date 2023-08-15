@@ -3209,6 +3209,20 @@ button,
   margin-top: 46px;
 }
 
+.super-games__link:hover,
+.super-games__link:focus {
+  color: #103AAE;
+  background-color: #ffffff;
+}
+
+.super-games__link:active {
+  color: #103AAE;
+}
+
+.super-games__link:disabled {
+  opacity: 0.5;
+}
+
 @media (max-width: 1199px) {
   .super-games {
     padding: 100px 0 0;
@@ -4116,6 +4130,14 @@ button,
   letter-spacing: 0.7px;
   text-transform: uppercase;
   text-decoration: underline;
+}
+
+.action__link:hover {
+  opacity: 0.8;
+}
+
+.action__link:focus {
+  border: 1px solid #FFF;
 }
 
 .action__card {
