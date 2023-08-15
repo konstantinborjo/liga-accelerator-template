@@ -131,7 +131,7 @@
       </div>
     </section>
 
-    <section class="tickets">
+    <!-- <section class="tickets">
       <div class="container">
         <h2 class="tickets__title">Абонементы</h2>
         <ul class="tickets__list month">
@@ -139,7 +139,6 @@
           <li class="month__item">6 месяцев</li>
           <li class="month__item">12 месяцев</li>
         </ul>
-
         <ul class="tickets__subs cards">
           <li class="cards__item cards__item--5000">
             <h3 class="cards__title">С тренером</h3>
@@ -174,6 +173,109 @@
           </li>
         </ul>
       </div>
+    </section> -->
+
+    <section class="tickets">
+      <div class="container">
+        <h2 class="tickets__title">Абонементы</h2>
+        <section class="component component-demo data-tabs">
+          <h3 class="visually-hidden">Табы</h3>
+          <div class="tabs no-transition-global" data-tabs="parent" data-delay="300" data-height="max">
+            <div class="tickets__list month tabs__controls" data-tabs="controls">
+              <button class="month__item month__item--active tabs__control btn" type="button" data-tabs="control"
+                data-index="0">
+                1 месяц
+              </button>
+              <button class="month__item tabs__control btn" type="button" data-tabs="control" data-index="1">6 месяцев
+              </button>
+              <button class="month__item tabs__control btn" type="button" data-tabs="control" data-index="2">
+                12 месяцев
+              </button>
+            </div>
+            <div class="tabs__content" data-tabs="content">
+              <div class="tabs__element" data-tabs="element">
+                <ul class="tickets__subs cards">
+                  <li class="cards__item cards__item--5000">
+                    <h3 class="cards__title">С тренером</h3>
+                    <span class="cards__description">12 занятий</span>
+                    <p class="cards__cost">5000
+                      <svg class="cards__rub" width="30" height="42">
+                        <use xlink:href="img/sprite.svg#rub"></use>
+                      </svg>
+                    </p>
+                    <a class="cards__link" href="#">купить абонемент</a>
+                  </li>
+                  <li class="cards__item cards__item--active cards__item--1700 cards__item--center">
+                    <h3 class="cards__title">Дневной</h3>
+                    <span class="cards__description"> с 8:00 до 17:00 </span>
+                    <p class="cards__cost"> 1700
+
+                      <svg class="cards__rub" width="30" height="42">
+                        <use xlink:href="img/sprite.svg#rub"></use>
+                      </svg>
+                    </p>
+                    <a class="cards__link cards__link--active" href="#">купить абонемент</a>
+                  </li>
+                  <li class="cards__item cards__item--2700">
+                    <h3 class="cards__title">Полный день</h3>
+                    <span class="cards__description">с 8:00 до 22:00</span>
+                    <p class="cards__cost">2700
+                      <svg class="cards__rub" width="30" height="42">
+                        <use xlink:href="img/sprite.svg#rub"></use>
+                      </svg>
+                    </p>
+                    <a class="cards__link" href="#">купить абонемент</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tabs__element" data-tabs="element">
+                <ul class="tickets__subs cards">
+                  <li class="cards__item cards__item--5000">
+                    <h3 class="cards__title">жопа</h3>
+                    <span class="cards__description">12 занятий</span>
+                    <p class="cards__cost">5000
+                      <svg class="cards__rub" width="30" height="42">
+                        <use xlink:href="img/sprite.svg#rub"></use>
+                      </svg>
+                    </p>
+                    <a class="cards__link" href="#">купить абонемент</a>
+                  </li>
+                  <li class="cards__item cards__item--active cards__item--1700 cards__item--center">
+                    <h3 class="cards__title">задолбался</h3>
+                    <span class="cards__description"> с 8:00 до 17:00 </span>
+                    <p class="cards__cost"> 1700
+
+                      <svg class="cards__rub" width="30" height="42">
+                        <use xlink:href="img/sprite.svg#rub"></use>
+                      </svg>
+                    </p>
+                    <a class="cards__link cards__link--active" href="#">купить абонемент</a>
+                  </li>
+                  <li class="cards__item cards__item--2700">
+                    <h3 class="cards__title">пивопиво</h3>
+                    <span class="cards__description">с 8:00 до 22:00</span>
+                    <p class="cards__cost">2700
+                      <svg class="cards__rub" width="30" height="42">
+                        <use xlink:href="img/sprite.svg#rub"></use>
+                      </svg>
+                    </p>
+                    <a class="cards__link" href="#">купить абонемент</a>
+                  </li>
+                </ul>
+
+
+
+              </div>
+              <div class="tabs__element" data-tabs="element">
+
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+
     </section>
 
     <section class="super-games">
@@ -434,13 +536,14 @@
             </div>
             <div class="tabs__content" data-tabs="content">
               <div class="tabs__element" data-tabs="element">
-                <div class="accordion" data-accordion="parent" >
+                <div class="accordion" data-accordion="parent">
                   <div class="ask__answer-list accordion__element is-active" data-accordion="element">
                     <button class="ask__card accordion__button" data-accordion="button">Как стать членом
                       фитнес-центра?</button>
                     <div class="accordion__content" data-accordion="content">
                       <div class="ask__panel accordion-panel accordion__wrapper" data-accordion="content">
-                        <p class="ask__answer">При первом посещении и покупке абонемента, необходимо заполнить анкету и
+                        <p class="ask__answer">При первом посещении и покупке абонемента, необходимо заполнить анкету
+                          и
                           подписать
                           договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам
                           на
@@ -548,7 +651,8 @@
                 </picture>
                 <figure class="figure comment__figure" tabindex="0">
                   <h3 class="comment__name">Анна Орлова</h3>
-                  <p class="comment__description">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
+                  <p class="comment__description">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда
+                    чисто,
                     тренажеры обновляют, персонал
                     дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                 </figure>
