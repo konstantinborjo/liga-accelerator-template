@@ -8,6 +8,15 @@
   max-width: 74px;
 }
 
+.navigation__link:hover{
+  text-decoration: underline;
+}
+
+.navigation__link:focus{
+  border: 1px solid #FFF;
+  text-decoration: none;
+  border-radius: 3px;
+}
 
 @include vp-767 {
   .navigation__item {

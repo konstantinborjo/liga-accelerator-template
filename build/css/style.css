@@ -2585,6 +2585,16 @@ button,
   max-width: 74px;
 }
 
+.navigation__link:hover {
+  text-decoration: underline;
+}
+
+.navigation__link:focus {
+  border: 1px solid #FFF;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
 @media (max-width: 767px) {
   .navigation__item {
     margin-top: 30px;
@@ -4962,8 +4972,22 @@ button,
   }
 }
 .site__svg {
-  width: 25px;
-  height: 35px;
+  color: #030A1A;
+  background: #ffffff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.site__svg:hover,
+.site__svg:focus {
+  background: #103AAE;
+  color: #ffffff;
+}
+
+.site__svg:active {
+  background: #102654;
+  color: #ffffff;
 }
 
 @media (max-width: 767px) {

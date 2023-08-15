@@ -1,6 +1,20 @@
-.site__svg{
-  width: 25px;
-  height: 35px;
+.site__svg {
+  color: #030A1A;
+  background: #ffffff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.site__svg:hover,
+.site__svg:focus {
+  background: #103AAE;
+  color: #ffffff;
+}
+
+.site__svg:active{
+  background: #102654;
+  color: #ffffff;
 }
 
 @include vp-767 {
