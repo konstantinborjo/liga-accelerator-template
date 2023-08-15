@@ -114,7 +114,7 @@
                   <defs>
                     <linearGradient id="paint0_linear_1_293" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444"
                       gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#ED0233"  />
+                      <stop stop-color="#ED0233" />
                       <stop offset="1" stop-color="#003EB7" />
                     </linearGradient>
                     <linearGradient id="paint1_linear_1_293" x1="14" y1="49.52" x2="54.1858" y2="9.18415"
@@ -434,32 +434,39 @@
             </div>
             <div class="tabs__content" data-tabs="content">
               <div class="tabs__element" data-tabs="element">
-                <div class="ask__answer-list ">
-                  <button class="ask__card accordion">Как стать членом фитнес-центра?</button>
-                  <div class="ask__panel accordion-panel">
-                    <p class="ask__answer">При первом посещении и покупке абонемента, необходимо заполнить анкету и
-                      подписать
-                      договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на
-                      почту.</p>
+                <div class="accordion" data-accordion="parent" >
+                  <div class="ask__answer-list accordion__element is-active" data-accordion="element">
+                    <button class="ask__card accordion__button" data-accordion="button">Как стать членом
+                      фитнес-центра?</button>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="ask__panel accordion-panel accordion__wrapper" data-accordion="content">
+                        <p class="ask__answer">При первом посещении и покупке абонемента, необходимо заполнить анкету и
+                          подписать
+                          договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам
+                          на
+                          почту.</p>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="ask__answer-list ">
+                    <button class="ask__card accordion">Где можно посмотреть расписание?</button>
+                    <div class="ask__panel accordion-panel"></div>
+                  </div>
+
+                  <div class="ask__answer-list ">
+                    <button class="ask__card accordion">Есть кулеры в центре? Предоставляются полотенца?</button>
+                    <div class="ask__panel accordion-panel"></div>
+                  </div>
+
+                  <div class="ask__answer-list ">
+                    <button class="ask__card accordion accordion--last">Сколько тренеров работает в клубе и какова их
+                      квалификация?</button>
+                    <div class="ask__panel accordion-panel"></div>
                   </div>
                 </div>
-
-                <div class="ask__answer-list ">
-                  <button class="ask__card accordion">Где можно посмотреть расписание?</button>
-                  <div class="ask__panel accordion-panel"></div>
-                </div>
-
-                <div class="ask__answer-list ">
-                  <button class="ask__card accordion">Есть кулеры в центре? Предоставляются полотенца?</button>
-                  <div class="ask__panel accordion-panel"></div>
-                </div>
-
-                <div class="ask__answer-list ">
-                  <button class="ask__card accordion accordion--last">Сколько тренеров работает в клубе и какова их
-                    квалификация?</button>
-                  <div class="ask__panel accordion-panel"></div>
-                </div>
-
               </div>
 
               <div class="tabs__element" data-tabs="element">
@@ -598,7 +605,6 @@
           </ul>
         </div>
       </div>
-      <!-- </div> -->
     </section>
   </main>
 

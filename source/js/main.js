@@ -1,13 +1,19 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
+import { iosVhFix } from './utils/ios-vh-fix';
+import { initModals } from './modules/modals/init-modals';
+import { Form } from './modules/form-validate/form';
 import './modules/video.js';
 import './init.js';
-import './acordion.js';
-import {initTabs} from './modules/tab/init-tabs';
+import { initTabs } from './modules/tab/init-tabs';
+import { initAccordions } from './init-accordion';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
+
+
+  window.addEventListener('load', () => {
+    initAccordions();
+  });
+
   // Utils
   // ---------------------------------
 
@@ -50,3 +56,5 @@ window.addEventListener('DOMContentLoaded', () => {
 // breakpointChecker();
 
 // используйте .closest(el);
+
+
