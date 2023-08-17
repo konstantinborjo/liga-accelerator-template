@@ -97,13 +97,14 @@
 
 @include vp-767 {
   .free {
-    padding: 70px 15px 70px 15px;
+    padding: 41px 15px;
   }
 
   .free__title {
     font-size: 32px;
     letter-spacing: 0.96px;
     width: 250px;
+    margin: 0;
   }
 
   .free__data {
@@ -112,9 +113,16 @@
 
   .free__button {
     width: 290px;
+    margin: 39px 0 28px 0px;
   }
 
   .free__input {
     width: 285px;
+    margin-left: -4px;
   }
+
+  .free__form{
+    margin-top: 16px;
+  }
+
 }

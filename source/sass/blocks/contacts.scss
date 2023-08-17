@@ -31,7 +31,12 @@
 
 @include vp-767 {
   .contacts {
-    padding: 70px 15px 70px;
+    padding: 64px 0px 62px 15px;
     border: none;
+  }
+
+  .contacts__title{
+    margin: 0px 0 0;
+    font-size: 31px;
   }
 }

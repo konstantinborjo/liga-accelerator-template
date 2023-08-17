@@ -75,7 +75,7 @@
 @include vp-1199 {
   .comment__title {
     letter-spacing: 1.4px;
-    margin: 125px 0 0 277px;
+    margin: 92px 0 0 277px;
     font-size: 42px;
   }
 
@@ -90,7 +90,7 @@
 
 @include vp-767 {
   .comment__title {
-    margin: 70px auto 0;
+    margin: 66px auto 0;
     font-size: 32px;
     text-align: center;
     letter-spacing: 0.96px;
@@ -113,14 +113,15 @@
     display: flex;
     flex-direction: column;
     width: 226px;
-    padding: 55px 25px 40px;
+    padding: 48px 25px 36px;
     position: relative;
   }
 
   .comment__description {
-    width: 190px;
+    width: 176px;
     text-align: center;
     line-height: 22px;
+    margin: 16px 0 0;
   }
 
   .comment__pic {
@@ -137,7 +138,7 @@
   }
 
   .comment__scroll {
-    margin: 37px auto 70px;
+    margin: 41px auto 70px;
   }
 
 }

@@ -71,6 +71,7 @@
     gap: 34px;
     flex-wrap: wrap;
     position: relative;
+    padding: 25px 0 45px;
   }
 
   .main-footer__list {
@@ -78,6 +79,7 @@
     margin: 0;
     gap: 73px;
     column-count: 2;
+    margin: 20px 0 -8px
   }
 
   .main-footer__link {
@@ -88,12 +90,13 @@
     font-size: 20px;
   }
 
+
   .main-footer__list li:first-child {
-    margin-top: 55px;
-  }
+    margin-top: 40px;
+}
 
   .main-footer__nav {
-    margin: 23px 0 0 14px;
+    margin: 0px 0 0 0px;
   }
 
 }

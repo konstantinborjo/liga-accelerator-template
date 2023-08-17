@@ -48,6 +48,10 @@
 }
 
 @include vp-1199 {
+  .tickets {
+    padding-bottom: 60px;
+  }
+
   .tickets__title {
     font-size: 42px;
     letter-spacing: 1.26px;
@@ -55,20 +59,22 @@
   }
 
   .tickets__list {
-    gap: 54px;
-    width: 400px;
+    gap: 60px;
   }
 
-  .tickets {
-    padding-bottom: 100px;
+  .tickets__list::after {
+    left: 172px;
+    bottom: -6px;
+    width: 333px;
   }
+
 }
 
 @include vp-767 {
   .tickets {
     padding-top: 57px;
     margin-top: 70px;
-    padding-bottom: 55px;
+    padding-bottom: 47px;
   }
 
   .tickets__title {
@@ -81,6 +87,12 @@
     gap: 0;
     justify-content: space-between;
     width: 286px;
+  }
+
+  .tickets__list::after{
+    left: -6px;
+    bottom: -7px;
+    width: 294px;
   }
 
 }

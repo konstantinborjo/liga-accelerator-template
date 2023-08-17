@@ -85,20 +85,22 @@
 
   .swiper-button--prev {
     left: -3px;
-    top: 48%;
+    top: 55%;
   }
 
   .swiper-button--next {
     right: -3px;
-    top: 48%;
+    top: 55%;
   }
 
   .swiper-button--prev-s {
     left: -53px;
+    top: 60%;
   }
 
   .swiper-button--next-s {
     right: -53px;
+    top: 60%;
   }
 }
 
@@ -110,12 +112,12 @@
 
   .swiper-button--prev {
     left: -5px;
-    top: 51%;
+    top: 60%;
   }
 
   .swiper-button--next {
     right: -5px;
-    top: 51%;
+    top: 60%;
   }
 
 
@@ -128,6 +130,14 @@
   .swiper-button--prev {
     width: 12px;
     height: 12px;
+  }
+
+  .swiper-button--prev-s{
+    top: 54%;
+  }
+
+  .swiper-button--next-s{
+    top: 54%;
   }
 
 }
