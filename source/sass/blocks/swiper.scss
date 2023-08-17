@@ -41,11 +41,12 @@
 
 .swiper-button--prev {
   left: -42px;
-  top: 48%;
+  top: 56%;
 }
 
 .swiper-button--prev-s {
-  right: -50px;
+  left: -50px;
+  top: 59%;
 }
 
 .swiper-button--prev::before {
@@ -54,8 +55,8 @@
 }
 
 .swiper-button--next {
-  right: -43px;
-  top: 48%;
+  right: -50px;
+  top: 59%;
 }
 
 .swiper-button--next-s {

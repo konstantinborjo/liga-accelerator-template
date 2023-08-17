@@ -1,5 +1,5 @@
 .action {
-  padding-bottom: 120px;
+  padding-bottom: 118px;
 }
 
 .action__title {
@@ -20,7 +20,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
-  margin-top: 31px;
+  margin-top: 34px;
 }
 
 .action__container {
@@ -37,8 +37,6 @@
   background: #ED0233;
   color: #ffffff;
   font-family: $ff-roboto;
-  display: flex;
-  flex-direction: column;
   font-style: normal;
   padding: 33px 48px 0px 43px;
   margin-left: 18px;
@@ -57,20 +55,21 @@
   font-size: 70px;
   font-weight: 700;
   line-height: 60px;
+  display: block;
 }
 
 .action__text {
-  width: 189px;
   margin-top: 25px;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
+  display: block;
+  width: 189px;
 }
 
 .action__link {
   margin-top: 189px;
-  width: 85px;
   color: #ffffff;
   font-family: $ff-roboto;
   font-size: 14px;
@@ -80,6 +79,7 @@
   letter-spacing: 0.7px;
   text-transform: uppercase;
   text-decoration: underline;
+  display: inline-block;
 }
 
 .action__link:hover{
@@ -88,6 +88,7 @@
 
 .action__link:focus{
   border: 1px solid #FFF;
+  outline: none;
 }
 
 .action__card {

@@ -1,5 +1,5 @@
 .month__item {
-  max-width: 107px;
+  max-width: 110px;
   color: rgba(16, 38, 84, 0.50);
   font-family: $ff-roboto;
   font-size: 20px;
@@ -7,30 +7,41 @@
   font-weight: 400;
   line-height: 30px;
   box-sizing: border-box;
-
-}
-
-// .month__item.is-active{
-//   background: none;
-//   color: rgba(16, 38, 84, 0.50);
-// }
-
-.month__item--active {
-  color: #102654;
+  background: none;
+  border: none;
   position: relative;
-  margin-left: 21px;
+
+&:hover,
+&:focus{}
+
 }
 
-.month__item--active::after {
-  position: absolute;
-  content: "";
-  top: 41px;
-  left: -4px;
-  width: 67px;
-  height: 2px;
-  background-color: #D10A42;
-  ;
-}
+.month__item.is-active{
+  color: #102654;
+  border-bottom: 2px solid #D10A42;
+
+  // &.month__item.is-active::after{
+  //   position: absolute;
+  //   content: "";
+  //   top: 41px;
+  //   left: 0;
+  //   width: 80px;
+  //   height: 2px;
+  //   background-color: #D10A42;
+  }
+
+
+
+// .month__item--active::after {
+//   position: absolute;
+//   content: "";
+//   top: 41px;
+//   left: -4px;
+//   width: 67px;
+//   height: 2px;
+//   background-color: #D10A42;
+//   ;
+// }
 
 @include vp-1199 {
   .month__item {

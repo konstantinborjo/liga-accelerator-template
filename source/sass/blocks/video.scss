@@ -34,6 +34,7 @@
   background: none;
   padding: 0;
   cursor: pointer;
+  background: url("../img/svg/circle.svg");
 }
 
 .video--enabled {
@@ -42,6 +43,26 @@
 
 .video--enable .video__button {
   display: block;
+}
+
+.video__click {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+  border-radius: 50px;
+}
+
+.video__svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  fill: #fff;
 }
 
 @include vp-1199 {
@@ -64,7 +85,7 @@
     height: 167px;
   }
 
-  .video__click{
+  .video__click {
     width: 70px;
     height: 70px;
 
@@ -79,17 +100,17 @@
     margin-top: 40px;
   }
 
-  .video__img{
+  .video__img {
     width: 100%;
     height: 100%;
   }
 
-  .video__button{
+  .video__button {
     width: 73px;
     height: 73px;
   }
 
-  .video__click{
+  .video__click {
     width: 73px;
     height: 73px;
   }

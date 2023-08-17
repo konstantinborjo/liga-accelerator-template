@@ -43,7 +43,7 @@
           <div class="main-header__town">
             <span class="main-header__description">омск</span>
             <h1 class="main-header__title">фитнес центр</h1>
-            <a class="main-header__button" href="#">купить абонемент</a>
+            <a class="main-header__button" href="#tickets">купить абонемент</a>
           </div>
         </div>
         <picture>
@@ -105,25 +105,11 @@
                 </picture>
               </a>
               <button class="video__button" aria-label="Проиграть видео.">
-                <svg class="video__click" width="100" height="100" viewBox="0 0 100 100" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="50" cy="50" r="49" stroke="url(#paint0_linear_1_293)" stroke-opacity="0.2"
-                    stroke-width="2" />
-                  <circle cx="50" cy="50" r="36" fill="url(#paint1_linear_1_293)" />
-                  <path d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z" fill="white" />
-                  <defs>
-                    <linearGradient id="paint0_linear_1_293" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444"
-                      gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#ED0233" />
-                      <stop offset="1" stop-color="#003EB7" />
-                    </linearGradient>
-                    <linearGradient id="paint1_linear_1_293" x1="14" y1="49.52" x2="54.1858" y2="9.18415"
-                      gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#003D85" />
-                      <stop offset="0.885417" stop-color="#B80027" />
-                    </linearGradient>
-                  </defs>
-                </svg>
+                <span class="video__click">
+                  <svg class="video__svg" width="17" height="17">
+                    <use xlink:href="img/sprite.svg#play"></use>
+                  </svg>
+                </span>
               </button>
             </div>
           </div>
@@ -131,64 +117,19 @@
       </div>
     </section>
 
-    <!-- <section class="tickets">
+    <section class="tickets" id="tickets">
       <div class="container">
         <h2 class="tickets__title">Абонементы</h2>
-        <ul class="tickets__list month">
-          <li class="month__item month__item--active">1 месяц</li>
-          <li class="month__item">6 месяцев</li>
-          <li class="month__item">12 месяцев</li>
-        </ul>
-        <ul class="tickets__subs cards">
-          <li class="cards__item cards__item--5000">
-            <h3 class="cards__title">С тренером</h3>
-            <span class="cards__description">12 занятий</span>
-            <p class="cards__cost">5000
-              <svg class="cards__rub" width="30" height="42">
-                <use xlink:href="img/sprite.svg#rub"></use>
-              </svg>
-            </p>
-            <a class="cards__link" href="#">купить абонемент</a>
-          </li>
-          <li class="cards__item cards__item--active cards__item--1700 cards__item--center">
-            <h3 class="cards__title">Дневной</h3>
-            <span class="cards__description"> с 8:00 до 17:00 </span>
-            <p class="cards__cost"> 1700
-
-              <svg class="cards__rub" width="30" height="42">
-                <use xlink:href="img/sprite.svg#rub"></use>
-              </svg>
-            </p>
-            <a class="cards__link cards__link--active" href="#">купить абонемент</a>
-          </li>
-          <li class="cards__item cards__item--2700">
-            <h3 class="cards__title">Полный день</h3>
-            <span class="cards__description">с 8:00 до 22:00</span>
-            <p class="cards__cost">2700
-              <svg class="cards__rub" width="30" height="42">
-                <use xlink:href="img/sprite.svg#rub"></use>
-              </svg>
-            </p>
-            <a class="cards__link" href="#">купить абонемент</a>
-          </li>
-        </ul>
-      </div>
-    </section> -->
-
-    <section class="tickets">
-      <div class="container">
-        <h2 class="tickets__title">Абонементы, выше в коде старая версия</h2>
         <section class="component component-demo data-tabs">
           <h3 class="visually-hidden">Табы</h3>
           <div class="tabs no-transition-global" data-tabs="parent" data-delay="300" data-height="max">
             <div class="tickets__list month tabs__controls" data-tabs="controls">
-              <button class="tabs__control btn month__item month__item--active " type="button" data-tabs="control"
-                data-index="5">
+              <button class="month__item month__item--active " type="button" data-tabs="control" data-index="5">
                 1 месяц
               </button>
-              <button class="month__item tabs__control btn" type="button" data-tabs="control" data-index="6">6 месяцев
+              <button class="month__item" type="button" data-tabs="control" data-index="6">6 месяцев
               </button>
-              <button class="month__item tabs__control btn" type="button" data-tabs="control" data-index="7">
+              <button class="month__item" type="button" data-tabs="control" data-index="7">
                 12 месяцев
               </button>
             </div>
@@ -263,16 +204,20 @@
                     <a class="cards__link" href="#">купить абонемент</a>
                   </li>
                 </ul>
-
-
-
               </div>
               <div class="tabs__element" data-tabs="element">
-
               </div>
-
             </div>
           </div>
+          <picture>
+            <source type="image/webp" media="(max-width: 768px)"
+              srcset="img/round-tablet.webp 1x, img/round-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/round.webp 1x, img/round@2x.webp 2x">
+
+            <source media="(max-width: 768px)" srcset="img/round-tablet.png 1x, img/round-tablet@2x.png 2x">
+            <img class="tickets__picture" src="img/round.png" width="321" height="384" srcset="img/round@2x.png"
+              alt="блины">
+          </picture>
         </section>
       </div>
     </section>
@@ -535,100 +480,170 @@
             </div>
             <div class="tabs__content" data-tabs="content">
               <div class="tabs__element" data-tabs="element">
-                <div class="accordion" data-accordion="parent">
-                  <div class="ask__answer-list accordion__element is-active" data-accordion="element">
-                    <button class="ask__card accordion__button" data-accordion="button">Как стать членом
-                      фитнес-центра?</button>
-                    <div class="accordion__content" data-accordion="content">
-                      <div class="ask__panel accordion-panel accordion__wrapper" data-accordion="content">
-                        <p class="ask__answer">При первом посещении и покупке абонемента, необходимо заполнить анкету
-                          и
-                          подписать
-                          договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам
-                          на
-                          почту.</p>
-                      </div>
+                <div class="tabs__accordion" data-accordion="parent">
+                  <div class="ask__answer-list  is-active" data-accordion="element">
+                    <button class="ask__card " data-accordion="button">Как стать членом
+                      фитнес-центра?
+                      <span class="ask__button">
+                        <span class="visually-hidden">кнопка</span>
+                      </span>
+                    </button>
+                    <div class="ask__panel" data-accordion="content">
+                      <p class="ask__answer">При первом посещении и покупке абонемента, необходимо заполнить анкету
+                        и
+                        подписать
+                        договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам
+                        на
+                        почту.</p>
                     </div>
                   </div>
 
-
-
-                  <div class="ask__answer-list ">
-                    <button class="ask__card accordion">Где можно посмотреть расписание?</button>
-                    <div class="ask__panel accordion-panel"></div>
+                  <div class="ask__answer-list " data-accordion="element">
+                    <button class="ask__card" data-accordion="button">Где можно посмотреть расписание?
+                      <span class="ask__button">
+                        <span class="visually-hidden">кнопка</span>
+                      </span>
+                    </button>
+                    <div class="ask__panel" data-accordion="content">
+                      <p class="ask__answer"></p>
+                    </div>
                   </div>
 
-                  <div class="ask__answer-list ">
-                    <button class="ask__card accordion">Есть кулеры в центре? Предоставляются полотенца?</button>
-                    <div class="ask__panel accordion-panel"></div>
+                  <div class="ask__answer-list " data-accordion="element">
+                    <button class="ask__card" data-accordion="button">Есть кулеры в центре? Предоставляются полотенца?
+                      <span class="ask__button">
+                        <span class="visually-hidden">кнопка</span>
+                      </span>
+                    </button>
+                    <div class="ask__panel" data-accordion="content">
+                      <p class="ask__answer"></p>
+                    </div>
                   </div>
 
-                  <div class="ask__answer-list ">
-                    <button class="ask__card accordion accordion--last">Сколько тренеров работает в клубе и какова их
-                      квалификация?</button>
-                    <div class="ask__panel accordion-panel"></div>
+                  <div class="ask__answer-list" data-accordion="element">
+                    <button class="ask__card ask__card--last" data-accordion="button">Сколько тренеров работает в клубе
+                      и какова их
+                      квалификация?
+                      <span class="ask__button">
+                        <span class="visually-hidden">кнопка</span>
+                      </span>
+                    </button>
+                    <div class="ask__panel" data-accordion="content">
+                      <p class="ask__answer"></p>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <div class="tabs__element" data-tabs="element">
-                <div class="ask__answer-list ">
-                  <button class="ask__card accordion">Занятия с тренером входят в абонемент?</button>
-                  <div class="ask__panel accordion-panel">
-                    <p class="ask__answer">При посещении тренажерного зала вам необходимо оплачить занятия с тренером
-                      отдельно. В зале всегда
-                      присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по
-                      тренажеру
-                      или технике выполнения упражнения.</p>
+                <div class="tabs__accordion" data-accordion="parent">
+                  <div class="ask__answer-list is-active" data-accordion="element">
+                    <button class="ask__card" data-accordion="button">Занятия с тренером входят в абонемент?
+                      <span class="ask__button">
+                        <span class="visually-hidden">кнопка</span>
+                      </span>
+                    </button>
+                    <div class="ask__panel" data-accordion="content">
+                      <p class="ask__answer">При посещении тренажерного зала вам необходимо оплачить занятия с тренером
+                        отдельно. В зале всегда
+                        присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по
+                        тренажеру
+                        или технике выполнения упражнения.</p>
+                    </div>
+                  </div>
+
+                  <div class="ask__answer-list" data-accordion="element">
+                    <button class="ask__card" data-accordion="button">Можно ли заморозить абонемент?
+                      <span class="ask__button">
+                        <span class="visually-hidden">кнопка</span>
+                      </span>
+                    </button>
+                    <div class="ask__panel " data-accordion="content">
+                      <p class="ask__answer"></p>
+                    </div>
+                  </div>
+
+                  <div class="ask__answer-list " data-accordion="element">
+                    <button class="ask__card" data-accordion="button">Есть ли лимит по посещениям тренажерного зала и
+                      групповых
+                      занятий?
+                      <span class="ask__button">
+                        <span class="visually-hidden">кнопка</span>
+                      </span>
+                    </button>
+                    <div class="ask__panel " data-accordion="content">
+                      <p class="ask__answer"></p>
+                    </div>
+                  </div>
+
+                  <div class="ask__answer-list" data-accordion="element">
+                    <button class="ask__card ask__card--last" data-accordion="button">Что такое семейный доступ и доступ
+                      для
+                      друзей?
+                      <span class="ask__button">
+                        <span class="visually-hidden">кнопка</span>
+                      </span>
+                    </button>
+                    <div class="ask__panel " data-accordion="content">
+                      <p class="ask__answer"></p>
+                    </div>
                   </div>
                 </div>
-                <div class="ask__answer-list ">
-                  <button class="ask__card accordion">Можно ли заморозить абонемент?</button>
-                  <div class="ask__panel accordion-panel"></div>
-                </div>
-
-                <div class="ask__answer-list ">
-                  <button class="ask__card accordion">Есть ли лимит по посещениям тренажерного зала и групповых
-                    занятий?</button>
-                  <div class="ask__panel accordion-panel"></div>
-                </div>
-
-                <div class="ask__answer-list ">
-                  <button class="ask__card accordion accordion--last">Что такое семейный доступ и доступ для
-                    друзей?</button>
-                  <div class="ask__panel accordion-panel"></div>
-                </div>
-
               </div>
+
+
               <div class="tabs__element" data-tabs="element">
+                <div class="tabs__accordion" data-accordion="parent">
+                  <div class="ask__answer-list" data-accordion="element">
+                    <button class="ask__card" data-accordion="button">Предлагает ли клуб услуги
+                      по консультированию по вопросам питания?
+                      <span class="ask__button">
+                        <span class="visually-hidden">кнопка</span>
+                      </span>
+                    </button>
+                    <div class="ask__panel" data-accordion="content">
+                      <p class="ask__answer">Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу.
+                        Специалист уточнит ваши данные, цели и предложит программу питания.</p>
+                    </div>
 
-                <div class="ask__answer-list ">
-                  <button class="ask__card accordion">Предлагает ли клуб услуги
-                    по консультированию по вопросам питания?</button>
-                  <div class="ask__panel accordion-panel">
-                    <p class="ask__answer">Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу.
-                      Специалист уточнит ваши данные, цели и предложит программу питания.</p>
-                  </div>
+                    <div class="ask__answer-list" data-accordion="element">
+                      <button class="ask__card" data-accordion="button">Проводятся ли в клубе какие-либо мероприятия или
+                        соревнования?
+                        <span class="ask__button">
+                          <span class="visually-hidden">кнопка</span>
+                        </span>
+                      </button>
+                      <div class="ask__panel" data-accordion="content">
+                        <p class="ask__answer"></p>
+                      </div>
+                    </div>
 
-                  <div class="ask__answer-list ">
-                    <button class="ask__card accordion">Проводятся ли в клубе какие-либо мероприятия или
-                      соревнования?</button>
-                    <div class="ask__panel accordion-panel"></div>
-                  </div>
+                    <div class="ask__answer-list" data-accordion="element">
+                      <button class="ask__card" data-accordion="button">Можно ли приобрести в центре спортивное питание?
+                        <span class="ask__button">
+                          <span class="visually-hidden">кнопка</span>
+                        </span>
+                      </button>
+                      <div class="ask__panel" data-accordion="content">
+                        <p class="ask__answer"></p>
+                      </div>
+                    </div>
 
-                  <div class="ask__answer-list ">
-                    <button class="ask__card accordion">Можно ли приобрести в центре спортивное питание?</button>
-                    <div class="ask__panel accordion-panel"></div>
-                  </div>
-
-                  <div class="ask__answer-list ">
-                    <button class="ask__card accordion accordion--last">Есть ли в центре детская комната?</button>
-                    <div class="ask__panel accordion-panel"></div>
+                    <div class="ask__answer-list" data-accordion="element">
+                      <button class="ask__card ask__card--last" data-accordion="button">Есть ли в центре детская
+                        комната?
+                        <span class="ask__button">
+                          <span class="visually-hidden">кнопка</span>
+                        </span>
+                      </button>
+                      <div class="ask__panel" data-accordion="content">
+                        <p class="ask__answer"></p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
         </section>
       </div>
 
