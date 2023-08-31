@@ -1417,7 +1417,7 @@ button,
   .container {
     padding: 0 15px;
   }
-  .container-mobile {
+  .container--mobile {
     padding: 0;
   }
 }
