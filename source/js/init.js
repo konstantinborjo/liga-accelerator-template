@@ -1,4 +1,4 @@
-new Swiper('.swiper', {
+const Swiper('.swiper', {
   loop: true,
   spaceBetween: 40,
   navigation: {
@@ -15,7 +15,7 @@ new Swiper('.swiper', {
     768: {
       slidesPerView: 2,
       slidesPerGroup: 2,
-      spaceBetween: 30
+      spaceBetween: 30,
 
     },
 
@@ -31,7 +31,7 @@ new Swiper('.swiper', {
   },
 })
 
-new Swiper('.comment__swiper', {
+const Swiper('.comment__swiper', {
   loop: true,
   spaceBetween: 10,
   navigation: {

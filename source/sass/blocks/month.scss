@@ -1,6 +1,6 @@
 .month__item {
   max-width: 110px;
-  color: rgba(16, 38, 84, 0.50);
+  color: rgba(16, 38, 84, 0.5);
   font-family: $ff-roboto;
   font-size: 20px;
   font-style: normal;
@@ -10,16 +10,12 @@
   background: none;
   border: none;
   position: relative;
-
-&:hover,
-&:focus{}
-
 }
 
-.month__item.is-active{
+.month__item.is-active {
   color: #102654;
-  border-bottom: 2px solid #D10A42;}
-
+  border-bottom: 2px solid #d10a42;
+}
 
 @include vp-1199 {
   .month__item {

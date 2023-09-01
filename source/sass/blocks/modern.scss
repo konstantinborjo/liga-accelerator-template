@@ -1,7 +1,7 @@
 .modern {
   display: flex;
   flex-direction: column;
-  background-color: #1C3374;
+  background-color: #1c3374;
   width: 240px;
   align-items: center;
   gap: 0;
@@ -19,7 +19,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 70px;
-  margin: 55px 0 0px 12px;
+  margin: 55px 0 0 12px;
 }
 
 .modern__title {
@@ -42,25 +42,25 @@
 @include vp-1199 {
   .modern {
     width: 442px;
-    padding: 29px 0px;
+    padding: 29px 0;
     gap: 0;
     grid-column: 1/3;
     grid-row: 2/3;
     margin-bottom: 4px;
   }
 
-.modern__number{
-  margin: 6px 0 0 11px;
-}
+  .modern__number {
+    margin: 6px 0 0 11px;
+  }
 
-.modern__title{
-  margin-top: 6px;
-  font-size: 22px;
-}
+  .modern__title {
+    margin-top: 6px;
+    font-size: 22px;
+  }
 
-.modern__text{
-  margin: 19px 0 8px;
-}
+  .modern__text {
+    margin: 19px 0 8px;
+  }
 }
 
 @include vp-767 {
@@ -70,15 +70,15 @@
     width: 100%;
   }
 
-  .modern__number{
-    margin: 9px 0 0 0px;
+  .modern__number {
+    margin: 9px 0 0 0;
   }
 
-  .modern__title{
+  .modern__title {
     margin-top: 3px;
   }
 
-  .modern__text{
+  .modern__text {
     margin: 13px 0 13px;
   }
 }

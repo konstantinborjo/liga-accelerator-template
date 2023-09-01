@@ -1,5 +1,5 @@
 .tickets {
-  background: #F8F9FC;
+  background: #f8f9fc;
   padding-top: 114px;
   padding-bottom: 89px;
   position: relative;
@@ -41,7 +41,7 @@
   position: absolute;
   left: 410px;
   bottom: 0;
-  border-bottom: 2px solid rgba(120, 120, 120, .2);
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   height: 1px;
   width: 370px;
   content: "";
@@ -67,7 +67,6 @@
     bottom: -6px;
     width: 333px;
   }
-
 }
 
 @include vp-767 {
@@ -89,10 +88,9 @@
     width: 286px;
   }
 
-  .tickets__list::after{
+  .tickets__list::after {
     left: -6px;
     bottom: -7px;
     width: 294px;
   }
-
 }

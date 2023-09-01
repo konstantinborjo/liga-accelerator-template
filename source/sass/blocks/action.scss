@@ -7,7 +7,6 @@
   margin-top: 135px;
   color: #102654;
   width: 115px;
-  color: #102654;
   font-family: $ff-alumni;
   font-size: 54px;
   font-style: normal;
@@ -34,11 +33,11 @@
 }
 
 .action__main {
-  background: #ED0233;
+  background: #ed0233;
   color: #ffffff;
   font-family: $ff-roboto;
   font-style: normal;
-  padding: 33px 48px 0px 43px;
+  padding: 33px 48px 0 43px;
   margin-left: 18px;
 }
 
@@ -87,7 +86,7 @@
 }
 
 .action__link:focus {
-  border: 1px solid #FFF;
+  border: 1px solid #ffffff;
   outline: none;
 }
 
@@ -104,7 +103,7 @@
 .action__title-dop {
   margin: 0;
   width: 235px;
-  color: #1C3374;
+  color: #1c3374;
   font-family: $ff-roboto;
   font-size: 26px;
   font-style: normal;
@@ -114,7 +113,7 @@
 
 .action__text-dop {
   width: 345px;
-  color: #1C3374;
+  color: #1c3374;
   font-family: $ff-roboto;
   font-size: 16px;
   font-style: normal;
@@ -125,7 +124,7 @@
 
 .action__link-dop {
   width: 85px;
-  color: #1C3374;
+  color: #1c3374;
   font-family: $ff-roboto;
   font-size: 12px;
   font-style: normal;
@@ -185,7 +184,7 @@
 
   .action__main {
     padding: 33px 47px 0 43px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .action__link-dop {
@@ -265,6 +264,6 @@
 
   .action__main {
     padding: 33px 46px 46px 43px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 }

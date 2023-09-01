@@ -1,7 +1,7 @@
 .video {
   position: relative;
-  padding-bottom: 34.637363%;
-  background-color: #000;
+  padding-bottom: 34.64%;
+  background-color: #000000;
   background-size: cover;
   width: 364px;
   height: 0;
@@ -34,7 +34,7 @@
   background: none;
   padding: 0;
   cursor: pointer;
-  background: url("../img/svg/circle.svg");
+  background-image: url("../img/svg/circle.svg");
 }
 
 .video--enabled {
@@ -62,11 +62,10 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  fill: #fff;
+  fill: #ffffff;
 }
 
 @include vp-1199 {
-
   .video__img,
   .video {
     width: 266px;
@@ -79,7 +78,6 @@
     left: 197px;
   }
 
-
   .video__media {
     width: 266px;
     height: 167px;
@@ -90,11 +88,11 @@
     height: 52px;
   }
 
-  .video__button{
+  .video__button {
     background: none;
     border-radius: 50%;
     border: 1px solid;
-    border-color:  #b80027;
+    border-color: #b80027;
     width: 73px;
     height: 73px;
   }

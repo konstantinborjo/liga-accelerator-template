@@ -11,7 +11,7 @@
 .super-games__text {
   display: flex;
   flex-direction: column;
-  background: #ED0233;
+  background: #ed0233;
   align-items: center;
   padding: 56px 35px 0;
   width: 500px;
@@ -27,7 +27,7 @@
 
 .super-games__title {
   width: 201px;
-  color: #FFF;
+  color: #ffffff;
   text-align: center;
   font-family: $ff-alumni;
   font-size: 82px;
@@ -35,7 +35,7 @@
   font-weight: 600;
   line-height: 96%;
   letter-spacing: 2.46px;
-  margin: 30px 0px 0px 4px;
+  margin: 30px 0 0 4px;
 }
 
 .super-games__description {
@@ -58,29 +58,29 @@
   font-size: 12px;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: .6px;
+  letter-spacing: 0.6px;
   text-transform: uppercase;
   margin-top: 46px;
 }
 
 .super-games__link:hover,
-.super-games__link:focus{
-color: #103AAE;
-background-color: #ffffff;
+.super-games__link:focus {
+  color: #103aae;
+  background-color: #ffffff;
 }
 
-.super-games__link:active{
-  color: #103AAE;
+.super-games__link:active {
+  color: #103aae;
 }
 
-.super-games__link:disabled{
+.super-games__link:disabled {
   opacity: 0.5;
 }
 
 @include vp-1199 {
-.super-games{
-  padding: 100px 0 0;
-}
+  .super-games {
+    padding: 100px 0 0;
+  }
 
   .super-games__title {
     font-size: 48px;
@@ -91,7 +91,7 @@ background-color: #ffffff;
   .super-games__description {
     font-size: 12px;
     line-height: 18px;
-    margin: 10px 0px 0 26px;
+    margin: 10px 0 0 26px;
     width: 228px;
   }
 
@@ -104,7 +104,6 @@ background-color: #ffffff;
   }
 
   .super-games__text {
-    width: 292px;
     padding: 13px 19px 8px;
     width: 323px;
   }
@@ -115,7 +114,7 @@ background-color: #ffffff;
     margin: 8px 0 0 0;
   }
 
-  .super-games__wrapper{
+  .super-games__wrapper {
     margin: 0;
   }
 }
@@ -143,7 +142,7 @@ background-color: #ffffff;
     flex-direction: column;
   }
 
-  .super-games__description{
+  .super-games__description {
     margin: 8px 0 0 26px;
   }
 }

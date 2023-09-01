@@ -1,5 +1,5 @@
 .ask {
-  background-color: #F8F9FC;
+  background-color: #f8f9fc;
   padding: 120px 0 76px;
 }
 
@@ -35,9 +35,8 @@
 
 .ask__item {
   width: 260px;
-  border: 1px solid rgba(16, 38, 84, 0.20);
+  border: 1px solid rgba(16, 38, 84, 0.2);
   padding: 18px 88px;
-  text-align: center;
   text-align: center;
   font-family: $ff-roboto;
   font-size: 18px;
@@ -56,18 +55,16 @@
   width: 100px;
   margin: 0 auto;
   color: #102654;
-
 }
 
 .ask__answer {
   margin: 3px 0 0;
   width: 659px;
-
 }
 
 .ask__answer-list {
   margin: 0 0 19px;
-  border-top: 1px solid rgba(28, 51, 116, .2);
+  border-top: 1px solid rgba(28, 51, 116, 0.2);
 }
 
 .ask__card {
@@ -80,7 +77,6 @@
   padding: 33px 0 0 0;
   border: none;
   background: none;
-  // border-top: 1px solid rgba(28, 51, 116, 0.20);
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -88,7 +84,7 @@
 }
 
 .ask__card--last {
-  border-bottom: 1px solid rgba(28, 51, 116, 0.20);
+  border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 }
 
 .ask__tabs {
@@ -103,31 +99,31 @@
   width: 42px;
   height: 42px;
   border-radius: 50px;
-  border: 1px solid #1C3374;
+  border: 1px solid #1c3374;
   font-size: 0;
   display: block;
   margin: -6px 18px 6px 0;
 
-  &:after {
-    content: '';
+  &::after {
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%);
     height: 1px;
     width: 18px;
-    background: #000
+    background: #000000;
   }
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%) rotate(90deg);
     height: 1px;
     width: 18px;
-    background: #000
+    background: #000000;
   }
 
   .is-active.ask__button {
@@ -181,7 +177,7 @@
   }
 
   .ask__button {
-    margin: -5px 0px 4px 0;
+    margin: -5px 0 4px 0;
   }
 }
 
@@ -202,7 +198,7 @@
 
   .ask__item {
     width: 140px;
-    padding: 14px 0px;
+    padding: 14px 0;
     font-size: 16px;
   }
 
@@ -213,17 +209,17 @@
     padding: 6px 0 0;
   }
 
-  .ask__tabs{
+  .ask__tabs {
     margin-top: 30px;
   }
 
-  .ask__button{
-    margin: 19px 0 0px;
+  .ask__button {
+    margin: 19px 0 0;
     width: 32px;
     height: 32px;
   }
 
-  .ask__answer{
+  .ask__answer {
     margin: 13px 0 0;
     width: 266px;
     font-size: 16px;

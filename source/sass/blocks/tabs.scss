@@ -7,7 +7,6 @@
   width: 100%;
   flex-direction: column;
 
-
   .tabs__link {
     color: #102654;
   }
@@ -39,7 +38,7 @@
   &.is-active {
     opacity: 1;
     pointer-events: none;
-    background: var(--1, linear-gradient(151deg, #ED0233 0%, #003EB7 100%));
+    background: var(--1, linear-gradient(151deg, #ed0233 0%, #003eb7 100%));
     border: none;
     color: #ffffff;
   }
@@ -56,30 +55,6 @@
 
   @media screen and (max-width: 767px) {
     padding: 15px;
-  }
-
-  // p {
-  //   margin: 0;
-
-  //   &:not(:last-child) {
-  //     margin: 15px 0 20px 0;
-  //   }
-  // }
-
-  &:nth-child(1) {
-    background: none;
-  }
-
-  &:nth-child(2) {
-    background: none;
-  }
-
-  &:nth-child(3) {
-    background: none;
-  }
-
-  &:nth-child(4) {
-    background: none;
   }
 }
 

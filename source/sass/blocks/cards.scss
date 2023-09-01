@@ -5,44 +5,40 @@
   margin: 38px auto 0;
   gap: 42px;
   list-style-type: none;
-  padding: 0;
   box-sizing: border-box;
 }
 
 .cards__item {
   width: 400px;
-  background: #fff;
-  padding: 63px 0 56px;
   background: #ffffff;
+  padding: 63px 0 56px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 7px solid transparent;
   padding-top: 59px;
 
-
   &:hover,
   &:focus {
-    border-image: linear-gradient(90deg, #B80027 0%, #003D85 75%) 1 / 7px stretch;
-
+    border-image: linear-gradient(90deg, #b80027 0%, #003d85 75%) 1 / 7px stretch;
   }
 }
 
 .cards__item--5000 {
-  background-image: url('../img/svg/5000.svg');
+  background-image: url("../img/svg/5000.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 18px;
 }
 
 .cards__item--1700 {
-  background-image: url('../img/svg/1700.svg');
+  background-image: url("../img/svg/1700.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .cards__item--2700 {
-  background-image: url('../img/svg/2700.svg');
+  background-image: url("../img/svg/2700.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -56,7 +52,7 @@
   font-size: 27px;
   font-style: normal;
   font-weight: 700;
-  line-height: 25.641px;
+  line-height: 25.64px;
 }
 
 .cards__description {
@@ -72,7 +68,7 @@
 }
 
 .cards__cost {
-  color: #103AAE;
+  color: #103aae;
   font-family: $ff-roboto;
   font-style: normal;
   font-weight: 700;
@@ -85,7 +81,7 @@
 .cards__link {
   width: 210px;
   color: #102654;
-  font-family: Roboto Condensed;
+  font-family: $ff-roboto;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -98,7 +94,7 @@
 }
 
 .cards__link--active {
-  background: var(--1, linear-gradient(151deg, #ED0233 0%, #003EB7 100%));
+  background: var(--1, linear-gradient(151deg, #ed0233 0%, #003eb7 100%));
   color: #ffffff;
   border: none;
 }
@@ -122,11 +118,11 @@
   }
 
   .cards__description {
-    margin: 13px 5px 0px 0px;
+    margin: 13px 5px 0 0;
   }
 
   .cards__cost {
-    margin: 67px 0px 0px 17px;
+    margin: 67px 0 0 17px;
   }
 
   .cards__link {
@@ -138,7 +134,7 @@
     padding: 52px 0 63px;
   }
 
-  .cards__item--2700{
+  .cards__item--2700 {
     padding: 57px 0 60px;
   }
 }
@@ -163,15 +159,12 @@
   .cards__cost {
     font-size: 48px;
     width: 151px;
+    margin: 53px 0 0 23px;
   }
 
   .cards__description {
-    margin: 9px 0px 0 0;
+    margin: 9px 0 0 0;
     font-size: 16px;
-  }
-
-  .cards__cost {
-    margin: 53px 0 0 23px;
   }
 
   .cards__rub {
@@ -180,7 +173,7 @@
   }
 
   .cards__link {
-    padding: 24px 0px 25px;
+    padding: 24px 0 25px;
     margin-top: 31px;
     width: 206px;
     text-align: center;
@@ -191,7 +184,7 @@
     margin-bottom: 13px;
   }
 
-  .cards__item--2700{
+  .cards__item--2700 {
     padding: 47px 0 67px;
   }
 }

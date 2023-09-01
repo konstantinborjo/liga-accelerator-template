@@ -12,16 +12,16 @@
 }
 
 .swiper-button:hover,
-.swiper-button:focus{
+.swiper-button:focus {
   border-radius: 50%;
   border: 1px solid #000000;
   width: 38px;
   height: 38px;
 }
 
-.swiper-button:active{
+.swiper-button:active {
   background: #102654;
-  }
+}
 
 .swiper-button:focus-visible,
 .socials__link:focus-visible,
@@ -113,6 +113,8 @@
   .swiper-button--prev {
     left: -5px;
     top: 60%;
+    width: 12px;
+    height: 12px;
   }
 
   .swiper-button--next {
@@ -120,24 +122,16 @@
     top: 60%;
   }
 
-
   .swiper-button::before {
     width: 12px;
     height: 12px;
-
   }
 
-  .swiper-button--prev {
-    width: 12px;
-    height: 12px;
-  }
-
-  .swiper-button--prev-s{
+  .swiper-button--prev-s {
     top: 54%;
   }
 
-  .swiper-button--next-s{
+  .swiper-button--next-s {
     top: 54%;
   }
-
 }

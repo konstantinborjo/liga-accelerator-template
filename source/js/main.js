@@ -1,27 +1,21 @@
-import { iosVhFix } from './utils/ios-vh-fix';
-import { initModals } from './modules/modals/init-modals';
-import { Form } from './modules/form-validate/form';
+import {iosVhFix} from './utils/ios-vh-fix';
+import {initModals} from './modules/modals/init-modals';
+import {Form} from './modules/form-validate/form';
 import './modules/video.js';
 import './init.js';
-import { initTabs } from './modules/tab/init-tabs';
-import { initAccordions } from './init-accordion';
+import {initTabs} from './modules/tab/init-tabs';
+import {initAccordions} from './init-accordion';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-
-
   window.addEventListener('load', () => {
     initAccordions();
   });
-
   // Utils
   // ---------------------------------
-
   iosVhFix();
-
   // Modules
   // ---------------------------------
-
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
@@ -33,7 +27,6 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 // ---------------------------------
-
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
 
 // привязывайте js не на классы, а на дата атрибуты (data-validate)
@@ -56,5 +49,3 @@ window.addEventListener('DOMContentLoaded', () => {
 // breakpointChecker();
 
 // используйте .closest(el);
-
-
