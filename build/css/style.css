@@ -2643,10 +2643,7 @@ button,
   font-weight: 300;
   line-height: 24px;
   margin: 39px 0 0;
-}
-
-.gym__description--second {
-  margin: 9px 0 0;
+  margin-bottom: -30px;
 }
 
 .gym__media {
