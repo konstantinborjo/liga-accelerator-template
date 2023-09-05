@@ -1,11 +1,12 @@
 .container {
-  width: 100%;
+  width: 1386px;
   margin: 0 auto;
   padding: 0 85px;
 }
 
 @include vp-1199 {
   .container {
+    width: 100%;
     padding: 0 45px;
   }
 }

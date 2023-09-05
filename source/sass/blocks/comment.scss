@@ -34,6 +34,27 @@
 
 .comment__figure {
   background: none;
+
+  h3 {
+    width: 135px;
+    color: #ffffff;
+    font-family: $ff-roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 18px 0 0 0;
+  }
+
+  p {
+    font-family: $ff-roboto;
+    width: 330px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    margin: 12px 0 0;
+  }
+
 }
 
 .comment__text {
@@ -50,27 +71,6 @@
   margin: 24px 0 0 9px;
   width: 84px;
 }
-
-.comment__name {
-  width: 135px;
-  color: #ffffff;
-  font-family: $ff-roboto;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 30px;
-  margin: 18px 0 0 0;
-}
-
-.comment__description {
-  font-family: $ff-roboto;
-  width: 330px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 23px;
-  margin: 12px 0 0;
-}
-
 
 @include vp-1199 {
   .comment__title {
