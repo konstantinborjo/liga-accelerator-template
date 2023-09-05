@@ -4781,8 +4781,7 @@ button,
   color: #ffffff;
   padding: 56px 139px 0 100px;
 }
-
-.free__form {
+.free form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
