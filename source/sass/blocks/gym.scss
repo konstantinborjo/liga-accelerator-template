@@ -10,44 +10,41 @@
   flex-direction: column;
   text-align: left;
   margin-left: 78px;
-}
 
-.gym__description {
-  width: 355px;
-  color: #102654;
-  font-family: $ff-roboto;
-  font-style: normal;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 24px;
-  margin: 39px 0 0;
-}
+  h2 {
+    width: 323px;
+    color: #102654;
+    font-family: $ff-alumni;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.44px;
+    margin: 39px 0 0;
+  }
 
-.gym__title {
-  width: 323px;
-  color: #102654;
-  font-family: $ff-alumni;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 1.44px;
-  margin: 39px 0 0;
-}
+  span {
+    width: 310px;
+    margin: 9px 0 0;
+    color: #102654;
+    font-family: $ff-roboto;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+  }
 
-.gym__area {
-  width: 310px;
-  margin: 9px 0 0;
-  color: #102654;
-  font-family: $ff-roboto;
-  font-style: normal;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 25px;
-}
-
-.gym__description--second {
-  margin: 9px 0 0;
+  p {
+    width: 355px;
+    color: #102654;
+    font-family: $ff-roboto;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 39px 0 0;
+    margin-bottom: -30px;
+  }
 }
 
 .gym__media {

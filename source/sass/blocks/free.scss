@@ -2,12 +2,12 @@
   background-color: #102654;
   color: #ffffff;
   padding: 56px 139px 0 100px;
-}
 
-.free__form {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
 }
 
 .free__data {
