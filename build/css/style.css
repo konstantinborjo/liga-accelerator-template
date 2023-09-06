@@ -2378,6 +2378,10 @@ button,
     letter-spacing: 0.48px;
     margin: 3px 0 0 0;
   }
+  .main-header__link svg {
+    width: 80px;
+    height: 30px;
+  }
   .main-header__picture {
     width: 324px;
     height: 390px;
