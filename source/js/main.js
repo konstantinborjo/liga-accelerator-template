@@ -4,7 +4,7 @@ import {Form} from './modules/form-validate/form';
 import './modules/video.js';
 import './init.js';
 import {initTabs} from './modules/tab/init-tabs';
-import {initAccordions} from './init-accordion';
+import {initAccordions} from './modules/init-accordion';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
